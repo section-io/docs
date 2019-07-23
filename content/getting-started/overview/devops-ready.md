@@ -1,5 +1,5 @@
 ---
-title: Devops Ready
+title: DevOps Ready
 weight: 7
 aliases:
   - /tutorials/overview/devops-ready/
@@ -11,9 +11,9 @@ Section runs a detailed, real-time logging and metrics platform to provide you w
 
 DevOps teams need a few things to get their job done well:
 
-* **Continual improvement**: Section collects hundreds of metrics about how your HTTP traffic is performing and provides long term retenion out of the box.
-* **Incident detection**: Section allows you to configure alerts for any metric in the platform.
-* **Incident management**: when things go wrong, use the real time metrics to identify problems and then dig right into the HTTP logs to isolate individual requests.
+- **Continual improvement**: Section collects hundreds of metrics about how your HTTP traffic is performing and provides long term retention out of the box.
+- **Incident detection**: Section allows you to configure alerts for any metric in the platform.
+- **Incident management**: when things go wrong, use the real time metrics to identify problems and then dig right into the HTTP logs to isolate individual requests.
 
 Legacy CDNs fall short of these needs in a couple of ways: either their log shipping latency is too slow (sometimes an hour after your problem started), or they fail to process those logs into meaningful and actionable information.
 

@@ -21,7 +21,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]]
 pre = "<h3>More</h3>"
-name = "<i class='fa fa-github'></i> Github repo"
+name = "<i class='fa fa-github'></i> GitHub repo"
 identifier = "ds"
 url = "https://github.com/section-io/docs"
 weight = 10
