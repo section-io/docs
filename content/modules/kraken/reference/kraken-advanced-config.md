@@ -7,7 +7,7 @@ weight: 1
 
 ## Kraken Module Settings
 
-Once your application has been set up with Kraken you will find the following settings under `Advanced Config > kraken` in the Aperture portal. We will go over these settings under Operations.
+Once your application has been set up with Kraken you will find the following settings under `Advanced Config > kraken` in the Section Console. We will go over these settings under Operations.
 
 {{< gist section-io-gists c720b97f695ccabccf75c39239deb0c6 >}}
 

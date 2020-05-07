@@ -1,6 +1,6 @@
 ---
 title: Block IP
-description: How to block bots or spammers from your website to improve website performance via the Aperture UI or directly through config files.
+description: How to block bots or spammers from your website to improve website performance via the Section Console UI or directly through config files.
 keywords: bot, bot blocker, spammers, crawlers, website performance, webpage speed, website security, content delivery network, CDN
 aliases:
   - /block-ip/
@@ -15,16 +15,16 @@ Rather than letting these requests be processed by Section and your origin serve
 
 There are two approaches to Blocking IP's.
 
-1. IP Restrictions screen in Aperture web dashboard
+1. IP Restrictions screen in Section Console web dashboard
 2. section.config.json in Advanced Config & git workflow
 
 The simplest interface to view/edit these values is available via "Configuration" > "IP Restrictions".
 
 {{% notice info %}}
-Note that blocking an IP within Aperture as described above adds the IP to the file ``section.config.json`` behind the scenes.
+Note that blocking an IP within Section Console as described above adds the IP to the file ``section.config.json`` behind the scenes.
 {{% /notice %}}
 
-## 1. Block IP via Aperture IP Restrictions
+## 1. Block IP via Section Console IP Restrictions
 
 Requests can be blocked by IP address or routing prefix.
 
@@ -44,7 +44,7 @@ The IP blacklist is stored in the ``section.config.json`` file in the root of th
 
 The `ip_blacklist` field is applied to an environment (living at the same level as `origin` ). It is a list (array) of IP v4 addresses and/or [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation) routing prefixes.
 
-The request blacklist is specified via an `ip_blacklist` property inside one of the `environment` objects found within the ``section.config.json`` file inside your Advanced Configuration tab of Aperture — for example:
+The request blacklist is specified via an `ip_blacklist` property inside one of the `environment` objects found within the ``section.config.json`` file inside your Advanced Configuration tab of Section Console — for example:
 
     {
         "proxychain": [],

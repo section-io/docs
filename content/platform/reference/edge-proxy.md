@@ -61,7 +61,7 @@ When the Edge proxy handles each incoming request, a unique identifier is genera
 
 This request header then propagates through to each proxy in your application's proxy stack and ultimately to your application's configured origin web server. When the final response is returned from your application, via the proxy stack, to the User-Agent, the Edge proxy also inserts the same identifier as a `section-io-id` HTTP response header.
 
-The `section-io-id` value is available in all the proxy logs provided by Aperture to enable easy correlation of log entries across the different proxies in the stack. You can also choose to log the `section-io-id` request header on your origin server to aid with diagnostics.
+The `section-io-id` value is available in all the proxy logs provided by Section Console to enable easy correlation of log entries across the different proxies in the stack. You can also choose to log the `section-io-id` request header on your origin server to aid with diagnostics.
 
 By providing the identifier as a request header, its value can be consumed in your chosen proxies. For example, Varnish Cache can refer to `req.http.section-io-id` in the VCL.
 

@@ -30,7 +30,7 @@ We also provide some convenience tools to help with removing particular URL's fr
 
 Requesting the Varnish Cache Log executes varnishlog for each Varnish Cache instance and returns the results.
 
-varnishncsa is also running, logging request and response details, including cache effectiveness. This data is used to drive the charts seen in Aperture.
+varnishncsa is also running, logging request and response details, including cache effectiveness. This data is used to drive the charts seen in Section Console.
 
 ### Table of contents
 

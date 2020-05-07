@@ -42,7 +42,7 @@ Finally, enable the Section Purger module and the `Core Tags Queuer`. This modul
 
 {{% figure src="/docs/images/drupal8-purger-modules.png" %}}
 
-### Safely store your Aperture Password with the key module
+### Safely store your Section Console Password with the key module
 
 Navigate to `/admin/config/system/keys/add` and input your section.io password. Use key type `Authentication`, and choose whichever key provider you find to be the safest in your particular environment. (More info on this in the [key module documentation](https://www.drupal.org/docs/8/modules/key)).
 
@@ -88,6 +88,6 @@ You can view the logs at `/admin/reports/dblog`
 
 ## Raise the timeout if necessary
 
-If you are seeing timeout errors connecting to aperture, raise the timeout in the purger settings. We recommend a timeout of 2, but feel free to increase this to 5 when using the cron processor.
+If you are seeing timeout errors connecting to Section Console, raise the timeout in the purger settings. We recommend a timeout of 2, but feel free to increase this to 5 when using the cron processor.
 
 {{% figure src="/docs/images/drupal8-purger-timeout.png" %}}

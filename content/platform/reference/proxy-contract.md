@@ -23,7 +23,7 @@ The following defines the interaction between the proxy container and the Sectio
    * All HTTP access must be written to the container's stdout stream in either JSON format or [LTSV](http://ltsv.org/) format.
    * All diagnostic or error logs must be written to the container' stderr stream.
    * Log files should not be used. They will not be accessible outside the proxy and the proxy is responsible managing file growth.
-* An executable at `/opt/section/validate.sh` will be executed by Aperture during the git push pre-receive hook to validate that the user's proxy configuration is correct.
+* An executable at `/opt/section/validate.sh` will be executed by Section Console during the git push pre-receive hook to validate that the user's proxy configuration is correct.
   * This executable must exist, even if it takes no action. It does not need to be a shell script, any file with this name and appropriate file mode is acceptable.
   * The user's configuration for the proxy will be available in the `/opt/proxy_config/` directory.
   * The process must return a zero exit code and zero output if config is valid.

@@ -6,7 +6,7 @@ aliases:
 
 Learning VCL can be a tricky thing so we have made a GUI that let's you cache your static assets and HTML documents without knowing VCL.
 
-In the left hand side of your Aperture dashboard there is a section called *Quick Config* which contains the toggles and inputs to configure Varnish Cache.
+In the left hand side of your Section Console dashboard there is a section called *Quick Config* which contains the toggles and inputs to configure Varnish Cache.
 
 {{< figure src="/docs/images/varnish-cache/quick-config.gif" title="Varnish Cache Quick Config" >}}
 

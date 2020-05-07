@@ -17,7 +17,7 @@ Overall Cache Hit count shows the number of cache hits from all content types. A
 
 The more often the cache can answer your customer requests, the higher the overall cache hit count. The higher the number of cache hits, the faster your website loads and the less work is required by your servers. This means you can earn more revenue by providing a better experience for your customers, and you can save money by not having to purchase additional servers with Magento.
 
-You can increase the overall cache hit count by caching more content. To setup caching, login to Section aperture account and add [configurations for Varnish](/docs/basic-configuration/#varnish).
+You can increase the overall cache hit count by caching more content. To setup caching, login to Section Console account and add [configurations for Varnish](/docs/basic-configuration/#varnish).
 
 
 ## HTML Cache Hit
@@ -25,7 +25,7 @@ HTML Cache Hit count shows the number of cache hits for HTML documents. HTML doc
 
 As with overall cache hit, the more often the cache can answer requests for the HTML document, the higher the HTML cache hit count. The higher the number of HTML cache hits, the faster your website loads and the less work is required by your servers. HTML documents are generated for you by Magento and they consume a significant amount of your server resources. By focusing on HTML document caching as the first type of content you try to optimize, you are focusing on the content type that can make the biggest initial improvement to both your performance and server resources. This means you can earn more revenue by providing a better experience for your customers, and you can save money by not having to purchase additional servers with Magento.
 
-To increase the HTML cache hit count, you should start serving these documents from the cache instead of from your server. To setup caching, login to Section aperture account and add [configurations for Varnish](/docs/basic-configuration/#varnish).
+To increase the HTML cache hit count, you should start serving these documents from the cache instead of from your server. To setup caching, login to Section Console account and add [configurations for Varnish](/docs/basic-configuration/#varnish).
 
 ## HTTP Status Codes
 HTTP status codes show how your website responded to a customer request. The extension in Magento is meant to give you an overview, but we recommend that a developer look into the logs in the Section application in order to review the codes as described below in order to make improvements. The chart shows responses by type in 4 hour increments over the previous 7 days. The timezone is based on the location of the Magento user. Here is what each of the response types mean and what you should do about them:

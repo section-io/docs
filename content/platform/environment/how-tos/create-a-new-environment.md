@@ -9,7 +9,7 @@ weight: 2
 
 This is a guide for setting up a new environment within an existing Section application.
 
-### 1) Log Into Aperture
+### 1) Log Into Section Console
 
 ### 2) Click on the Application in which you want the new environment
   The number of options that appear here will vary depending on the number of applications associated with your account.

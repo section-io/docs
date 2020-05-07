@@ -12,7 +12,7 @@ To make it easy to get started configuring your reverse proxies, Section offers 
 
 ## Varnish
 
-To make getting your CDN setup easier we have a number of configuration options you can enable without having to know how to use Varnish's VCL programming language. To use these go to the Proxy page under the Configuration menu in Aperture.  To use these features the following line needs to be in your `default.vcl` file under the `backend` declaration (it will be there by default). Note, these basic options work for VCL 4.0 only.
+To make getting your CDN setup easier we have a number of configuration options you can enable without having to know how to use Varnish's VCL programming language. To use these go to the Proxy page under the Configuration menu in Section Console.  To use these features the following line needs to be in your `default.vcl` file under the `backend` declaration (it will be there by default). Note, these basic options work for VCL 4.0 only.
 
     include "section-features.vcl";
 
@@ -40,7 +40,7 @@ To start writing your own VCL, you'll need to head over to the [repo](/docs/topi
 
 ## Modsecurity
 
-To make getting your CDN setup easier we have a number of configuration options you can enable without writing any code. We've defined rules that you can view by going to the Proxy page under the Configuration menu in Aperture. If you have both Varnish Cache and Modsecurity setup, you will need to click Proxy in the top nav to display a drop down menu to view both of your reverse proxies and select Modsecurity.
+To make getting your CDN setup easier we have a number of configuration options you can enable without writing any code. We've defined rules that you can view by going to the Proxy page under the Configuration menu in Section Console. If you have both Varnish Cache and Modsecurity setup, you will need to click Proxy in the top nav to display a drop down menu to view both of your reverse proxies and select Modsecurity.
 
 The initial configuration in a repository starts ModSecurity’s SecRuleEngine in DetectionOnly mode (this writes log entries but never executes any disruptive actions). This is a great starting point, as you can immediately see possible threats without stopping legitimate traffic to your site.
 

@@ -9,7 +9,7 @@ aliases:
 
 ## Varnish Cache Configuration
 
-Advanced configuration is done via the Varnish Cache Control Language file `default.vcl`. You can access this file by going to Repository under the Configuration menu in the left nav of Aperture and then clicking on the Varnish Cache file.
+Advanced configuration is done via the Varnish Cache Control Language file `default.vcl`. You can access this file by going to Repository under the Configuration menu in the left nav of Section Console and then clicking on the Varnish Cache file.
 
 To help you get started, we've written some VCL snippets that cover some basic aspects of functionality for you to review.
 

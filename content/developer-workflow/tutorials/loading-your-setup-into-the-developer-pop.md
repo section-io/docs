@@ -25,11 +25,11 @@ Clone with `git clone <url-from-advanced-config>`
 #### 2. Add the Dev PoP remote to your repository
   * Open the Dev Pop UI: `minikube service -n section-shared developer-pop`
 
-{{< figure src="/docs/images/dev/get-ready-section.png" title="Section app ready to connect to Aperture" >}}
+{{< figure src="/docs/images/dev/get-ready-section.png" title="Section app ready to connect to Section Console" >}}
 
-#### Connect Aperture
+#### Connect Section Console
 
-{{< figure src="/docs/images/dev/connect-aperture.png" title="Connect to Aperture button" >}}
+{{< figure src="/docs/images/dev/connect-aperture.png" title="Connect to Section Console button" >}}
 
 #### Grant Access
 
@@ -114,7 +114,7 @@ Now that your configurations are running on the Dev Pop, you will need to config
 
 Use the Dev Pop UI's **Services** tab where you will find information about the repository you just pushed up. A page refresh might be needed.
 
-#### (a) Connect Dev PoP to Aperture
+#### (a) Connect Dev PoP to Section Console
  Make sure to connect your Dev PoP to your [Aperture account]({{< relref "developer-workflow/how-tos/connect-to-aperture.md" >}}) and **import** the Environment configurations.
 
 1. Click on **Import** under the *Operations* column in the **Services** tab.
@@ -124,7 +124,7 @@ Use the Dev Pop UI's **Services** tab where you will find information about the 
 {{< figure src="/docs/images/dev/import-env.gif" title="Import ENV" >}}
 
 {{% notice tip %}}
-To Import an Application and its Environments you must be invited as a User for that Account. This is done via Aperture: Account > Manage Users > Invite User. 
+To Import an Application and its Environments you must be invited as a User for that Account. This is done via Section Console: Account > Manage Users > Invite User. 
 {{% /notice %}}
 
 #### (b) Configure the service manually

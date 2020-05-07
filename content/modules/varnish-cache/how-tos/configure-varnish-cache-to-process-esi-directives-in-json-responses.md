@@ -18,7 +18,7 @@ To do this:
 }
 ```.
 1. Commit the file.
-1. Push your changes to the Developer PoP or Aperture.
+1. Push your changes to the Developer PoP or Section Console.
 
 {{% notice note %}}
 Whilst this change will take effect in the Developer PoP, you may need to contact support for this to take effect in production.

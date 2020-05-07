@@ -9,7 +9,7 @@ weight: 1
 
 ## Virtual Waiting Module Settings
 
-Once your application has been set up with Virtual Waiting Room you will find the following files under `Advanced Config > virtualwaitingroom` in the Aperture portal.
+Once your application has been set up with Virtual Waiting Room you will find the following files under `Advanced Config > virtualwaitingroom` in the Section Console.
 
 ### `virtualwaitingroom.json`
 

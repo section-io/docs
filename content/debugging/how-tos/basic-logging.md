@@ -8,7 +8,7 @@ aliases:
 
 ---
 
-In this document and video we get a basic demo of how to search the HTTP Logs in Section's dashboard called Aperture.
+In this document and video we get a basic demo of how to search the HTTP Logs in Section's dashboard called Section Console.
 
 Use the Kibana 4 HTTP Logs to debug the proxy stack for possible issues with origin or the application in Section.
 
@@ -24,13 +24,13 @@ Use the Kibana 4 HTTP Logs to debug the proxy stack for possible issues with ori
 
 ### HTTP Logs
 
-Login to Section's dashboard Aperture and click the HTTP Logs link.
+Login to Section's dashboard Section Console and click the HTTP Logs link.
 
 {{% figure src="/docs/images/debugging/basic1.png" %}}
 
 ### HTTP Logs Screen
 
-Open the HTTP Logs screen and view Kibana wrapped inside an iframe in Aperture.
+Open the HTTP Logs screen and view Kibana wrapped inside an iframe in Section Console.
 
 {{% figure src="/docs/images/debugging/basic2.png" %}}
 

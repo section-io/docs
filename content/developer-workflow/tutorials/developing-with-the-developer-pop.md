@@ -34,7 +34,7 @@ Double-click on the certificate in your downloads folder and add it to the appro
 
 Now that you have traffic flowing through the Dev PoP you will be able to change any configuration and see it live within a few seconds.
 
-Using your favorite editor, open the repository you cloned from Aperture. Whether you have Varnish, PageSpeed, or a Web Application Firewall, you can change the configuration to see how your application will behave.
+Using your favorite editor, open the repository you cloned from Section Console. Whether you have Varnish, PageSpeed, or a Web Application Firewall, you can change the configuration to see how your application will behave.
 
 Once you have made changes to your config, you will want to push them to the Dev PoP to see them in action. Again we will be using a typical git workflow:
 

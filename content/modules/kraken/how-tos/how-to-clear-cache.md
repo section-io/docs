@@ -23,7 +23,7 @@ Updating the "cache_version" will clear the entire Kraken cache.
 ### Clear a particular image from the cache.
 
 To clear the cache for an individual URL you can use our API: https://aperture.section.io/api/ui/#!/Proxy/proxyStatePost with the `proxyName` as Kraken and the URL of the image as the `banExpression`.
-You can also clear the cache for the URL using the Aperture portal. This feature is an option available under `Clear Cache > kraken`
+You can also clear the cache for the URL using the Section Console. This feature is an option available under `Clear Cache > kraken`
 
 {{% figure src="/docs/images/kraken-cache-clear.png" %}}
 

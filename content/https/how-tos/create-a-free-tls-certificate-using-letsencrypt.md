@@ -9,9 +9,9 @@ aliases:
 
 ## Get started
 
-Log into your Aperture dashboard and under **Set up** navigate to the **HTTPS** page.
+Log into your Section Console dashboardand under **Set up** navigate to the **HTTPS** page.
 
-{{< figure src="/docs/images/https/https-aperture.gif" title="HTTPS in Aperture" >}}
+{{< figure src="/docs/images/https/https-aperture.gif" title="HTTPS in Section Console" >}}
 
 
 ## Select domain

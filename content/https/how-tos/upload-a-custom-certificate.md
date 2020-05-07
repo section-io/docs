@@ -9,7 +9,7 @@ aliases:
 
 ## 1) Navigate to HTTPS 
 
-Log into your Aperture dashboard and under **Set up** navigate to the **HTTPS** page.
+Log into your Section Console and under **Set up** navigate to the **HTTPS** page.
 
 
 ## 2) Select your desired domain

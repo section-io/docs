@@ -14,7 +14,7 @@ If you have added [multiple domains](/docs/change-dns/#multiple-domains) to the 
 
 Each certificate has a short validity period and will be renewed 30 days prior to expiry. If you require wildcards, multi hostname or extended validation (EV) certificates you will need to provide your own certificate.
 
-## Add custom certificate through aperture
+## Add custom certificate through Section Console
 
 To use a custom certificate for your application you will need to obtain a certificate and private key pair. For production use you should use a certificate signed by a trusted root Certificate Authority (CA). In development scenarios, you may find a [self-signed certificate is sufficient](https://en.wikipedia.org/wiki/Self-signed_certificate) ([Beginners guide](https://www.ssl.com/faqs/faq-what-is-ssl/)) ([Certificate Generation](https://www.thenativeweb.io/blog/2017-12-29-11-51-the-openssl-beginners-guide-to-creating-ssl-certificates/))
 

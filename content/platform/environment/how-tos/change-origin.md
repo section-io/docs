@@ -73,7 +73,7 @@ To implement this feature there are 2 elements to configure, Please see our Alte
 
 ## Enable SNI
 
-If your origin has SNI enabled and serves multiple secure(HTTPS) websites using different SSL certificates then you should `Enable SNI` under `Origins` > `Common Settings` in the aperture portal.
+If your origin has SNI enabled and serves multiple secure(HTTPS) websites using different SSL certificates then you should `Enable SNI` under `Origins` > `Common Settings` in the Section Console.
 
 {{% figure src="/docs/images/enable-sni.png" %}}
 

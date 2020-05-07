@@ -10,7 +10,7 @@ aliases:
 
 To simplify management for your websites, Section can provide DNS hosting. This is especially useful for pointing a zone-apex record (ie bare domain) at a Section endpoint if your current DNS hosting provider does not support the `ALIAS` or `ANAME` record types.
 
-Hosting your DNS with Section also provides convenient access to DNS management within the Aperture portal.
+Hosting your DNS with Section also provides convenient access to DNS management within the Section Console.
 
 ### Begin hosting DNS with Section
 

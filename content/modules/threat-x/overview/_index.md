@@ -23,6 +23,6 @@ Of course, you can still rely on ThreatX for virtual patching, which is one of t
 
 ## Other things to note
 
-Naturally, you can see ThreatX is on your site by looking at the Overview page in Aperture, Section management console.
+Naturally, you can see ThreatX is on your site by looking at the Overview page in Section Console, Section management console.
 
 The Section platform writes a log for each HTTP request that passes through ThreatX. These will be available in our powerful Kibana interface alongside logs from all of the other proxies in your stack.

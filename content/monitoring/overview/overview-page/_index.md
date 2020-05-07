@@ -1,5 +1,5 @@
 ---
-title: Aperture Overview Page
+title: Section Console Overview Page
 description:
 keywords: metrics, grafana, graphite, kibana, varnish, modsecurity, website performance, website security, content delivery network, CDN
 aliases:

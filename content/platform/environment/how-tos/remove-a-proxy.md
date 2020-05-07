@@ -6,7 +6,7 @@ keywords: proxy, installation, removal
 ---
 
 ## The section.config.json file
-This file in the root of your git repository found under the Advanced config menu in Aperture, defined which proxies/modules are running for your environment dictated by the git branch.
+This file in the root of your git repository found under the Advanced config menu in Section Console, defined which proxies/modules are running for your environment dictated by the git branch.
 
 For example, if your application is setup with Varnish Cache 6.1.1 and Kraken 2.0.0, you should see this at the top of your config file:
 

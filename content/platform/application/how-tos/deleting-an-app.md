@@ -33,7 +33,7 @@ The original application with no-prefix (also considered the / root prefix) can 
 >
 > > -   www.example.com/assets/images/ - static images only
 
-See the Split option under Overview for your application in Section Aperture for some more detail.
+See the Split option under Overview for your application in Section Console for some more detail.
 
 A split application can later be [deleted](#deleting-applications) and requests for its URL prefix will resume being handled by the original application.
 
