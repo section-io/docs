@@ -28,8 +28,9 @@ HTTP Requests and Bytes used by Module (Not normally needed)
 When logged into Section Console you can browse to the following uri (Replace ACCOUNTID with your own account ID): `https://aperture.section.io/account/ACCOUNTID/prometheus/api/v1/query_range`
 
 Metrics names available:
-section_http_bytes_rate:by_module_name_and_hostname
-section_http_count_rate:by_module_name_and_hostname
+
+* `section_http_bytes_rate:by_module_name_and_hostname`
+* `section_http_count_rate:by_module_name_and_hostname`
 
 Labels:
 
@@ -50,10 +51,10 @@ Labels:
 Example queries:
 
 All data for Account:
-https://aperture.section.io/account/ACCOUNTID/prometheus/api/v1/query_range?query=section_http_request_count_rate%3Aby_module_name_and_hostname%7Bsection_io_module_name%3D%22private-ingress%22%2C%20section_io_account_id%3D%221949%22%7D*60&start=1595446578.479&end=1595468178.479&step=60&_=1595467942570
+`https://aperture.section.io/account/ACCOUNTID/prometheus/api/v1/query_range?query=section_http_request_count_rate%3Aby_module_name_and_hostname%7Bsection_io_module_name%3D%22private-ingress%22%2C%20section_io_account_id%3D%221949%22%7D*60&start=1595446578.479&end=1595468178.479&step=60&_=1595467942570`
 
 Restrict to specific domain:
-https://aperture.section.io/account/ACCOUNTID/prometheus/api/v1/query_range?query=section_http_request_count_rate%3Aby_module_name_and_hostname%7Bsection_io_module_name%3D%22private-ingress%22%2C%20section_io_application_id%3D%227210%22%2C%20hostname%3D%22www.example.com%22%7D*60&start=1595461225.853&end=1595468425.853&step=60&_=1595467942575
+`https://aperture.section.io/account/ACCOUNTID/prometheus/api/v1/query_range?query=section_http_request_count_rate%3Aby_module_name_and_hostname%7Bsection_io_module_name%3D%22private-ingress%22%2C%20section_io_application_id%3D%227210%22%2C%20hostname%3D%22www.example.com%22%7D*60&start=1595461225.853&end=1595468425.853&step=60&_=1595467942575`
 
 Example with curl:
 When using curl / remote systems ensure you had created a username and password in the Section Account that you are querying and included this in the uri as per below:
@@ -61,7 +62,7 @@ When using curl / remote systems ensure you had created a username and password 
 `curl -g --user username:password “https://aperture.section.io/account/ACCOUNTID/prometheus/api/v1/query_range?query=section_http_request_count_rate%3Aby_module_name_and_hostname%7Bsection_io_module_name%3D%22private-ingress%22%2C%20section_io_account_id%3D%221949%22%7D*60&start=1595446578.479&end=1595468178.479&step=60&_=1595467942570”`
 
 Query API is also available:
-https://aperture.section.io/account/ACCOUNTID/prometheus/api/v1/query?query=section_http_request_count_rate%3Aby_module_name_and_hostname%7Bsection_io_module_name%3D%22private-ingress%22%2C%20section_io_application_id%3D%227210%22%2C%20hostname%3D%22www.example.com%22%7D*60
+`https://aperture.section.io/account/ACCOUNTID/prometheus/api/v1/query?query=section_http_request_count_rate%3Aby_module_name_and_hostname%7Bsection_io_module_name%3D%22private-ingress%22%2C%20section_io_application_id%3D%227210%22%2C%20hostname%3D%22www.example.com%22%7D*60`
 
 
 
