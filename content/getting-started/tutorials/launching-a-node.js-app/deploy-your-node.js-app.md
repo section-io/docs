@@ -18,7 +18,15 @@ section apps
 Tell Section about your new app:
 
 ```
-section apps create nextjs-blog --environments production
+section apps create nextjs-blog 
+```
+
+This will create a new app on section, with a single environment, `Production`. 
+
+You can create multiple enviroments by using the `--environments` option: 
+
+```
+section apps create nextjs-blog --environments Production,Staging,UAT
 ```
 
 ### Deploy your app
@@ -26,7 +34,7 @@ section apps create nextjs-blog --environments production
 Now your app is ready to deploy:
 
 ```
-section deploy nextjs-blog --environment production
+section deploy nextjs-blog --environment Production
 ```
 
 ### View your app running on Section
