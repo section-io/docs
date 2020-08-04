@@ -1,5 +1,5 @@
 ---
-title: API Caching 
+title: API Caching
 description: How-to use Varnish to cache an API.
 keywords: API, API caching, varnish, Varnish Cache, JSON, JSON API caching
 aliases:
@@ -9,11 +9,11 @@ aliases:
 
 ## Overview
 
-Varnish Cache can be used to cache an API. By caching a JSON RESTFul API an application running on the edge can be made to run faster. 
+Varnish Cache can be used to cache an API. By caching a JSON RESTFul API an application running on the edge can be made to run faster.
 
 This how-to describes using the Varnish Module on the Section platform to cache an Application Programming Interface (API).
 
-For example, an application running in a Section NodeJS Module on the Edge can cache commonly used API routes in a "varnishapi" Varnish Cache Module.
+For example, an application running in a [Section Node.js Module]({{< ref "modules/nodejs/_index.md" >}}) on the Edge can cache commonly used API routes in a "varnishapi" Varnish Cache Module.
 
 ### section.config.json
 
@@ -42,7 +42,7 @@ The section.config.json could look like;
 {{< / highlight >}}
 
 
-In our example we will cache the following routes; 
+In our example we will cache the following routes;
 
 {{< highlight bash >}}
 /api
@@ -58,7 +58,7 @@ But, will pass all other routes to other proxies;
 
 ### VCL syntax
 
-Example VCL is used in the "varnishapi" module to cache API's. 
+Example VCL is used in the "varnishapi" module to cache API's.
 
 {{< highlight bash >}}
 sub vcl_recv {
@@ -69,16 +69,16 @@ sub vcl_recv {
     #rest / soap apis or magento should pass
     if (req.url ~ "^/api/(rest|soap|v2_soap)") {
         return(pass);
-    } 
-    #all except /api/+ should look for cache 
+    }
+    #all except /api/+ should look for cache
     elseif (req.url ~ "/api/.+") {
-      return(hash); 
+      return(hash);
     }
     if (req.http.Authorization) {
         return (pass);
     }
 
-    return(pass); 
+    return(pass);
 }
 
 
@@ -105,9 +105,9 @@ sub vcl_backend_response {
         set beresp.uncacheable = true;
         return (deliver);
     } else {
-        if (bereq.url ~ "^/api") { 
+        if (bereq.url ~ "^/api") {
             unset beresp.http.Set-Cookie;
-            set beresp.ttl = 4h;  # cache for 4 hours 
+            set beresp.ttl = 4h;  # cache for 4 hours
             set beresp.grace = 4h;
             return (deliver);
         }
@@ -128,7 +128,7 @@ sub vcl_deliver {
     } else {
         set resp.http.CUSTOMER-API-Cache = "MISS";
     }
-   
+
 }
 
 
