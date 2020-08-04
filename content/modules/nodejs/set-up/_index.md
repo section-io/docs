@@ -56,9 +56,9 @@ location ~ "/examplePath2/" {
 
 Your Node.js application will live entirely in the `nodejs` directory and needs to satisfy the following requirements:
 
-[Node.js Contract]({{< relref "modules/nodejs/_index.md" >}})
+- [Node.js Contract]({{< relref "modules/nodejs/_index.md" >}}#nodejs-contract)
 
-Here is an example application that will work out of the box with Section Node.js module. [Node.js Example Nuxt App](https://github.com/section/nodejs-example)
+Check out an [example Nuxt application](https://github.com/section/nodejs-example) that will work out of the box with Section Node.js module.
 
 ## Step 4: Deploy to the Edge
 
