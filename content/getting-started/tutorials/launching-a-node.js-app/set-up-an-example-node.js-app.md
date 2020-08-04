@@ -7,7 +7,7 @@ weight: 1
 
 ## Setup
 
-First, let’s make sure that your development environment is ready.
+First, let’s make sure that your local development workspace is ready.
 
 - If you don’t have Node.js installed, [install it from here](https://nodejs.org/en/). You’ll need Node.js version 10.13 or later.
 - You’ll be using your own text editor and terminal app for this tutorial.
