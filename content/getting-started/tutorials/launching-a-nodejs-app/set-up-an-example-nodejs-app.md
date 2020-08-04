@@ -50,4 +50,4 @@ echo 'server: npx next start' | tee Procfile
 
 ### The Section CLI is now configured.
 
-Next: [deploy your Node.js app]({{< relref "getting-started/tutorials/launching-a-node.js-app/deploy-your-node.js-app.md" >}}).
+Next: [deploy your Node.js app]({{< relref "getting-started/tutorials/launching-a-nodejs-app/deploy-your-nodejs-app.md" >}}).

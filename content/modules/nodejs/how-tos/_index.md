@@ -10,4 +10,4 @@ weight: 2
 
 {{% children depth="3" %}}
 
-- [Launching a Node.js app]({{< ref "getting-started/tutorials/launching-a-node.js-app/_index.md" >}})
+- [Launching a Node.js app]({{< ref "getting-started/tutorials/launching-a-nodejs-app/_index.md" >}})

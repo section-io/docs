@@ -5,7 +5,7 @@ keywords: guide, getting started, website performance, page speed, webpage speed
 weight: 1
 ---
 
-Before you deploy, make sure you have [set up an example Node.js app]({{< relref "getting-started/tutorials/launching-a-node.js-app/set-up-an-example-node.js-app.md" >}}).
+Before you deploy, make sure you have [set up an example Node.js app]({{< relref "getting-started/tutorials/launching-a-nodejs-app/set-up-an-example-nodejs-app.md" >}}).
 
 ### Tell Section about your new app
 
@@ -18,12 +18,12 @@ section apps
 Tell Section about your new app:
 
 ```
-section apps create nextjs-blog 
+section apps create nextjs-blog
 ```
 
-This will create a new app on section, with a single environment, `Production`. 
+This will create a new app on section, with a single environment, `Production`.
 
-You can create multiple enviroments by using the `--environments` option: 
+You can create multiple enviroments by using the `--environments` option:
 
 ```
 section apps create nextjs-blog --environments Production,Staging,UAT
@@ -45,4 +45,4 @@ You can now view your app running on Section:
 
 ### The Section CLI is now configured.
 
-Next: [deploy your Node.js app]({{< relref "getting-started/tutorials/launching-a-node.js-app/deploy-your-node.js-app.md" >}}).
+Next: [deploy your Node.js app]({{< relref "getting-started/tutorials/launching-a-nodejs-app/deploy-your-nodejs-app.md" >}}).
