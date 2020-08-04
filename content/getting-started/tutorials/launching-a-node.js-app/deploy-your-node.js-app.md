@@ -18,7 +18,7 @@ section apps
 Tell Section about your new app:
 
 ```
-section apps create --name nextjs-blog --environments production
+section apps create nextjs-blog --environments production
 ```
 
 ### Deploy your app
@@ -26,12 +26,12 @@ section apps create --name nextjs-blog --environments production
 Now your app is ready to deploy:
 
 ```
-section deploy --name nextjs-blog --environment production
+section deploy nextjs-blog --environment production
 ```
 
 ### View your app running on Section
 
-You can now view yoru app running on Section:
+You can now view your app running on Section:
 
 > [nextjs-blog.section.dev](https://nextjs-blog.section.dev)
 
