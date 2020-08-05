@@ -42,7 +42,3 @@ section deploy nextjs-blog --environment Production
 You can now view your app running on Section:
 
 > [nextjs-blog.section.dev](https://nextjs-blog.section.dev)
-
-### The Section CLI is now configured.
-
-Next: [deploy your Node.js app]({{< relref "getting-started/tutorials/launching-a-nodejs-app/deploy-your-nodejs-app.md" >}}).
