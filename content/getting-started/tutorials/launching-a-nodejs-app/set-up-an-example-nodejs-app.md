@@ -1,5 +1,5 @@
 ---
-title: Set up the Section CLI tool
+title: Set up an example Node.js app
 description: A step-by-step guide on how to launch a Node.js app on Section.
 keywords: guide, getting started, website performance, page speed, webpage speed, website security, content delivery network, CDN
 weight: 2
