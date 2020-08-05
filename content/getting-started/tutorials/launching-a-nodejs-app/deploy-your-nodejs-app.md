@@ -2,7 +2,7 @@
 title: Deploy your Node.js app
 description: A step-by-step guide on how to launch a Node.js app on Section.
 keywords: guide, getting started, website performance, page speed, webpage speed, website security, content delivery network, CDN
-weight: 1
+weight: 3
 ---
 
 Before you deploy, make sure you have [set up an example Node.js app]({{< relref "getting-started/tutorials/launching-a-nodejs-app/set-up-an-example-nodejs-app.md" >}}).
