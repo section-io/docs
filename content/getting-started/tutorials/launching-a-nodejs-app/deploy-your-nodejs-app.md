@@ -7,7 +7,7 @@ weight: 3
 
 Before you deploy, make sure you have [set up an example Node.js app]({{< relref "getting-started/tutorials/launching-a-nodejs-app/set-up-an-example-nodejs-app.md" >}}).
 
-### Tell Section about your new app
+### Find the name of your app
 
 List applications you have access to, and environments for each:
 
@@ -15,30 +15,29 @@ List applications you have access to, and environments for each:
 section apps
 ```
 
-Tell Section about your new app:
+The output will look something like this:
 
 ```
-section apps create nextjs-blog
+Name => Environments
+--------------------
+
+paranoid-android => Production
 ```
 
-This will create a new app on section, with a single environment, `Production`.
+The application name was automatically generated for you when you signed up.
 
-You can create multiple enviroments by using the `--environments` option:
-
-```
-section apps create nextjs-blog --environments Production,Staging,UAT
-```
+Note the name of the application that is returned – you are going to use it in the next step.
 
 ### Deploy your app
 
 Now your app is ready to deploy:
 
 ```
-section deploy nextjs-blog --environment Production
+section deploy paranoid-android --environment Production
 ```
 
 ### View your app running on Section
 
 You can now view your app running on Section:
 
-> [nextjs-blog.section.dev](https://nextjs-blog.section.dev)
+> [paranoid-android.section.dev](https://paranoid-android.section.dev)
