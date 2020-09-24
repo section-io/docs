@@ -5,6 +5,7 @@ keywords: guide, getting started, website performance, page speed, webpage speed
 weight: 1
 aliases:
   - /tutorials/activate-section-io/create-application-edge/
+  - /create-application/
 ---
 
 1. On your main account dashboard, click **Create application**.

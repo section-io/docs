@@ -3,3 +3,4 @@
 # Mac OS X hidden files
 .DS_Store
 .env
+Brewfile.development.lock.json
