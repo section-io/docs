@@ -56,10 +56,15 @@ All data for Account:
 Restrict to specific domain:
 `https://aperture.section.io/account/ACCOUNTID/prometheus/api/v1/query_range?query=section_http_request_count_rate%3Aby_module_name_and_hostname%7Bsection_io_module_name%3D%22private-ingress%22%2C%20section_io_application_id%3D%227210%22%2C%20hostname%3D%22www.example.com%22%7D*60&start=1595461225.853&end=1595468425.853&step=60&_=1595467942575`
 
-Example with curl:
+Examples with curl:
 When using curl / remote systems ensure you had created a username and password in the Section Account that you are querying and included this in the uri as per below:
 
 `curl -g --user username:password “https://aperture.section.io/account/ACCOUNTID/prometheus/api/v1/query_range?query=section_http_request_count_rate%3Aby_module_name_and_hostname%7Bsection_io_module_name%3D%22private-ingress%22%2C%20section_io_account_id%3D%221949%22%7D*60&start=1595446578.479&end=1595468178.479&step=60&_=1595467942570”`
+
+Summarise all data for the last 24hrs for a specific domain:
+
+`curl -g --user username:password "https://aperture.section.io/account/ACCOUNTID/prometheus/api/v1/query_range?query=sum(sum_over_time(section_http_request_count_rate%3Aby_module_name_and_hostname%7Bhostname%3D%22www.example.com%22%2Csection_io_account_id%3D%22ACCOUNTID%22%2Csection_io_module_name%3D%22private-ingress%22%7D%5B86400s%5D))*(60)&start=1601437080.527&end=1601523480.527&step=86400&_=1601509374478"`
+
 
 Query API is also available:
 `https://aperture.section.io/account/ACCOUNTID/prometheus/api/v1/query?query=section_http_request_count_rate%3Aby_module_name_and_hostname%7Bsection_io_module_name%3D%22private-ingress%22%2C%20section_io_application_id%3D%227210%22%2C%20hostname%3D%22www.example.com%22%7D*60`
