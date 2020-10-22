@@ -63,3 +63,9 @@ Example simple usage:
 
 Example advanced usage:
 `www.example.com/image.png?strategy=fill&width=100&height=200&background=000000`
+
+### Bypass optimization
+
+Section Kraken module will not optimize an image when the request contains the header:
+
+- `Kraken-Disabled: true`
