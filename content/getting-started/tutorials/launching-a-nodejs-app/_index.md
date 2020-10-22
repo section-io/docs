@@ -13,6 +13,6 @@ At the end of this tutorial you will have:
 
 * A website running as a subdomain at `section.dev`
 * Free and automatically renewing SSL certificates for your website
-* Used the `section` CLI tool to deploy changes to your app
+* Used the `sectionctl` CLI tool to deploy changes to your app
 
-Let's start by [setting up the Section CLI tool]({{< relref "getting-started/tutorials/launching-a-nodejs-app/set-up-the-section-cli-tool.md" >}}).
+Let's start by [setting up `sectionctl`, the Section CLI tool]({{< relref "getting-started/tutorials/launching-a-nodejs-app/set-up-sectionctl.md" >}}).
