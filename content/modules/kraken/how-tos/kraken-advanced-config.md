@@ -68,4 +68,4 @@ Example advanced usage:
 
 Section Kraken module will not optimize an image when the request contains the header:
 
-- `"Kraken-Disabled": true`
+- `Kraken-Disabled: true`
