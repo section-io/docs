@@ -20,7 +20,7 @@ Then place the executable on your path and ensure it's executable.
 
 On Linux this looks like:
 ```
-mv dist/sectionctl-v0.0.6-linux-amd64/sectionctl /usr/local/bin/sectionctl
+mv dist/sectionctl-v1.0.0-linux-amd64/sectionctl /usr/local/bin/sectionctl
 chmod +x /usr/local/bin/sectionctl
 ```
 
