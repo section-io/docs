@@ -40,4 +40,6 @@ section deploy paranoid-android --environment Production
 
 You can now view your app running on Section:
 
-> [paranoid-android.section.dev](https://paranoid-android.section.dev)
+{{% notice tip %}}
+Node.js Edge App Hosting is a new Section product, so it may have some rough edges. **If you see something that needs improvement, we'd love to [hear your feedback](https://support.section.io/hc/en-us/requests/new).**
+{{% /notice %}}

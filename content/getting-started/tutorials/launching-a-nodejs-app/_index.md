@@ -16,3 +16,7 @@ At the end of this tutorial you will have:
 * Used the `sectionctl` CLI tool to deploy changes to your app
 
 Let's start by [setting up `sectionctl`, the Section CLI tool]({{< relref "getting-started/tutorials/launching-a-nodejs-app/set-up-sectionctl.md" >}}).
+
+{{% notice tip %}}
+Node.js Edge App Hosting is a new Section product, so it may have some rough edges. **If you see something that needs improvement, we'd love to [hear your feedback](https://support.section.io/hc/en-us/requests/new).**
+{{% /notice %}}

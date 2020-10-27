@@ -37,3 +37,7 @@ This will prompt you for your Section username and password, and securely store 
 ### The Section CLI is now configured and ready to use
 
 Next: [set up an example Node.js app]({{< relref "getting-started/tutorials/launching-a-nodejs-app/set-up-an-example-nodejs-app.md" >}}).
+
+{{% notice tip %}}
+Node.js Edge App Hosting is a new Section product, so it may have some rough edges. **If you see something that needs improvement, we'd love to [hear your feedback](https://support.section.io/hc/en-us/requests/new).**
+{{% /notice %}}

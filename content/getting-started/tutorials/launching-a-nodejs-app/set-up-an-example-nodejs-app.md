@@ -51,3 +51,7 @@ echo 'server: npx next start' | tee Procfile
 ### The Section CLI is now configured.
 
 Next: [deploy your Node.js app]({{< relref "getting-started/tutorials/launching-a-nodejs-app/deploy-your-nodejs-app.md" >}}).
+
+{{% notice tip %}}
+Node.js Edge App Hosting is a new Section product, so it may have some rough edges. **If you see something that needs improvement, we'd love to [hear your feedback](https://support.section.io/hc/en-us/requests/new).**
+{{% /notice %}}
