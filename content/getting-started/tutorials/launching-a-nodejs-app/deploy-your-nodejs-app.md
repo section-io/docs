@@ -9,36 +9,53 @@ Before you deploy, make sure you have [set up an example Node.js app]({{< relref
 
 ### Find the name of your app
 
-List applications you have access to, and environments for each:
+Find the ID of your account:
 
 ```
-section apps
+sectionctl accounts
 ```
 
 The output will look something like this:
 
 ```
-Name => Environments
---------------------
+| ACCOUNT ID | ACCOUNT NAME                      |
+|------------|-----------------------------------|
+| 1335       | g9ts24tx7gm8n12b2evf3.section.dev |
+```
 
-paranoid-android => Production
+Note the number value in the account ID column – we're about to use it to list applications you have access to:
+
+```
+sectionctl apps list --account-id 1335
+```
+
+The output will look something like this:
+
+```
+| APP ID |    APP NAME                       |
+|--------|-----------------------------------|
+| 7171   | g9ts24tx7gm8n12b2evf3.section.dev |
 ```
 
 The application name was automatically generated for you when you signed up.
 
-Note the name of the application that is returned – you are going to use it in the next step.
+Note the name of the application that is returned – you are going to use it in the next and final step.
 
 ### Deploy your app
 
 Now your app is ready to deploy:
 
 ```
-section deploy paranoid-android --environment Production
+sectionctl deploy --account-id 1335 --app-id 7171
 ```
+
+(make sure to substitute your account and app IDs when you run this command)
+
+This will take a few minutes to upload and deploy your Node.js app to Section's edge.
 
 ### View your app running on Section
 
-You can now view your app running on Section:
+Plug the app name you saw above into your browser, and you should see your app running.
 
 {{% notice tip %}}
 Node.js Edge App Hosting is a new Section product, so it may have some rough edges. **If you see something that needs improvement, we'd love to [hear your feedback](https://support.section.io/hc/en-us/requests/new).**
