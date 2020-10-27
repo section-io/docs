@@ -5,48 +5,52 @@ keywords: guide, getting started, website performance, page speed, webpage speed
 weight: 2
 ---
 
+Next, we're going to set up a [NuxtJS](https://nuxtjs.org) app for you to deploy to Section's Edge App Hosting.
+
 ## Setup
 
 First, let’s make sure that your local development workspace is ready.
 
-- If you don’t have Node.js installed, [install it from here](https://nodejs.org/en/). You’ll need Node.js version 10.13 or later.
+- If you don’t have Node.js installed, [install it from here](https://nodejs.org/en/). You’ll need Node.js version 10.14 or later.
 - You’ll be using your own text editor and terminal app for this tutorial.
 
 If you are on Windows, we recommend [downloading Git for Windows](https://gitforwindows.org/) and use Git Bash that comes with it, which supports the UNIX-specific commands in this tutorial.
 
-### Create a Next.js app
+### Set up a demo app
 
-To create a Next.js app, open your terminal, `cd` into the directory you’d like to create the app in, and run the following command:
+To set up a demo app, open your terminal, `cd` into the directory you’d like to create the app in, and run the following command:
 
 ```
-npx create-next-app nextjs-blog --use-npm --example "https://github.com/vercel/next-learn-starter/tree/master/learn-starter"
+git clone https://github.com/section/nodejs-example
 ```
 
 ### Run the development server
 
-You now have a new directory called nextjs-blog. Let’s cd into it:
+You now have a new directory called `nodejs-example`. Let’s `cd` into it:
 
 ```
-cd nextjs-blog
+cd nodejs-example
 ```
+
+Pull down the dependencies and build your app by running:
+
+```
+npm install
+npm run-script build
+```
+{{% notice info %}}
+The Section platform expects you have run both of these commands before you can deploy your app.
+{{% /notice %}}
 
 Then, run the following command:
 
 ```
-npm run dev
+npm run-script start
 ```
 
-This starts your Next.js app’s "development server" on port 3000.
+This starts your app’s development server on port 8080.
 
-Let’s check to see if it’s working. Open [http://localhost:3000](http://localhost:3000) from your browser.
-
-### Add a Procfile
-
-Add a Procfile, so Section knows how to start your app:
-
-```
-echo 'server: npx next start' | tee Procfile
-```
+Let’s check to see if it’s working. Open [http://localhost:8080](http://localhost:8080) from your browser.
 
 ### The Section CLI is now configured.
 
