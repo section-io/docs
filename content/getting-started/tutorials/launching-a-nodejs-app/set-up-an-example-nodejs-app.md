@@ -52,7 +52,7 @@ This starts your app’s development server on port 8080.
 
 Let’s check to see if it’s working. Open [http://localhost:8080](http://localhost:8080) from your browser.
 
-### The Section CLI is now configured.
+### Your app is now ready to deploy
 
 Next: [deploy your Node.js app]({{< relref "getting-started/tutorials/launching-a-nodejs-app/deploy-your-nodejs-app.md" >}}).
 
