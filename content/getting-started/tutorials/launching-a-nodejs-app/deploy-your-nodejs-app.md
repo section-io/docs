@@ -39,7 +39,19 @@ The output will look something like this:
 
 The application name was automatically generated for you when you signed up.
 
-Note the name of the application that is returned – you are going to use it in the next and final step.
+Note the name of the application that is returned – you are going to use it in the final steps.
+
+### Set up the SSL certificate for your domain
+
+Section provides SSL certificates for your apps for free.
+
+To set up this up so your app is available, run:
+
+```
+sectionctl certs renew --account-id 1335 --hostname g9ts24tx7gm8n12b2evf3.section.dev
+```
+
+(make sure to substitute your account ID and domain when you run this command)
 
 ### Deploy your app
 
