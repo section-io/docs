@@ -15,6 +15,10 @@ At the end of this tutorial you will have:
 * Free and automatically renewing SSL certificates for your website
 * Used the `sectionctl` CLI tool to deploy changes to your app
 
+{{% notice warning %}}
+**If you have just signed up to Section**, please check your emails to **confirm your account**, and **set a password**. You won't be able to complete this tutorial without having a password set.
+{{% /notice %}}
+
 Let's start by [setting up `sectionctl`, the Section CLI tool]({{< relref "getting-started/tutorials/launching-a-nodejs-app/set-up-sectionctl.md" >}}).
 
 {{% notice tip %}}
