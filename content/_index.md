@@ -13,7 +13,7 @@ What will you create?
 
 ## Getting started
 
-Here you will find all the information you need to built and maintain your customized edge workload, whether that be typical CDN workload like caching and WAF, custom build containers, or a combination of the two.
+Here you will find all the information you need to build and maintain your customized edge workload, whether that be typical CDN workload like caching and WAF, custom build containers, or a combination of the two.
 
 * [Read Section's core concepts]({{< relref "getting-started/_index.md" >}})
   * Get a handle for the terminology we use and how we differentiate from other solutions.
