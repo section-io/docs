@@ -72,3 +72,21 @@ Plug the app name you saw above into your browser, and you should see your app r
 {{% notice tip %}}
 Node.js Edge App Hosting is a new Section product, so it may have some rough edges. **If you see something that needs improvement, we'd love to [hear your feedback](https://support.section.io/hc/en-us/requests/new).**
 {{% /notice %}}
+
+### See the state of an application
+You can use the following command to see the state of an application
+```
+sectionctl ps -- app-id 7171
+```
+
+This will return the status of running containers in the following format:
+
+```
+| APP STATUS |    APP PAYLOAD ID                             |
+|------------|-----------------------------------------------|
+| Deploying  | 69be5c29-9f02-41dc-bed0-27cff1cbbbaf (latest) |
+| Deploying  | 69be5c29-9f02-41dc-bed0-27cff1cbbbaf (latest) |
+| Running    | 2ea3e806-706d-4af2-bd8c-3d45ba4b634b          |
+| Running    | 2ea3e806-706d-4af2-bd8c-3d45ba4b634b          |
+```
+The above response shows that there are two containers of the application running which is on a previous version and two new containers with the latest deploy in the process of deployment. Once a container becomes ready, its status will change to `Running` and replace  containers with the older version.
