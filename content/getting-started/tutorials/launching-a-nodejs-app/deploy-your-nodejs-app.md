@@ -75,8 +75,9 @@ Node.js Edge App Hosting is a new Section product, so it may have some rough edg
 
 ### See the state of an application
 You can use the following command to see the state of an application
+
 ```
-sectionctl ps -- app-id 7171
+sectionctl ps --account-id 1337 --app-id 7171
 ```
 
 This will return the status of running containers in the following format:
