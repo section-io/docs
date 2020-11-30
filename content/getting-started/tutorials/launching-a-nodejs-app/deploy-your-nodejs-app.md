@@ -83,7 +83,7 @@ sectionctl ps --account-id 1337 --app-id 7171
 This will return the status of running app instances in the following format:
 
 ```
-| APP STATUS |    APP PAYLOAD ID                             |
+| APP STATUS |                APP PAYLOAD ID                 |
 |------------|-----------------------------------------------|
 | Deploying  | 69be5c29-9f02-41dc-bed0-27cff1cbbbaf (latest) |
 | Deploying  | 69be5c29-9f02-41dc-bed0-27cff1cbbbaf (latest) |
