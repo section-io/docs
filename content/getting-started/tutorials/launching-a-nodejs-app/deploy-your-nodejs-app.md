@@ -80,7 +80,7 @@ You can use the following command to see the state of an application
 sectionctl ps --account-id 1337 --app-id 7171
 ```
 
-This will return the status of running containers in the following format:
+This will return the status of running app instances in the following format:
 
 ```
 | APP STATUS |    APP PAYLOAD ID                             |
