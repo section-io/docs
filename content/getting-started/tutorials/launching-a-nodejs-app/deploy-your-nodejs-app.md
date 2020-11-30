@@ -90,4 +90,17 @@ This will return the status of running app instances in the following format:
 | Running    | 2ea3e806-706d-4af2-bd8c-3d45ba4b634b          |
 | Running    | 2ea3e806-706d-4af2-bd8c-3d45ba4b634b          |
 ```
-The above response shows that there are two containers of the application running which is on a previous version and two new containers with the latest deploy in the process of deployment. Once a container becomes ready, its status will change to `Running` and replace  containers with the older version.
+
+The example above shows:
+
+- two running instances of the application on a previous version
+- two app instances being deployed with the latest version.
+
+Once an app instance finishes deploying, its status will change from `Deploying` to `Running`, and replace the app instances running the older version:
+
+```
+| APP STATUS |                APP PAYLOAD ID                 |
+|------------|-----------------------------------------------|
+| Running    | 69be5c29-9f02-41dc-bed0-27cff1cbbbaf (latest) |
+| Running    | 69be5c29-9f02-41dc-bed0-27cff1cbbbaf (latest) |
+```
