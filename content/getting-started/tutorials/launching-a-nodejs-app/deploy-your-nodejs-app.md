@@ -83,24 +83,24 @@ sectionctl ps --account-id 1337 --app-id 7171
 This will return the status of running app instances in the following format:
 
 ```
-| APP STATUS |                APP PAYLOAD ID                 |
-|------------|-----------------------------------------------|
-| Deploying  | 69be5c29-9f02-41dc-bed0-27cff1cbbbaf (latest) |
-| Deploying  | 69be5c29-9f02-41dc-bed0-27cff1cbbbaf (latest) |
-| Running    | 2ea3e806-706d-4af2-bd8c-3d45ba4b634b          |
-| Running    | 2ea3e806-706d-4af2-bd8c-3d45ba4b634b          |
+| APP INSTANCE NAME | APP STATUS |            APP PAYLOAD ID            |
+|-------------------|------------|--------------------------------------|
+| nodejs-flwp6-3b4  | Deploying  | 69be5c29-9f02-41dc-bed0-27cff1cbbbaf |
+| nodejs-7xzhf-0d3  | Deploying  | 69be5c29-9f02-41dc-bed0-27cff1cbbbaf |
+| nodejs-a8sfs-23e  | Running    | 2ea3e806-706d-4af2-bd8c-3d45ba4b634b |
+| nodejs-sdfk5-54s  | Running    | 2ea3e806-706d-4af2-bd8c-3d45ba4b634b |
 ```
 
 The example above shows:
 
-- two running instances of the application on a previous version
+- two running instances of the application on a previous version as indicated by the payload ID.
 - two app instances being deployed with the latest version.
 
 Once an app instance finishes deploying, its status will change from `Deploying` to `Running`, and replace the app instances running the older version:
 
 ```
-| APP STATUS |                APP PAYLOAD ID                 |
-|------------|-----------------------------------------------|
-| Running    | 69be5c29-9f02-41dc-bed0-27cff1cbbbaf (latest) |
-| Running    | 69be5c29-9f02-41dc-bed0-27cff1cbbbaf (latest) |
+| APP INSTANCE NAME | APP STATUS |            APP PAYLOAD ID            |
+|-------------------|------------|--------------------------------------|
+| nodejs-flwp6-3b4  | Running    | 69be5c29-9f02-41dc-bed0-27cff1cbbbaf |
+| nodejs-7xzhf-0d3  | Running    | 69be5c29-9f02-41dc-bed0-27cff1cbbbaf |
 ```
