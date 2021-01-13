@@ -23,7 +23,7 @@ Each environment has its own section in the file where you can specify config op
 
 ![Change Origin Config File](/docs/images/change-origin-configfile.png?height=410px)
 
-To change the address of your production environment Click the Edit button on the page. This will open the online file editor. From there you can change the value of the origin address to the new IP address or CNAME. To save the change, put a description in the Commit Message field (remember, this is all git) and click Commit. This will do a git commit & push which will trigger a deploy to the Section delivery nodes to apply the new orgin address.
+To change the address of your production environment Click the Edit button on the page. This will open the online file editor. From there you can change the value of the origin address to the new IP address or CNAME. To save the change, put a description in the Commit Message field (remember, this is all git) and click Commit. This will do a git commit & push which will trigger a deploy to the Section delivery nodes to apply the new origin address.
 
 Within a few seconds Section will be serving requests from your new webserver.
 
