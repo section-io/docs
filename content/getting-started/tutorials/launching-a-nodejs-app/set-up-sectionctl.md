@@ -12,8 +12,8 @@ Go to GitHub [to download the latest release](https://github.com/section/section
 On Linux this looks like:
 
 ```
-wget https://github.com/section/sectionctl/releases/download/v1.5.0/sectionctl-v1.5.0-linux-amd64.tar.gz
-tar zxvf sectionctl-v1.5.0-linux-amd64.tar.gz
+wget https://github.com/section/sectionctl/releases/download/v1.6.1/sectionctl-v1.6.1-linux-amd64.tar.gz
+tar zxvf sectionctl-v1.6.1-linux-amd64.tar.gz
 ```
 
 Then place the executable on your path and ensure it's executable.
