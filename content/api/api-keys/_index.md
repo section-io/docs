@@ -25,3 +25,9 @@ Use your API Key by adding it to your requests in the Section-Token header.
 ```bash
 curl -H "Section-Token: API-KEY-HERE" aperture.section.io/api/v1
 ```
+## Listing Your API Keys
+List your API Keys by using the following curl command:
+
+```bash
+curl -u username:password -XPOST -d '{"query": "{ userAPITokens }"}' https://aperture.section.io/new/authorized/graphql_api/query
+```
