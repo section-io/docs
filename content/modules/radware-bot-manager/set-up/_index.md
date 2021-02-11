@@ -19,8 +19,8 @@ This tutorial will guide you through the process to adding the Radware Bot Manag
 
 ```
 {
-    "name": "radware-bot-manager",
-    "image": "radware-bot-manager:1.0.0"
+    "name": "radwarebotmanager",
+    "image": "radware-bot-manager:5.3.4"
 }
 ```
 
@@ -30,7 +30,7 @@ You can add this module at any index in your proxystack array. We'd recommend ad
 
 ### Step 2 - Adding default files
 
-1. Create a `radware-bot-manager` directory in the root of your repository.
+1. Create a `radwarebotmanager` directory in the root of your repository.
 1. Create the following files under the **Radware Bot Manager** directory:
     * shieldsquare.json
 
