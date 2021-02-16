@@ -53,7 +53,7 @@ location / {
 }
 ```
 
-This default config implments the consistent hash based on the URI path of the HTTP request in the proxy_pass directive, but you can use the following values for other forms of consistent hashing:
+This default config implements the consistent hash based on the URI path of the HTTP request in the proxy_pass directive, but you can use the following values for other forms of consistent hashing:
 
 * `consistenthash_uri_next_hop_upstream` - consistent hash based on the URI path.
 * `consistenthash_client_ip_next_hop_upstream` - consistent hash based on the originating Client IP address.
