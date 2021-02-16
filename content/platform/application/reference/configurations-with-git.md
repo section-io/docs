@@ -20,10 +20,16 @@ Inside Advanced Config, you should see one folder for every reverse proxy runnin
 
 ## Working locally
 
-Because your Section configuration is a git repository, you can also clone it locally to work with as well as using the web editor.  This is particularly helpful if you want to do local development with our [Developer Pop](/docs/developer-workflow/).
+Because your Section configuration is a git repository, you can also clone it locally to work with as well as using the web editor. 
+This is particularly helpful if you want to do local development with our [Developer POP](/docs/developer-workflow/).
 
 Copy the URL from the *Advanced Config* page labelled *Clone with HTTPS* and use this to run `git clone <url-from-advanced-config>`.
 
 ### Git Authentication
 
-There are two ways to authenticate git.  If you log into Aperture with a username & password you can just use those credentials to also authenticate git.  If you access Aperture via SSO, or you don't want to use your main credentials for git, you can also authenticate with an API token. If you don't already have an API token, [follow these instructions to create one](/docs/api/api-tokens/#creating-an-api-token). Once that is done you can authenticate git using `section-token` as the username and the token value as the password.
+There are two ways to authenticate git:
+
+1. If you log into Aperture with a username & password you can just use those credentials to also authenticate git.  
+1. If you access Aperture via SSO, or you don't want to use your main credentials for git, you can also authenticate with an API Token. 
+   If you don't already have an API token, [follow these instructions to create one](/docs/api/api-tokens/#creating-an-api-token). 
+   Once that is done you can authenticate git using `section-token` as the username and the API Token value as the password.
