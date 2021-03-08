@@ -39,7 +39,8 @@ npm install
 npm run-script build
 ```
 {{% notice info %}}
-The Section platform expects you have run both of these commands before you can deploy your app.
+The Section platform expects you have run both of these commands before you can deploy your app. 
+You must use `npm` as `yarn` is unsupported for now.
 {{% /notice %}}
 
 Then, run the following command:
