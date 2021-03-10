@@ -5,6 +5,14 @@ keywords: content delivery network, CDN, varnish, turpentine, modsecurity, rever
 aliases:
   - /proxy-list/
   - /reference/proxy-list/
+  - /modules/pagespeed/
+  - /modules/pagespeed/set-up/
+  - /modules/pagespeed/how-tos/
+  - /modules/pagespeed/how-tos/debugging-pagespeed/
+  - /modules/pagespeed/how-tos/enable-and-disable-filers/
+  - /modules/pagespeed/how-tos/pagespeed-advanced-config/
+  - /modules/pagespeed/how-tos/pagespeed-and-varnish-cache/
+  - /modules/pagespeed/how-tos/turn-pagespeed-on-and-off/
 weight: 150
 ordersectionsby: "title"
 ---
@@ -26,7 +34,6 @@ If you want to experiment with different modules you can use our [Developer Work
 | [ModSecurity](/docs/modules/modsecurity/ "ModSecurity") | Web Application Firewall | Open source Web Application Firewall. |
 | [Node.js](/docs/modules/nodejs/ "Node.js overview") | Edge Compute | Node.js Javascript application module running on Section compute edge. |
 | [OpenResty](/docs/modules/openresty/ "OpenResty overview") | Edge Compute | Nginx and Lua based scriptable web platform. |
-| [PageSpeed](/docs/modules/pagespeed/ "PageSpeed overview") | Front End Optimization | Optimize images, minify Javascript and CSS, defer Javascript libraries and more. |
 | [Radware Bot Manager](/docs/modules/radware-bot-manager/ "Radware Bot Manager overview") | Bot Management | Non-human bot traffic detection and management. |
 | [Signal Sciences](/docs/modules/signal-sciences/ "Signal Sciences overview") | Web Application Firewall | Real-time protection for an application under attack and integrates into devops toolchains. |
 | [SiteSpect](/docs/modules/sitespect/ "SiteSpect overview") | A/B Testing | Javascript and Tag Free A/B testing. |
