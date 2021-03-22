@@ -2,9 +2,11 @@
 title: Optidash
 description: Using the Optidash Image Optimization module on Section.
 aliases:
+  - /modules/kraken/
   - /modules/kraken/overview/
   - /modules/kraken/reference/
-  - /optidash
+  - /kraken/
+  - /optidash/
 ---
 
 ## What does it do
