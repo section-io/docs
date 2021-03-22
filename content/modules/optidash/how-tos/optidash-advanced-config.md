@@ -9,8 +9,7 @@ aliases:
 
 ## Optidash Module Settings
 
-Once your application has been set up with Optidash you will find the following settings under `Advanced Config > Optidash` in the Aperture portal. We will go over these settings under Operations.
-
+Once your application has been set up with Optidash you will find the following settings under `Advanced Config > Optidash` in the Section Console (Aperture portal). 
 ```
 {
     "api_key": "REDACTED",
