@@ -13,7 +13,7 @@ Optidash module allows the flexibility to control the quality of the optimized i
 
 ## How To
 
-You can control the optimized image quality by changing the following settings in the [advanced configuration](/docs/modules/optidash/reference/optidash-advanced-config/) settings for Optidash :
+You can control the optimized image quality by changing the following settings in the [advanced configuration](/docs/modules/optidash/how-tos/optidash-advanced-config/) settings for Optidash :
 
 - `"lossless" : "true/false"`
 
