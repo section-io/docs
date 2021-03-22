@@ -30,7 +30,7 @@ If you want to experiment with different modules you can use our [Developer Work
 | Module | Function | Description
 |:--|:--|---|
 | [Cloudinary](/docs/modules/cloudinary/ "Cloudinary overview") | Image Optimization | On-the-fly image manipulation and optimization. |
-| [Kraken](/docs/modules/kraken/ "Kraken overview") | Image Optimization | Optimize images and reduce page weight and load time. |
+| [Optidash](/docs/modules/optidash/ "Optidash overview") | Image Optimization | Optimize images and reduce page weight and load time. |
 | [ModSecurity](/docs/modules/modsecurity/ "ModSecurity") | Web Application Firewall | Open source Web Application Firewall. |
 | [Node.js](/docs/modules/nodejs/ "Node.js overview") | Edge Compute | Node.js Javascript application module running on Section compute edge. |
 | [OpenResty](/docs/modules/openresty/ "OpenResty overview") | Edge Compute | Nginx and Lua based scriptable web platform. |
