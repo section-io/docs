@@ -9,13 +9,8 @@ aliases:
 
 ---
 
-If your origin server is down or running slowly, you or your users might be presented with the following screen:
+Have a look in Chrome's development tools, on the network tab, to discover the HTTP response code for a request.
 
-{{% figure src="/docs/images/generic-error-http.png" %}}
-
-This page is show where Section responds with a HTTP 502 or HTTP 504 response code.
-
-Have a look in Chrome's development tools, on the network tab, to discover the HTTP response code.
 
 ### HTTP 502
 
