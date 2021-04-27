@@ -28,6 +28,14 @@ Here are some things to check:
 
 1. Is your server under heavy load? Perhaps you could [improve your cache hit rate]({{< relref "modules/varnish-cache/how-tos/varnish-cache-hit-rate.md" >}}).
 
+### HTTP 508
+
+The HTTP status code that Section edge serves if there appears to be a cyclic loop (i.e., egress requests back to edge).
+
+Here are some things to check:
+
+1. Is your origin configured as another environment on the Section platform?
+
 ## Custom Error Messages
 
 If you would like to customise what HTML we return in case of specific HTTP error codes you can place a file in the `custom_errors` folder in your application repository.
