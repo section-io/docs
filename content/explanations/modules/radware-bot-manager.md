@@ -3,6 +3,7 @@ title: Radware Bot Manager
 description: Radware Bot Manager Module overview
 weight: 1
 aliases:
+aliases:
   - /modules/radware-bot-manager/
   - /modules/shieldsquare/overview/
   - /modules/shieldsquare/reference/
