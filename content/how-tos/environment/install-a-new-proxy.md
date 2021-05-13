@@ -20,7 +20,7 @@ For example, if your application is setup with Varnish Cache 4.0.3, you should s
 	    ]
 
 ## 1) Add the proxy to your environment's section.config.json file
-Let's add Varnish Cache 6.0.0 to the example above. You can find a list of current proxies [here]({{< relref "modules/_index.md" >}})
+Let's add Varnish Cache 6.0.0 to the example above. You can find a list of current proxies [here]({{< relref "reference/modules.md" >}})
 
 To add a proxy, we need to insert a json object containing the proxy's name and image (the specific version of the proxy you want). After adding the Varnish Cache proxy, our file looks like:
 
