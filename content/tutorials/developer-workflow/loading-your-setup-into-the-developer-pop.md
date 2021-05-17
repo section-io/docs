@@ -25,6 +25,7 @@ Clone with `git clone <url-from-advanced-config>`
 
 #### 2. Add the Dev PoP remote to your repository
   * Open the Dev Pop UI: `minikube service -n section-shared developer-pop`
+    * This may take a few minutes if the pods in the cluster are still spinning up. Check the status by running `kubectl get pods -A`
 
 {{< figure src="/docs/images/dev/get-ready-section.png" title="Section app ready to connect to Aperture" >}}
 
