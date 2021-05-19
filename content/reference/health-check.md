@@ -35,7 +35,7 @@ You can use the following example to query your environment and confirm if your 
 ```bash
 curl --head 'https://apps.manibatra.xyz/.well-known/section-io/aee-hc/healthz?ts=12345' \
 --header 'section-debug: true' \
---max-time 30
+--max-time 42
 
 HTTP/2 404
 date: Tue, 27 Apr 2021 04:53:20 GMT
