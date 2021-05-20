@@ -38,7 +38,9 @@ Enable disable lossy compression.
 
  This options will only be used if the LOSSY option is set to true. Can be a number in the range of 1 - 100. If the quality option is not provided it will default to "auto" where Optidash will optimize the images based on their characteristics.
 
+- `"compression" : "ultra"`
 
+Overrides `lossless` and `quality` settings and provides lower quality and smaller images even compared to the lowest `quality` setting. This option is only recommended for sites that do not care about the image quality and require maximise image size reduction.
 
 - `"cache_version" : "v1"`
 
