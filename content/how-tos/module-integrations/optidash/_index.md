@@ -4,6 +4,7 @@ description: Adding Optidash to your Section proxy stack.
 keywords: content delivery network, CDN, optidash, image optimization, reverse proxies, proxy, proxy template
 weight: 1
 aliases:
+  - /how-tos/integrations/optidash/
   - /modules/optidash/set-up/
   - /modules/optidash/tutorials/add-optidash-to-your-proxystack/
   - /modules/kraken/tutorials/add-kraken-to-your-proxystack/
