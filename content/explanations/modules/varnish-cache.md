@@ -31,7 +31,7 @@ Assuming Varnish Cache is the first proxy in your proxy stack, Varnish Cache wil
 
 Issuing cache invalidation requests to Varnish Cache sends a ban command to the Varnish Cache management interface. Section accepts any valid Ban expression and passes it to Varnish Cache unaltered.
 
-We also provide some convenience tools to help with removing particular URL's from the cache, see our [Cache Clearing]({{< relref "how-tos/integrations/varnish/clearing-the-cache.md" >}})  documentation for more details.
+We also provide some convenience tools to help with removing particular URL's from the cache, see our [Cache Clearing]({{< relref "/how-tos/module-integrations/varnish/clearing-the-cache.md" >}})  documentation for more details.
 
 Requesting the Varnish Cache Log executes varnishlog for each Varnish Cache instance and returns the results.
 

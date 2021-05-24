@@ -3,6 +3,7 @@ title: Install A New Proxy
 description: How to install a new proxy within an existing proxy configuration.
 keywords: proxy, installation
 aliases:
+  - /how-tos/environment/install-a-new-proxy/
   - /platform/environment/how-tos/install-a-new-proxy/
   - /how-to/install-a-new-proxy/
 

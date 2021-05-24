@@ -29,5 +29,5 @@ To clear the cache for an individual URL you can use our API: https://aperture.s
 
 You can also clear the cache for the URL using the Section Console (formerly known as Aperture portal). This feature is an option available under `Clear Cache > Optidash`
 
-When using Optidash behind Varnish be sure to [clear the Varnish cache]({{< relref "how-tos/integrations/varnish/clearing-the-cache.md" >}})  to see the updated image.
+When using Optidash behind Varnish be sure to [clear the Varnish cache]({{< relref "/how-tos/module-integrations/varnish/clearing-the-cache.md" >}})  to see the updated image.
 

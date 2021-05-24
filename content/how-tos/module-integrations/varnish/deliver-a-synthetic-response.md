@@ -33,6 +33,6 @@ sub vcl_synth {
 
 ### Other use cases
 
-* [Redirect a request]({{< relref "how-tos/integrations/varnish/redirect-a-request.md" >}})
-* [Generate a 404 response]({{< relref "how-tos/integrations/varnish/respond-with-a-404.md" >}})
-* [Block a request]({{< relref "how-tos/integrations/varnish/block-a-request.md" >}})
+* [Redirect a request]({{< relref "/how-tos/module-integrations/varnish/redirect-a-request.md" >}})
+* [Generate a 404 response]({{< relref "/how-tos/module-integrations/varnish/respond-with-a-404.md" >}})
+* [Block a request]({{< relref "/how-tos/module-integrations/varnish/block-a-request.md" >}})

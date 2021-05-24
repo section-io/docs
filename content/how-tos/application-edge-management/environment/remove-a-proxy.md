@@ -3,6 +3,7 @@ title: Removing a module from your proxy stack
 description: How to remove a proxy/module within an existing proxy configuration.
 keywords: proxy, installation, removal
 aliases:
+  - /how-tos/environment/remove-a-proxy/
   - /platform/environment/how-tos/remove-a-proxy/
 ---
 

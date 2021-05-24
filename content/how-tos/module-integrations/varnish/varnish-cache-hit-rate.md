@@ -33,7 +33,7 @@ Use the Kibana logs to review the HTTP requests. For more information about thes
 
 ## Make Changes to VCL
 
-Modify your local VCL file. Save and fire the requests at your local instance. See [Local Development](/docs/how-tos/integrations/varnish/basic-configuration/).
+Modify your local VCL file. Save and fire the requests at your local instance. See [Local Development](/docs/how-tos/module-integrations/varnish/basic-configuration/).
 
 Review logs again to confirm a change in the cache hit behavior for the target assets.
 

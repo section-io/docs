@@ -3,6 +3,7 @@ title: Deleting an Application
 description: Guide for deleting your application.
 keywords: application, deleting an application
 aliases:
+  - /how-tos/environment/deleting-an-app/
   - /how-tos/application/deleting-an-app/
   - /platform/application/how-tos/deleting-an-app/
   - /how-to/account-management/deleting-an-app/

@@ -3,6 +3,7 @@ title: Whitelist Section traffic to origin infrastructure
 description: Whitelist Section traffic to origin infrastructure
 keywords: whitelist, origin traffic
 aliases: 
+  - /how-tos/environment/whitelist-section-traffic-on-origin/
   - /platform/environment/how-tos/whitelist-section-traffic-on-origin/
 ---
 

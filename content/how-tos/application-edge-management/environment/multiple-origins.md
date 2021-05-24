@@ -3,6 +3,7 @@ title: Run multiple origins in one environment
 description: Set up Section so that it can deliver content from multiple origin servers
 keywords: multiple origins, multiple upstreams, origin address, origin server, origin, cache, cached data, content delivery network, CDN
 aliases:
+  - /how-tos/environment/multiple-origins/
   - /platform/environment/how-tos/multiple-origins/
   - /multiple-origins/
   - /how-to/multiple-origins/

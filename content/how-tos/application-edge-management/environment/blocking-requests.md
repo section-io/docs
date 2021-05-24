@@ -3,6 +3,7 @@ title: Block IP
 description: How to block bots or spammers from your website to improve website performance via the Aperture UI or directly through config files.
 keywords: bot, bot blocker, spammers, crawlers, website performance, webpage speed, website security, content delivery network, CDN
 aliases:
+  - /how-tos/environment/blocking-requests/
   - /platform/environment/how-tos/blocking-requests/
   - /block-ip/
   - /blocking-requests/

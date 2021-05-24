@@ -1,6 +1,7 @@
 ---
 title: How to clear the cache
 aliases:
+  - /how-tos/integrations/varnish/clearing-the-cache/
   - /modules/varnish-cache/how-tos/clearing-the-cache/
   - /how-to/varnish-cache/clearing-the-cache/
 ---

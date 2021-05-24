@@ -3,6 +3,7 @@ title: Set up Outage Pages
 description: Set up Section so that it can serve an outage page during maintenace
 keywords: custom outage mapge, maintenance, custom html, content delivery network, CDN, scheduled maintenance.
 aliases:
+  - /how-tos/environment/outage-pages/
   - /platform/environment/how-tos/outage-pages/
   - /reference/outage-pages/
 
