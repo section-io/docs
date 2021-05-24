@@ -10,6 +10,7 @@ aliases:
 
 **WHY:** You may not want to be checking your metrics everyday, but you want to know if something is wrong so you can fix it. With Alerts you can set benchmarks for your metrics and be alerted via your preferred notification system.
 
-**HOW:** Under the alerting tab you can identify a metric using graphite query string and at what value you want to be alerted. More details [here](https://www.section.io/docs/monitoring-and-alerting/).
+**HOW:** Under the alerting tab you can identify a metric using graphite query string and at what value you want to be alerted. More details [here](/tutorials/monitoring/grafana/).
 
-For more in-depth guides on evaluating your website's performance and activity, see our [debugging](/docs/debugging/) and [monitoring](/docs/monitoring/) guides.
+For more in-depth guides on evaluating your website's performance and activity, see our [debugging](/how-tos/debugging/) and [monitoring](/tutorials/monitoring/
+) guides.

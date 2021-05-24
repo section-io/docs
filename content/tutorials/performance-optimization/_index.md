@@ -13,5 +13,5 @@ This tutorial will show you a repeatable process to optimize your Varnish Cache 
 
 ## In this tutorial
 
-{{% children description="true" style="h3" %}}
+{{% children %}}
 

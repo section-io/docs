@@ -1,5 +1,5 @@
 ---
-title: Set up
+title: Set up Optidash
 description: Adding Optidash to your Section proxy stack.
 keywords: content delivery network, CDN, optidash, image optimization, reverse proxies, proxy, proxy template
 weight: 1

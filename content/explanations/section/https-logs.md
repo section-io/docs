@@ -1,9 +1,10 @@
 ---
-title: Overview
+title: HTTP Logs
 description: An overview of the platform's HTTP logging functionality.
 keywords: monitoring, graphite, metrics, logs
 weight: 1
 aliases:
+  - /logs/
   - /debugging/overview/
   - /graphite/
   - /topic-guides/platform-monitoring/http-logs/

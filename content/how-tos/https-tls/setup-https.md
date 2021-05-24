@@ -17,7 +17,7 @@ Each certificate has a short validity period and will be renewed 30 days prior t
 
 ## Add custom certificate through aperture
 
-To use a custom certificate for your application you will need to obtain a certificate and private key pair. For production use you should use a certificate signed by a trusted root Certificate Authority (CA). In development scenarios, you may find a [self-signed certificate is sufficient](https://en.wikipedia.org/wiki/Self-signed_certificate) ([Beginners guide](https://www.ssl.com/faqs/faq-what-is-ssl/)) ([Certificate Generation](https://www.thenativeweb.io/blog/2017-12-29-11-51-the-openssl-beginners-guide-to-creating-ssl-certificates/))
+To use a custom certificate for your application you will need to obtain a certificate and private key pair. For production use you should use a certificate signed by a trusted root Certificate Authority (CA). In development scenarios, you may find a [self-signed certificate is sufficient](https://en.wikipedia.org/wiki/Self-signed_certificate) ([Beginners guide](https://www.ssl.com/faqs/faq-what-is-ssl/)) ([Certificate Generation](https://www.keycdn.com/blog/openssl-tutorial))
 
 ### 1) Get your properly-formatted certificate
 

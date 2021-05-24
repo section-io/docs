@@ -1,8 +1,9 @@
 ---
-title: "Integrations"
+title: "Module Integrations"
 description: ""
 weight: 100
 aliases:
+  - how-tos/integrations/
   - docs/integrations/
 ---
 

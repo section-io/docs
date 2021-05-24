@@ -8,7 +8,7 @@ aliases:
 weight: 2
 ---
 
-This tutorial will get your [Node.js]({{< ref "modules/nodejs/_index.md" >}}) app running on Section's edge compute platform.
+This tutorial will get your [Node.js]({{< ref "explanations/modules/nodejs.md" >}}) app running on Section's edge compute platform.
 
 At the end of this tutorial you will have:
 

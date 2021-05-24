@@ -3,6 +3,7 @@ title: Deleting an Application
 description: Guide for deleting your application.
 keywords: application, deleting an application
 aliases:
+  - /how-tos/application/deleting-an-app/
   - /platform/application/how-tos/deleting-an-app/
   - /how-to/account-management/deleting-an-app/
 ---
@@ -43,7 +44,7 @@ All applications handling requests for a given domain must be within the same Se
 Sometimes you may wish to start an application from scratch or simply remove an unused application.
 
 #### 1) Navigate to application's Overview Page
-and click on Actions, then select Delete Application from the drop down menu. Note, if your site is currently live on the Section platform you may wish to point the DNS record for the site away from us before deletion, as deleting the application will cause an outage until you create a new one to replace it.
+Click on Actions, then select Delete Application from the drop down menu. Note, if your site is currently live on the Section platform you may wish to point the DNS record for the site away from us before deletion, as deleting the application will cause an outage until you create a new one to replace it.
 
 {{% figure src="/docs/images/delete-app.png" %}}
 
