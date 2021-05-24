@@ -7,9 +7,9 @@ keywords: dns, domain configuration
 ## Overview
 
 This guide will walk you through the steps needed to add a domain to an existing Section environment. For help understanding whether adding an new domain to an
-existing environment is best for your use case, please [visit this guide](/docs/platform/reference/new-app-or-env/). If you wish to set up an entirely separate application for this domain or have reached this page without following the going live tutorial please see the [getting started guide]({{< relref "/tutorials/going-live/_index.md" >}}) for a comprehensive guide to every step of the go live process.
+existing environment is best for your use case, please [visit this guide](/docs/reference/new-app-or-env/). If you wish to set up an entirely separate application for this domain or have reached this page without following the going live tutorial please see the [getting started guide]({{< relref "/tutorials/going-live/_index.md" >}}) for a comprehensive guide to every step of the go live process.
 
-Note as well [the DNS guidelines for running multiple domains on one environment](/docs/dns/reference/dns-with-multiple-domains/).
+Note as well [the DNS guidelines for running multiple domains on one environment](/docs/reference/dns-with-multiple-domains/).
 
 ### Step 1 - Adding the domain
 

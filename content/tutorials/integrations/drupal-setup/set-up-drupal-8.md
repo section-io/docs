@@ -12,8 +12,8 @@ The following is a guide to installing the Section Drupal module into an existin
 
 ### Prerequisites
 
-* An existing Section application. For help setting up an application, [go here](https://www.section.io/docs/tutorials/activate-section-io/create-application-edge/)
-* A user account to be associated with the Drupal Module (many customers choose to create a user account that exists simply to authenticate cache clearing and is not associated with a specific, real person). To create an account please visit [this link](https://www.section.io/public/register) and for help adding a new user to an app please [see here](https://www.section.io/docs/how-to/user-management/add-a-user-to-your-account/)
+* An existing Section application. For help setting up an application, [go here](https://www.section.io/docs/tutorials/going-live/create-application-edge/)
+* A user account to be associated with the Drupal Module (many customers choose to create a user account that exists simply to authenticate cache clearing and is not associated with a specific, real person). To create an account please contact us [this link](https://support.section.io/hc/en-us/requests/new) and for help adding a new user to an app please [see here](https://www.section.io/docs/how-to/user-management/add-a-user-to-your-account/)
 * The Drupal 8 [purge module](https://www.drupal.org/project/purge) installed.
 * The Drupal 8 [key module](https://www.drupal.org/project/key) installed.
 * Drush installed if you want to purge any invalidation type over CLI. (requires purge 8.x-3.x-dev or newer for Drush 9 support)

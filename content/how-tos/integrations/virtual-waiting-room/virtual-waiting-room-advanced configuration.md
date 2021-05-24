@@ -4,6 +4,7 @@ description: Settings Available for the Virtual Waiting Room module
 keywords: Section, training, virtual waiting room, platform overview
 weight: 1
 aliases:
+  - /modules/virtual-waiting-room/reference/virtual-waiting-room-advanced-configuration/
   - /modules/virtual-waiting-room/how-tos/virtual-waiting-room-advanced-configuration/
   - /modules/virtual-waiting-room/references/virtual-waiting-room-advanced-configuration/
 ---

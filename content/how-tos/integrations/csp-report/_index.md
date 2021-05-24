@@ -4,6 +4,7 @@ description: Training area, Section platform overview.
 keywords: Section, training, platform overview
 weight: 2
 aliases:
+  - /modules/csp-report/tutorials/add-csp-report-to-your-proxystack/
   - /modules/csp-report/how-tos/
 ---
 ---
