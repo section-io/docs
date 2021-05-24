@@ -1,5 +1,5 @@
 ---
-title: API Tokens
+title: Using an API Key
 description: API tokens usage with the Section API
 keywords: Section, training, platform overview, api keys
 weight: 2
