@@ -4,6 +4,7 @@ description: Settings Available for the Optidash module
 keywords: Section, training, platform overview
 weight: 1
 aliases:
+  - /how-tos/integrations/optidash/optidash-advanced-config/
   - /modules/optidash/how-tos/optidash-advanced-config/
   - /modules/kraken/reference/optidash-advanced-config/
 ---
