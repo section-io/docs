@@ -55,7 +55,7 @@ You can also import your vcl configuration using the `bin/magento sectionio:upda
 
 There is also a button to pull in free HTTPS certificate. This will ensure your website has the green padlock next to the url. This is a free certificate included with your Section application that we will managed on your behalf, to include procurement, installation, and renewal. Please ensure your website has an endpoint exposed to the internet so we can validate the certificate before you go live.
 
-**note:** if you do not perform this step, you will need to upload a custom certificate to the Section portal in order to maintain HTTPS. (See [our guide]({{< relref "how-tos/https-tls/upload-a-custom-certificate.md" >}}) )
+**note:** if you do not perform this step, you will need to upload a custom certificate to the Section portal in order to maintain HTTPS. (See [our guide]({{< relref "how-tos/application-edge-management/https-tls/upload-a-custom-certificate.md" >}}) )
 
 ### 6) Change DNS and Go Live!
 

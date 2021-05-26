@@ -1,7 +1,7 @@
 ---
 title: "Domain and DNS "
 description: ""
-weight: 100
+weight: 200
 aliases:
   - /how-to/dns/
   - /topic-guides/dns/

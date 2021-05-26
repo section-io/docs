@@ -19,7 +19,7 @@ This is a modified [HTTP 502](https://en.wikipedia.org/wiki/List_of_HTTP_status_
 Here are some things to check:
 
 1. Is your server running? Sometimes your web server (for example, Apache or nginx) may not be running. It may be refusing TCP connections.
-1. Is your origin server address correct? Try browsing directly to your server IP (you may need to override DNS with hosts file entries). If not, [update your origin address]({{< relref "how-tos/application-edge-management/environment/change-origin.md" >}}).
+1. Is your origin server address correct? Try browsing directly to your server IP (you may need to override DNS with hosts file entries). If not, [update your origin address]({{< relref "how-tos/application-edge-management/account-configuration/change-origin.md" >}}).
 
 ### HTTP 524
 

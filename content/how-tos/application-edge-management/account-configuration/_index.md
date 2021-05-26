@@ -1,7 +1,7 @@
 ---
-title: "Environment"
+title: "Account Configuration"
 description: ""
-weight: 100
+weight: 50
 aliases:
   - /how-tos/environment/
   - /platform/application/
