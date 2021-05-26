@@ -18,5 +18,5 @@ aliases:
 Congratulations! You are now live with Section.
 
 {{% notice info %}}
-If you have any trouble, consider looking at our [HTTPS Troubleshooting guides]({{< relref "how-tos/domains-dns/check-your-current-dns-setup.md" >}}).
+If you have any trouble, consider looking at our [HTTPS Troubleshooting guides]({{< relref "how-tos/application-edge-management/domains-dns/check-your-current-dns-setup.md" >}}).
 {{% /notice %}}

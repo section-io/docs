@@ -33,7 +33,7 @@ If there is an AAAA IPv6 record setup for the domain, it will need to be removed
 4. Back in the management console, click **Verify**. You'll see a message that your DNS is correctly configured.
 
 {{% notice info %}}
-If you have any trouble, consider looking at our [HTTPS Troubleshooting guides]({{< relref "how-tos/domains-dns/check-your-current-dns-setup.md" >}}).
+If you have any trouble, consider looking at our [HTTPS Troubleshooting guides]({{< relref "how-tos/application-edge-management/domains-dns/check-your-current-dns-setup.md" >}}).
 {{% /notice %}}
 
 Let's proceed to step 3, [Enabling Automatic SSL]({{< relref "tutorials/going-live/enable-automatic-ssl.md" >}})
