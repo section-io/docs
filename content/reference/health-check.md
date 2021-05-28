@@ -17,14 +17,13 @@ Section uses multiple remote-agents throughout the world to query the environmen
 
 |Scenario|Healthy|
 |--- |--- |
-|error: timeout|irrelevant|
-|error: dns|irrelevant|
-|error: tls, note: that this does not validate the certificate|false|
-|Anything other than a HTTP 200 OK from the Remote Agent|irrelevant|
-|headers contains section-origin-status and the value is not 000 and not empty|true|
-|status: 409 and headers contains section-ingress: not-configured|false|
-|status: 5-- where -- is any number|false|
-|status is any number and does not meet the above conditions|true|
+|Response timeout|Ignored|
+|DNS fails to resolve|Ignored|
+|TLS handshake fails (excluding certificate validation)|NOT healthy|
+|Response headers contain `section-origin-status` and the value is not `000` and not empty|Healthy|
+|Response status code is `409` and headers contain `section-ingress: not-configured`|NOT healthy|
+|Response status code is an error, e.g. `500` through to `599`|NOT healthy|
+|Response status code is any number and does not meet the above conditions|Healthy|
 
 You can read more about [custom debugging headers here](/docs/debugging/reference/debug-headers/).
 
