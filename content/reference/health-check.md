@@ -13,7 +13,7 @@ Section platform has a default built-in HTTP health check that monitors the heal
 
 Section uses a health check that queries the path `/.well-known/section-io/aee-hc/healthz?ts=<timestamp>` to check for health of the entire stack of modules and it's ability to handle HTTP traffic. The health check is validating the Section edge components, and Section's ability to communicate with your origin from each PoP, it is **not** checking the health of your origin.
 
-If you Section environment has multiple domain names associated, the health check will use the first domain name, sorted alphabetically, preferring domain names that are confirmed to have the DNS record directed to Section.
+If your Section environment has multiple domain names associated, the health check will use the first domain name, sorted alphabetically, preferring domain names that are confirmed to have the DNS record directed to Section.
 
 Section uses multiple remote-agents throughout the world to query the environment and then the individiual health responses are aggregated. An individual health response is calculated according to the following conditions:
 
