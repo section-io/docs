@@ -11,16 +11,18 @@ aliases:
 
 Section platform has a default built-in HTTP health check that monitors the health of the environment across multiple locations in the world.
 
-Section uses a health check that queries the path `/.well-known/section-io/aee-hc/healthz?ts=<timestamp>` to check for health of the entire stack of modules and it's ability to handle HTTP traffic.
+Section uses a health check that queries the path `/.well-known/section-io/aee-hc/healthz?ts=<timestamp>` to check for health of the entire stack of modules and it's ability to handle HTTP traffic. The health check is validating the Section edge components, and Section's ability to communicate with your origin from each PoP, it is **not** checking the health of your origin.
 
-Section uses multiple remote-agents throughout the world to query the environment and then the individiual health responses are aggregated. An individual health response is calculated according to the following conditions :
+If your Section environment has multiple domain names associated, the health check will use the first domain name, sorted alphabetically, preferring domain names that are confirmed to have the DNS record directed to Section.
+
+Section uses multiple remote-agents throughout the world to query the environment and then the individiual health responses are aggregated. An individual health response is calculated according to the following conditions:
 
 |Scenario|Healthy|
 |--- |--- |
 |Response timeout|Ignored|
 |DNS fails to resolve|Ignored|
 |TLS handshake fails (excluding certificate validation)|NOT healthy|
-|Response headers contain `section-origin-status` and the value is not `000` and not empty|Healthy|
+|**Any** response status code sent by the origin|Healthy|
 |Response status code is `409` and headers contain `section-ingress: not-configured`|NOT healthy|
 |Response status code is an error, e.g. `500` through to `599`|NOT healthy|
 |Response status code is any number and does not meet the above conditions|Healthy|
