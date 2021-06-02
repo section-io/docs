@@ -1,7 +1,7 @@
 ---
 title: "Monitoring"
 description: ""
-weight: 100
+weight: 80
 aliases:
   - /topic-guides/platform-monitoring/
 ---

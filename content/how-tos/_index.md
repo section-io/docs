@@ -1,7 +1,7 @@
 ---
 title: "How-Tos"
 description: ""
-weight: 120
+weight: 80
 ---
 
 # Section Docs

@@ -2,7 +2,7 @@
 title: Performance Evaluation
 description: Performance Evaluation for the Section Edge Platform.
 keywords: performance evaluation, cache, https, website performance, page speed, webpage speed, website security, content delivery network, CDN
-weight: 10
+weight: 60
 aliases:
   - /topic-guides/performance-evaluation/
 ---
