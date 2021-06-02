@@ -1,7 +1,7 @@
 ---
 title: "Application Edge Management"
 description: ""
-weight: 100
+weight: 20
 aliases:
   - /how-tos/environment/
   - /platform/application/
