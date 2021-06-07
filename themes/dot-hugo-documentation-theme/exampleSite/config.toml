@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 # provide your domain here
-baseURL = "https://www.section.io"
+baseURL = "https://examplesite.com/"
 # theme
 theme = "dot"
 # site title
