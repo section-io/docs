@@ -9,7 +9,7 @@ aliases:
   - /bigcommerce/
 ---
 
-Bigcommerce is a popular ecommerce SaaS that benefits from Section performance optmization.
+Bigcommerce is a popular ecommerce SaaS that benefits from Section performance optimization.
 
 Section delivers speed improvements to Bigcommerce through location optimization, HTML Streaming and caching of static assets using Varnish Cache.
 

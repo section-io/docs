@@ -1,6 +1,7 @@
 ---
 title: "Bare Domains"
-description: ""
+description: "How to set up bare domains with the Section platform."
+type: "docs"
 aliases:
   - /dns/reference/bare-domains/
   - /threat-x/

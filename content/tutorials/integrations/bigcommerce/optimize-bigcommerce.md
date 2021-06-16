@@ -2,6 +2,7 @@
 title: Optimize Bigcommerce with Section
 description: A guide to optimize Bigcommerce on the Section platform.
 keywords: bigcommerce, cache, https, website performance, page speed, webpage speed, website security, content delivery network, CDN
+type: "docs"
 weight: 10
 aliases:
   - /how-tos/bigcommerce/optimize-bigcommerce-copy/

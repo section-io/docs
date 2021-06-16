@@ -1,6 +1,7 @@
 ---
 title: Launching a Node.js app
 description: A step-by-step guide on how to launch a Node.js app on Section.
+type: "docs"
 keywords: node.js, nodejs, node , guide, getting started, website performance, page speed, webpage speed, website security, edge compute, paas
 aliases:
   - /getting-started/tutorials/launching-a-nodejs-app/
