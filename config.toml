@@ -13,6 +13,16 @@ googleAnalytics = "" # paste your analytics ID here. (Ex: UA-123-45)
 [markup.goldmark.renderer]
 unsafe = true
 
+############################# Algolia Search ##############################
+[outputs]
+home = ["HTML","RSS","Algolia"]
+
+[outputFormats.Algolia]
+  mediaType = "application/json"
+  baseName = "algolia"
+  isPlainText = true
+  notAlternative = true
+
 ############################# Default Parameters ##########################
 [params]
 # logo is for all page
