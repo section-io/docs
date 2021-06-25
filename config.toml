@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 # provide your domain here
-baseURL = "https://section.io/"
+baseURL = "https://www.section.io/docs/"
 # theme
 theme = "dot"
 # site title
@@ -12,7 +12,6 @@ googleAnalytics = "" # paste your analytics ID here. (Ex: UA-123-45)
 # unsafe html
 [markup.goldmark.renderer]
 unsafe = true
-
 
 ############################# Default Parameters ##########################
 [params]
@@ -28,7 +27,7 @@ author = "Themefisher"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
 # customize color
-primary_color = "#02007e"
+primary_color = "#087830"
 body_color = "#f9f9f9"
 text_color = "#636363"
 text_color_dark = "#242738"
@@ -40,7 +39,6 @@ font_family = "lato" # Choose font family from : https://fonts.google.com/
 
 # contact form action
 contact_form_action = "#" # contact form works with : https://formspree.io
-
 
 ############################## social links ##############################
 [[params.social]]
@@ -98,30 +96,24 @@ hasChildren = true
 
   [[Languages.en.menu.main]]
   parent = "docs"
-  name = "Documentation"
-  url = "docs"
-  weight = 1
-
-  [[Languages.en.menu.main]]
-  parent = "docs"
   name = "How-Tos"
   url = "how-tos"
-  weight = 2
+  weight = 1
 
   [[Languages.en.menu.main]]
   parent = "docs"
   name = "Tutorials"
   url = "tutorials"
-  weight = 3
+  weight = 2
 
    [[Languages.en.menu.main]]
   parent = "docs"
   name = "Explanations"
   url = "explanations"
-  weight = 4
+  weight = 3
 
  [[Languages.en.menu.main]]
   parent = "docs"
   name = "Reference"
   url = "reference"
-  weight = 5
+  weight = 4

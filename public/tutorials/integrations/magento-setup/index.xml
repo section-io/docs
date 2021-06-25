@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Magento on Section</title>
+    <link>https://www.section.io/docs/tutorials/integrations/magento-setup/</link>
+    <description>Recent content in Magento on Section</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2021 Section.</copyright><atom:link href="https://www.section.io/docs/tutorials/integrations/magento-setup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Set up a Magento 2 app on Section</title>
+      <link>https://www.section.io/docs/tutorials/integrations/magento-setup/set-up-magento-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/tutorials/integrations/magento-setup/set-up-magento-2/</guid>
+      <description>The following is a guide to going live on Section with a Magento 2 application.
+1) Download the Section extension. a) Via the Magento Marketplace To get started with Section and Varnish Cache directly from the Magento Admin portal, you first must download the &amp;ldquo;Instant Global Cache&amp;rdquo; extension from the Magento Marketplace.
+b) Via the command line Add &amp;quot;sectionio/metrics&amp;quot;: &amp;quot;dev-master&amp;quot; to your composer.json file and run composer update. This assumes that your application is configured to pull from Packagist.</description>
+    </item>
+    
+    <item>
+      <title>Set up and optimize Magento 1 on Section</title>
+      <link>https://www.section.io/docs/tutorials/integrations/magento-setup/set-up-magento-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/tutorials/integrations/magento-setup/set-up-magento-1/</guid>
+      <description>Options to optimize HTML:  HTML Streaming - https://www.section.io/html-streaming/ Anonymous User Caching (Recommended) - https://community.section.io/t/a-novel-way-to-cache-html/79 Turpentine - Detail below  Set up Varnish Cache Caching Magento 1.9 and earlier does not support Varnish Cache out of the box. Support is instead provided by the [free Turpentine Magento extension].
+The Turpentine extension issues commands required for correct operation to a management port intended for Varnish Cache. A special “bridge” program listens on this port, and makes the Section platform look like a normal Varnish Cache instance (Instead of a globally distributed platform that runs Varnish Cache for you).</description>
+    </item>
+    
+  </channel>
+</rss>

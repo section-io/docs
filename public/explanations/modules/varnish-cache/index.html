@@ -1,0 +1,3997 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <title>Varnish Cache</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="generator" content="Hugo 0.79.0" />
+  <meta name="description" content="Varnish Cache - Section ">
+  
+  <!-- ** CSS Plugins Needed for the Project ** -->
+  
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://www.section.io/docs/plugins/bootstrap/bootstrap.min.css">
+
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="https://www.section.io/docs/plugins/themify-icons/themify-icons.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="https://www.section.io/docs/images/favicon.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+  
+  <style>
+  :root{
+    --primary-color:#087830;
+    --body-color:#f9f9f9;
+    --text-color:#636363;
+    --text-color-dark:#242738;
+    --white-color:#ffffff;
+    --light-color:#f8f9fa;
+    --font-family:Lato;
+  }
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link href="https://www.section.io/docs/css/style.min.css" rel="stylesheet" media="screen"/>
+  
+<!-- ** JS Plugins Needed for the Project ** -->
+
+<!-- jquiry -->
+<script src="https://www.section.io/docs/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="https://www.section.io/docs/plugins/jquery/jquery-ui.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://www.section.io/docs/plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- match-height JS -->
+<script src="https://www.section.io/docs/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+
+  
+
+  <!-- create /layouts/partials/overrides/header.html in your own theme or root directory to add your custom content here -->
+
+
+
+
+
+
+
+
+<meta name="twitter:title" content="Varnish Cache"/>
+<meta name="twitter:description" content="A high level overview of how Section runs Varnish Cache"/>
+
+
+
+<meta property="og:title" content="Varnish Cache" />
+<meta property="og:description" content="A high level overview of how Section runs Varnish Cache" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.section.io/docs/explanations/modules/varnish-cache/" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Varnish Cache"/>
+<meta name="twitter:description" content="A high level overview of how Section runs Varnish Cache"/>
+
+
+</head>
+
+  
+  <body>
+    
+    <!-- header -->
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container">
+    <a class="navbar-brand px-2" href="/docs">
+      
+      
+      
+      Section
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://www.section.io/docs/">Home</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            docs
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://www.section.io/docs/how-tos">How-Tos</a>
+            
+            <a class="dropdown-item" href="https://www.section.io/docs/tutorials">Tutorials</a>
+            
+            <a class="dropdown-item" href="https://www.section.io/docs/explanations">Explanations</a>
+            
+            <a class="dropdown-item" href="https://www.section.io/docs/reference">Reference</a>
+            
+          </div>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    <!-- /header -->
+    
+    
+
+<!-- details page -->
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+        <a class="back-btn" href="/docs" aria-label="back"></a>
+          <ul class="list-styled">
+            
+            
+              
+              
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/" title="Explanations" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/">
+    Explanations
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/section/" title="Section" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/section/">
+    Section
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/section/https-logs/" title="HTTP Logs" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/section/https-logs/">
+    HTTP Logs
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/section/better-than-a-cdn/" title="Better than a CDN" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/section/better-than-a-cdn/">
+    Better than a CDN
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/section/agency-ready/" title="Agency Ready" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/section/agency-ready/">
+    Agency Ready
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/section/global-network/" title="Global Network" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/section/global-network/">
+    Global Network
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/section/proxy-options/" title="Proxy Options" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/section/proxy-options/">
+    Proxy Options
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/section/developer-ready/" title="Developer Ready" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/section/developer-ready/">
+    Developer Ready
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/section/devops-ready/" title="Devops Ready" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/section/devops-ready/">
+    Devops Ready
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/section/dns-options/" title="DNS Options" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/section/dns-options/">
+    DNS Options
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/section/https-options/" title="HTTPS Options" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/section/https-options/">
+    HTTPS Options
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/section/monitoring/" title="Aperture Overview" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/section/monitoring/">
+    Aperture Overview
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/modules/" title="Modules" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/modules/">
+    Modules
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/modules/consistent-hash/" title="Consistent Hash" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/modules/consistent-hash/">
+    Consistent Hash
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/modules/csp-report/" title="CSP Report" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/modules/csp-report/">
+    CSP Report
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/modules/modsecurity/" title="ModSecurity" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/modules/modsecurity/">
+    ModSecurity
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/modules/openresty/" title="OpenResty" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/modules/openresty/">
+    OpenResty
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/modules/radware-bot-manager/" title="Radware Bot Manager" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/modules/radware-bot-manager/">
+    Radware Bot Manager
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/modules/signal-sciences/" title="Signal Sciences" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/modules/signal-sciences/">
+    Signal Sciences
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/modules/sitespect/" title="SiteSpect" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/modules/sitespect/">
+    SiteSpect
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/modules/threat-x/" title="ThreatX" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/modules/threat-x/">
+    ThreatX
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/modules/varnish-cache/" title="Varnish Cache" class="sidelist
+  active">
+  <a href="https://www.section.io/docs/explanations/modules/varnish-cache/">
+    Varnish Cache
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/modules/virtual-waiting-room/" title="Virtual Waiting Room" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/modules/virtual-waiting-room/">
+    Virtual Waiting Room
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/modules/cloudinary/" title="Cloudinary" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/modules/cloudinary/">
+    Cloudinary
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/explanations/modules/nodejs/" title="Node.js" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/explanations/modules/nodejs/">
+    Node.js
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white">
+          <h2 class="mb-5">Varnish Cache</h2>
+          
+          <div class="content"><h2 id="what-does-it-do">What does it do</h2>
+<p>Section implements a pure and unchanged version of the Varnish Cache.</p>
+<p>At every opportunity, the implementation of Varnish Cache on the Section platform has been designed to be as close as possible to how it would be if you had installed Varnish Cache yourself locally.</p>
+<p>Section uses the official Varnish Cache distributions published by Varnish Cache. Section does not use custom-compiled builds of Varnish Cache.</p>
+<p>Varnish Cache is started, listening on port 80.</p>
+<p>Varnish Cache VCL can found in the <strong>default.vcl</strong> file in the corresponding subdirectory of your Section application repository.</p>
+<p>Assuming Varnish Cache is the first proxy in your proxy stack, Varnish Cache will receive connections from the <strong>Section TLS Offload Proxy</strong> with two additional HTTP request headers.</p>
+<ol>
+<li><strong>X-Forwarded-For</strong> containing the downstream client IP address and any intermediate proxy IP addresses.</li>
+<li><strong>X-Forwarded-Proto</strong> which will specify either HTTP or HTTPS depending on the protocol with which the downstream client connected.</li>
+</ol>
+<p>Issuing cache invalidation requests to Varnish Cache sends a ban command to the Varnish Cache management interface. Section accepts any valid Ban expression and passes it to Varnish Cache unaltered.</p>
+<p>We also provide some convenience tools to help with removing particular URL&rsquo;s from the cache, see our <a href="/docs/how-tos/module-integrations/varnish/clearing-the-cache/">Cache Clearing</a>  documentation for more details.</p>
+<p>Requesting the Varnish Cache Log executes varnishlog for each Varnish Cache instance and returns the results.</p>
+<p>varnishncsa is also running, logging request and response details, including cache effectiveness. This data is used to drive the charts seen in Aperture.</p>
+<h2 id="fundamentals">Fundamentals</h2>
+<ul>
+<li>Varnish Cache is a HTTP caching reverse proxy.</li>
+<li>&ldquo;Varnish Cache decides whether it can store the content or not based on the response it gets back from the backend&rdquo;.</li>
+<li>the origin or backend can instruct Varnish Cache to cache the content with the HTTP response header Cache-Control.</li>
+<li>Varnish Cache by default does not cache cookies or other sensitive client side content.</li>
+<li>Varnish Cache has a conservative approach to caching to avoid the cache leaking sensitive data i.e. shopping cart or personalization information.</li>
+<li>Varnish Cache policies can be changed by Varnish Configuration Language (VCL).</li>
+<li>VCL is a flexible and power language that can handle a wide range of use cases.</li>
+<li>delivery from cache is usually in milliseconds.</li>
+<li>Varnish Cache is highly performant, is usually twice as fast as a backend server and Varnish Cache is usually constrained by networks.</li>
+</ul>
+<p>Source: <a href="https://varnish-cache.org/docs/6.3/tutorial/starting_varnish.html">Varnish 6.3 Official Docs - Starting Varnish</a></p>
+<h2 id="varnish-cache-basics">Varnish Cache Basics</h2>
+<p>The Varnish Configuration Language (VCL) is a domain-specific language for caching HTTP requests. The language is specific to the domain of caching HTTP requests and responses.</p>
+<ul>
+<li>Varnish Configuration Language (VCL) implements a state machine.</li>
+<li>Varnish Cache uses VCL (Varnish Configuration Language) to run as a ‘state machine’.</li>
+<li>Various Varnish Cache states are thought of, and implemented as subroutines.</li>
+<li>Varnish Cache includes built-in subroutines via builtin.vcl.</li>
+<li>VCL has functions, legal return actions and variables.</li>
+<li>VCL functions can be extended by <em>vmods</em> (Varnish Cache modifications).</li>
+<li>Varnish Cache on Section has a preinstalled set of <a href="https://github.com/nigoroll/varnish-modules">vmods</a>.</li>
+<li>Each URL in the cache is hashed and accessible via a hash key based on host-headers, IP or other criteria via VCL logic or VMODs.</li>
+</ul>
+<h2 id="varnish-cache-receive-and-respond">Varnish Cache Receive and Respond</h2>
+<p>The two most important Varnish states or subroutines or subs are &ldquo;received request&rdquo;<code>vcl_recv</code> and &ldquo;backend response&rdquo; <code>vcl_backend_response</code>.</p>
+<ul>
+<li>&ldquo;received request&rdquo; <code>vcl_recv</code></li>
+<li>&ldquo;backend response&rdquo; <code>vcl_backend_response</code></li>
+</ul>
+<h2 id="varnish-cache-flow">Varnish Cache Flow</h2>
+<p><img src="http://book.varnish-software.com/4.0/_images/simplified_fsm.svg" alt="Varnish Cache Flow Diagram"></p>
+<p>Source: <a href="https://info.varnish-software.com/the-varnish-book">Varnish Software Book</a></p>
+<h2 id="varnish-cache-flow-described">Varnish Cache Flow Described</h2>
+<p>Each HTTP request flows by switching between Varnish Cache states such as <code>recv</code>, <code>hit</code>, <code>miss</code> or <code>pass</code> by calling <code>return</code> functions which use VCL logic to determine which state is next. For each state <code>recv</code> there is a VCL subroutine <code>vcl_recv</code>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">State</th>
+<th style="text-align:left">Subroutine</th>
+<th style="text-align:left">Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><a href="https://varnish-cache.org/docs/trunk/users-guide/vcl-built-in-subs.html#vcl-recv" title="vcl_recv">recv</a></td>
+<td style="text-align:left"><a href="https://book.varnish-software.com/4.0/chapters/VCL_Subroutines.html#vcl-vcl-recv" title="vcl_recv">vcl_recv</a></td>
+<td style="text-align:left"><strong>Received</strong></td>
+<td>HTTP request is completely received, parsed and can then be inspected and modified by this routine. <code>vcl_recv</code> subroutine is terminated by calling <code>return()</code> and can <code>fail</code>, <code>synth</code>, <code>restart</code>, <code>pass</code>, <code>pipe</code>, <code>hash</code>, <code>purge</code> and <code>vcl(label)</code>.</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://varnish-cache.org/docs/trunk/users-guide/vcl-built-in-subs.html#vcl-hash" title="vcl_hash">hash</a></td>
+<td style="text-align:left"><a href="https://book.varnish-software.com/4.0/chapters/VCL_Subroutines.html#vcl-vcl-hash" title="vcl_hash">vcl_hash</a></td>
+<td style="text-align:left"><strong>Hash</strong></td>
+<td>Creates a unique hash key for each cached object. By default, the builtin <code>vcl_hash</code> uses hostname or IP address and adds the requested URL to the cache hash. <code>vcl_hash</code> always runs the <code>lookup</code> action on the hash key and determines the next state / sub-routine i.e. <code>hit</code>, <code>miss</code>, <code>pass</code> or <code>purge</code> etc.</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://varnish-cache.org/docs/trunk/users-guide/vcl-built-in-subs.html#vcl-hit" title="vcl_hit">hit</a></td>
+<td style="text-align:left"><a href="https://book.varnish-software.com/4.0/chapters/VCL_Subroutines.html#vcl-vcl-hit" title="vcl_hit">vcl_hit</a></td>
+<td style="text-align:left"><strong>Hit</strong></td>
+<td>Called by <code>vcl_hash</code> via the lookup operation, <code>vcl_hit</code> finds or &ldquo;hits&rdquo; a cache object. High hit rates are optimal for website performance.</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://book.varnish-software.com/4.0/chapters/VCL_Subroutines.html#vcl-vcl-miss" title="vcl_miss">miss</a></td>
+<td style="text-align:left"><a href="https://varnish-cache.org/docs/trunk/users-guide/vcl-built-in-subs.html#vcl-miss" title="vcl_miss">vcl_miss</a></td>
+<td style="text-align:left"><strong>Miss</strong></td>
+<td>If a requested object is not found by a lookup of the cache hash key, it is declared a miss by the <code>vcl_miss</code> subroutine. <code>vcl_miss</code> decides if a document should be retrieved from a backend by returning <code>fetch</code>.</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://book.varnish-software.com/4.0/chapters/VCL_Subroutines.html#vcl-vcl-pass" title="vcl_pass">pass</a></td>
+<td style="text-align:left"><a href="https://varnish-cache.org/docs/trunk/users-guide/vcl-built-in-subs.html#vcl-pass" title="vcl_pass">vcl_pass</a></td>
+<td style="text-align:left"><strong>Pass</strong></td>
+<td>&ldquo;Called upon entering pass mode. In this mode, the request is passed on to the backend, and the backend&rsquo;s response is passed on to the client, but is not entered into the cache. Subsequent requests submitted over the same client connection are handled normally&rdquo;.</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://varnish-cache.org/docs/trunk/users-guide/vcl-built-in-subs.html#vcl-pipe" title="vcl_pipe">pipe</a></td>
+<td style="text-align:left">vcl_pipe</td>
+<td style="text-align:left"><strong>Pipe</strong></td>
+<td>Pipes a HTTP request direct to backend or origin, passing back and forwards with no other VCL running. Basically turns Varnish into a dump TCP/IP proxy.</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://book.varnish-software.com/4.0/chapters/VCL_Subroutines.html#vcl-vcl-backend-fetch" title="vcl_backend_fetch">fetch</a></td>
+<td style="text-align:left"><a href="https://varnish-cache.org/docs/trunk/users-guide/vcl-built-in-subs.html#vcl-backend-fetch" title="vcl-backend-fetch">vcl_backend_fetch</a></td>
+<td style="text-align:left"><strong>Backend Fetch</strong></td>
+<td><code>vcl_backend_fetch</code> can be called from <code>vcl_miss</code> or <code>vcl_pass</code>. It typically alters the request before it gets to the backend or origin.</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://book.varnish-software.com/4.0/chapters/VCL_Basics.html#vcl-vcl-backend-response" title="vcl_backend_response">response</a></td>
+<td style="text-align:left"><a href="https://varnish-cache.org/docs/trunk/users-guide/vcl-built-in-subs.html#vcl-backend-response" title="vcl-backend-response">vcl_backend_response</a></td>
+<td style="text-align:left"><strong>Backend Response</strong></td>
+<td><code>vcl_backend_response</code> is designed to avoid caching cookies and other probably undesired data. Called after response headers are retrieved from the backend/origin. Returns <code>vcl_deliver</code>.</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://book.varnish-software.com/4.0/chapters/VCL_Subroutines.html#vcl-vcl-deliver" title="vcl_backend_deliver">deliver</a></td>
+<td style="text-align:left"><a href="https://varnish-cache.org/docs/trunk/users-guide/vcl-built-in-subs.html#vcl-deliver" title="vcl-deliver">vcl_deliver</a></td>
+<td style="text-align:left"><strong>Deliver</strong></td>
+<td>Usually the last exit point for HTTP request flows and is often used to add or remove debug-headers. Cached content is ready to be delivered to client of user.</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://book.varnish-software.com/4.0/chapters/VCL_Subroutines.html#vcl-vcl-backend-fetch" title="vcl_synth">synth</a></td>
+<td style="text-align:left"><a href="https://varnish-cache.org/docs/trunk/users-guide/vcl-built-in-subs.html#vcl-synth" title="vcl_synth">vcl_synth</a></td>
+<td style="text-align:left"><strong>Synth</strong></td>
+<td><code>vcl_synth</code> is called to deliver a synthetic object, generated in VCL and not fetched from the backend.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="varnish-cache-modifications">Varnish Cache Modifications</h2>
+<p>Varnish Cache modifications or vmods pre-installed on Section. This is a collection of modules (&ldquo;vmods&rdquo;) extending Varnish VCL used for describing HTTP request/response policies with additional capabilities.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">VMOD</th>
+<th style="text-align:left">Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><a href="https://varnish-cache.org/docs/trunk/reference/vmod_cookie.html?highlight=cookie" title="cookie">cookie</a></td>
+<td style="text-align:left">Cookie</td>
+<td>HTTP request is received and can then be inspected and modified by this routine.</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://github.com/nigoroll/varnish-modules/blob/master/docs/vmod_vsthrottle.rst" title="vsthrottle - Throttling VMOD">vsthrottle</a></td>
+<td style="text-align:left">Throttling VMOD</td>
+<td>A Varnish Cache vmod for rate-limiting traffic on a single Varnish Cache server. Offers a simple interface for throttling traffic on a per-key basis to a specific request rate.</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://github.com/nigoroll/varnish-modules/blob/master/docs/vmod_header.rst" title="Header VMOD for Varnish">header</a></td>
+<td style="text-align:left">Header VMOD for Varnish Cache</td>
+<td>Varnish Cahce Module for manipulation of duplicated HTTP headers, for instance multiple Set-Cookie headers.</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://github.com/nigoroll/varnish-modules/blob/master/docs/vmod_saintmode.rst" title=" Saint mode backend director">saintmode</a></td>
+<td style="text-align:left">Saint mode backend director</td>
+<td>Saintmode lets you deal with a backend that is failing in random ways for specific requests. It maintains a blacklist per backend, marking the backend as sick for specific objects. When the number of objects marked as sick for a backend reaches a set threshold, the backend is considered sick for all requests. Each blacklisted object carries a TTL, which denotes the time it will stay blacklisted.</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://github.com/nigoroll/varnish-modules/blob/master/docs/vmod_softpurge.rst" title="Softpurge">softpurge</a></td>
+<td style="text-align:left">Softpurge</td>
+<td>Softpurge is cache invalidation in Varnish that reduces TTL but keeps the grace value of a resource. It is not safe to use with Varnish Cache 5.0 onwards, use vmod-purge from Varnish Cache 5.2 instead.</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://github.com/nigoroll/varnish-modules/blob/master/docs/vmod_tcp.rst" title="TCP vmod">tcp</a></td>
+<td style="text-align:left">TCP vmod</td>
+<td>The TCP vmod opens for access and modification of client TCP connection attributes from VCL.</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://github.com/nigoroll/varnish-modules/blob/master/docs/vmod_var.rst" title="var">var</a></td>
+<td style="text-align:left">var</td>
+<td>This VMOD implements basic variable support in VCL.</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://github.com/nigoroll/varnish-modules/blob/master/docs/vmod_xkey.rst" title="xkey">xkey</a></td>
+<td style="text-align:left">xkey - Surrogate keys support for Varnish Cache</td>
+<td>This vmod adds secondary hashes to objects, allowing fast purging on all objects with this hash key.</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://github.com/nigoroll/varnish-modules/blob/master/src/vmod_bodyaccess.c" title="Body access">bodyaccess</a></td>
+<td style="text-align:left">Body access</td>
+<td>Undocumented VMOD giving access to body objects.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="builtin-vcl">Builtin VCL</h2>
+<ul>
+<li>The built-in standard <a href="https://github.com/varnishcache/varnish-cache/blob/master/bin/varnishd/builtin.vcl">Varnish builtin.vcl</a></li>
+</ul>
+<blockquote>
+<p>&ldquo;Make sure you understand this: Your own VCL-configuration will not overwrite this builtin configuration, it will just be prepended to each sub. Unless your VCL code executes a terminating statement (e.g. return(pass)) it will continue into these default subs.&rdquo;</p>
+</blockquote>
+<p>Source: <a href="https://varnish-cache.org/trac/wiki/VCLExamples">Varnish Examples</a></p>
+<h2 id="varnish-cache-resources">Varnish Cache Resources</h2>
+<ul>
+<li><a href="https://info.varnish-software.com/the-varnish-book">Varnish Software Book</a>: <a href="https://book.varnish-software.com/4.0/chapters/Introduction.html">Intro</a></li>
+<li><a href="https://info.varnish-software.com/blog?hsLang=en-us">Varnish Blog</a></li>
+<li><a href="https://varnish-cache.org/docs/trunk/">Varnish Latest Official Docs</a></li>
+<li><a href="https://github.com/varnishcache/varnish-cache">Varnish Source Code</a></li>
+<li><a href="https://github.com/nigoroll/varnish-modules">Varnish modifications</a></li>
+</ul>
+<p>This document is inspired by <a href="https://www.integralist.co.uk/posts/fastly-varnish/">Integralist</a></p>
+<h2 id="available-versions">Available versions</h2>
+<h3 id="varnish-cache-v60">Varnish Cache v6.0</h3>
+<ul>
+<li>Varnish Cache  6.0.0</li>
+<li>Std VMOD - <a href="https://www.varnish-cache.org/docs/6.0/reference/vmod_std.generated.html">https://www.varnish-cache.org/docs/6.0/reference/vmod_std.generated.html</a></li>
+<li>Cookie, Header, Softpurge, Var, and Xkey VMODs - <a href="https://github.com/varnish/varnish-modules#readme">https://github.com/varnish/varnish-modules#readme</a></li>
+</ul>
+<h3 id="varnish-cache-v52">Varnish Cache v5.2</h3>
+<ul>
+<li>Varnish Cache  5.2.1</li>
+<li>Std VMOD - <a href="https://www.varnish-cache.org/docs/5.2/reference/vmod_std.generated.html">https://www.varnish-cache.org/docs/5.2/reference/vmod_std.generated.html</a></li>
+<li>Cookie, Header, Softpurge, Var, and Xkey VMODs - <a href="https://github.com/varnish/varnish-modules#readme">https://github.com/varnish/varnish-modules#readme</a></li>
+<li>UUID VMOD - <a href="https://github.com/Sharecare/libvmod-uuid#readme">https://github.com/Sharecare/libvmod-uuid#readme</a></li>
+</ul>
+<h3 id="varnish-cache-v51">Varnish Cache v5.1</h3>
+<ul>
+<li>Varnish Cache  5.1.3</li>
+<li>Std VMOD - <a href="https://www.varnish-cache.org/docs/5.1/reference/vmod_std.generated.html">https://www.varnish-cache.org/docs/5.1/reference/vmod_std.generated.html</a></li>
+<li>Cookie, Header, Softpurge, Var, and Xkey VMODs - <a href="https://github.com/varnish/varnish-modules#readme">https://github.com/varnish/varnish-modules#readme</a></li>
+<li>UUID VMOD - <a href="https://github.com/Sharecare/libvmod-uuid#readme">https://github.com/Sharecare/libvmod-uuid#readme</a></li>
+</ul>
+<h3 id="varnish-cache-v41">Varnish Cache v4.1</h3>
+<p>Varnish Cache  4.1 is available if you need this version</p>
+<ul>
+<li>Varnish Cache  4.1.9</li>
+<li>Std VMOD - <a href="https://www.varnish-cache.org/docs/4.1/reference/vmod_std.generated.html">https://www.varnish-cache.org/docs/4.1/reference/vmod_std.generated.html</a></li>
+<li>Cookie, Header, Softpurge, Var, and Xkey VMODs - <a href="https://github.com/varnish/varnish-modules#readme">https://github.com/varnish/varnish-modules#readme</a></li>
+<li>UUID VMOD - <a href="https://github.com/Sharecare/libvmod-uuid#readme">https://github.com/Sharecare/libvmod-uuid#readme</a></li>
+</ul>
+<h3 id="varnish-cache--v40">Varnish Cache  v4.0</h3>
+<p>Varnish Cache  4.0 is available if you need this version</p>
+<ul>
+<li>Varnish Cache  4.0.3</li>
+<li>Std VMOD - <a href="https://www.varnish-cache.org/docs/4.0/reference/vmod_std.generated.html">https://www.varnish-cache.org/docs/4.0/reference/vmod_std.generated.html</a></li>
+<li>Cookie VMOD - <a href="https://www.varnish-cache.org/vmod/cookie">https://www.varnish-cache.org/vmod/cookie</a></li>
+<li>Maxmind GeoIP VMOD - <a href="https://www.varnish-cache.org/vmod/maxmind-geoip">https://www.varnish-cache.org/vmod/maxmind-geoip</a></li>
+<li>Header VMOD - <a href="https://www.varnish-cache.org/vmod/header-manipulation">https://www.varnish-cache.org/vmod/header-manipulation</a></li>
+<li>UUID VMOD - <a href="https://github.com/Sharecare/libvmod-uuid#readme">https://github.com/Sharecare/libvmod-uuid#readme</a></li>
+</ul>
+<h3 id="varnish-cache-v3">Varnish Cache v3</h3>
+<p>If you have a need to run Varnish Cache 3, eg. you have existing v3 VCL you want to run in Section, pick this one. This proxy also has ESI enabled to support the [Magento Turpentine extension]</p>
+<ul>
+<li>Varnish Cache  3.0.5</li>
+<li>Cookie VMOD - <a href="https://www.varnish-cache.org/vmod/cookie">https://www.varnish-cache.org/vmod/cookie</a></li>
+<li>Maxmind GeoIP VMOD - <a href="https://www.varnish-cache.org/vmod/maxmind-geoip">https://www.varnish-cache.org/vmod/maxmind-geoip</a></li>
+<li>Header VMOD - <a href="https://www.varnish-cache.org/vmod/header-manipulation">https://www.varnish-cache.org/vmod/header-manipulation</a></li>
+</ul>
+<p><em>Varnish is a registered trademark of Varnish Software AB and its affiliates</em></p>
+<h3 id="table-of-contents">Table of contents</h3>
+
+
+
+
+
+
+
+<ul class="children children-li">
+	
+
+	
+		
+	
+
+	
+
+	
+		
+	
+
+	
+</ul>
+
+
+</div>
+          
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 01 Jan 0001</p>
+          <nav class="pagination mt-3">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="https://www.section.io/docs/explanations/modules/threat-x/" aria-label="Previous page" ><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">ThreatX</span></a>
+            
+            
+            <a class="nav nav-next" href="https://www.section.io/docs/explanations/modules/virtual-waiting-room/" aria-label="Previous page" > <span class="d-none d-md-block">Virtual Waiting Room</span><i class="ti-arrow-right ml-2"></i></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /details page -->
+
+
+
+
+
+    <!-- footer -->
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+       <p class="mb-md-0 mb-4">Copyright © 2021 Section.</p>
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline">
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.section.io/" aria-label="Section"><i class="ti-home"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://github.com/section-io/docs" aria-label="Github"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://community.section.io/" aria-label="Community"><i class="ti-comments-smiley"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+
+<script src="https://www.section.io/docs/js/script.min.js"></script>
+  </body>
+
+</html>

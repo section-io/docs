@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Drupal on Section</title>
+    <link>https://www.section.io/docs/tutorials/integrations/drupal-setup/</link>
+    <description>Recent content in Drupal on Section</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2021 Section.</copyright><atom:link href="https://www.section.io/docs/tutorials/integrations/drupal-setup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Set up Drupal 8 on Section</title>
+      <link>https://www.section.io/docs/tutorials/integrations/drupal-setup/set-up-drupal-8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/tutorials/integrations/drupal-setup/set-up-drupal-8/</guid>
+      <description>The following is a guide to installing the Section Drupal module into an existing Drupal 8 application. This module allows Section&amp;rsquo;s global, distributed caching layer to quickly respond to invalidation events from a Drupal instance in exactly the same way that Drupal&amp;rsquo;s internal cache or a local varnish cache running on the host machine does, ensuring that the content in Section&amp;rsquo;s global caching layer is never stale.
+Prerequisites  An existing Section application.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HTTPS and TLS on Section</title>
+    <link>https://www.section.io/docs/how-tos/application-edge-management/https-tls/</link>
+    <description>Recent content in HTTPS and TLS on Section</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2021 Section.</copyright><atom:link href="https://www.section.io/docs/how-tos/application-edge-management/https-tls/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Check your current HTTPS setup</title>
+      <link>https://www.section.io/docs/how-tos/application-edge-management/https-tls/check-your-current-https-setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/application-edge-management/https-tls/check-your-current-https-setup/</guid>
+      <description>Using the command line - OpenSSL  Open a terminal. Run openssl s_client -showcerts -connect www.example.com:443 &amp;lt;/dev/null, with your domain name. If successful, you&amp;rsquo;ll receive a complete output of what a browser uses to establish secure HTTP.  Using an online tool - DigiCert  Browse to an online certificate checking service such as: https://www.digicert.com/help Enter your domain name and initiate the check Verify your setup receives a tick at the bottom of the test  </description>
+    </item>
+    
+    <item>
+      <title>Create a Free Certificate using Let&#39;s Encrypt</title>
+      <link>https://www.section.io/docs/how-tos/application-edge-management/https-tls/create-a-free-tls-certificate-using-letsencrypt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/application-edge-management/https-tls/create-a-free-tls-certificate-using-letsencrypt/</guid>
+      <description>Get started Log into your Aperture dashboard and under Set up navigate to the HTTPS page.
+  HTTPS in Aperture   Select domain   HTTPS Pulldown   The SSL information for the first domain in this application will automatically load. If you have setup multiple domains on a single application, click the drop down box &amp;ldquo;Select your domain&amp;rdquo; and select the domain you wish to upload a certificate for.</description>
+    </item>
+    
+    <item>
+      <title>Create a Let&#39;s Encrypt Certificate Before your DNS Change</title>
+      <link>https://www.section.io/docs/how-tos/application-edge-management/https-tls/create-a-letsencrypt-certificate-before-your-dns-change/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/application-edge-management/https-tls/create-a-letsencrypt-certificate-before-your-dns-change/</guid>
+      <description>If you would like to create your free TLS certificates before you make your DNS change, you need to configure your server.
+For users of Nginx   Obtain the CNAME record for your application. You&amp;rsquo;ll see this on the DNS menu in the Section management console.
+  Add this block to your server&amp;rsquo;s configuration, replacing yourdomain.c.section.io with the CNAME you obtained above:
+location /.well-known/acme-challenge/ {proxy_set_header Host $host;proxy_pass http://yourdomain.</description>
+    </item>
+    
+    <item>
+      <title>Determine TLS Certificate Order</title>
+      <link>https://www.section.io/docs/how-tos/application-edge-management/https-tls/determine-tls-certificate-order/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/application-edge-management/https-tls/determine-tls-certificate-order/</guid>
+      <description>Getting started Download or unzip the certificates in to a directory somewhere on your computer. The certificates should be PEM encoded and will look like the following in a text editor.
+-----BEGIN CERTIFICATE-----/* contents of certificate */-----END CERTIFICATE----- You will require Openssl to be installed. To check if you have Openssl installed, open a command prompt and type:
+openssl version You should see output like OpenSSL 1.</description>
+    </item>
+    
+    <item>
+      <title>Passthrough ACME Challenge HTTP Request</title>
+      <link>https://www.section.io/docs/how-tos/application-edge-management/https-tls/passthrough-acme-challenge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/application-edge-management/https-tls/passthrough-acme-challenge/</guid>
+      <description>Context If you wish to configure the Section platform to pass the ACME Challenge route through to your origin please follow the following steps. Please note that enabling this feature will render the Section provided Let&amp;rsquo;s Encrypt SSL certificates unusable.
+Steps Follow the below steps to deploy this change:
+ Locate the section.config.json file in the root of your Section git repository. Locate environment block (in this example we&amp;rsquo;ll be using Production).</description>
+    </item>
+    
+    <item>
+      <title>Set up HTTPS and HTTP/2</title>
+      <link>https://www.section.io/docs/how-tos/application-edge-management/https-tls/setup-https/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/application-edge-management/https-tls/setup-https/</guid>
+      <description>When your application is first created it will be served over HTTP and via HTTPS using a default network certificate. Once we detect DNS has been changed on to our platform we will provide a signed and valid certificate through Let&amp;rsquo;s Encrypt.
+If you have added multiple domains to the application, a Let&amp;rsquo;s Encrypt certificate will be provided for each domain. If you have provided your own custom certificate, you need to upload a certificate for each domain (even if they are listed as alternate names on the same certificate) using our API.</description>
+    </item>
+    
+    <item>
+      <title>Upload a Custom SSL Certificate</title>
+      <link>https://www.section.io/docs/how-tos/application-edge-management/https-tls/upload-a-custom-certificate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/application-edge-management/https-tls/upload-a-custom-certificate/</guid>
+      <description>1) Navigate to HTTPS Log into your Aperture dashboard and under Set up navigate to the HTTPS page.
+2) Select your desired domain The dropdown will automatically fill with the first domain listed in your application. If that&amp;rsquo;s not the one you want, select the correct one from the dropdown.
+If you have multiple sub domains in this application and wish to upload a wild card certificate or a certificate with multiple domains in the Subject Alternate Name(SAN), you will need to upload the certificate for each domain.</description>
+    </item>
+    
+  </channel>
+</rss>
