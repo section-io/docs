@@ -23,6 +23,10 @@ home = ["HTML","RSS","Algolia"]
   isPlainText = true
   notAlternative = true
 
+[params.algolia]
+vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+params = ["categories", "tags"]
+
 ############################# Default Parameters ##########################
 [params]
 # logo is for all page
