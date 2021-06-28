@@ -1,41 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Bigcommerce on Section</title>
-    <link>https://www.section.io/docs/tutorials/integrations/bigcommerce/</link>
-    <description>Recent content in Bigcommerce on Section</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Copyright © 2021 Section.</copyright><atom:link href="https://www.section.io/docs/tutorials/integrations/bigcommerce/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Optimize Bigcommerce with Section</title>
-      <link>https://www.section.io/docs/tutorials/integrations/bigcommerce/optimize-bigcommerce/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.section.io/docs/tutorials/integrations/bigcommerce/optimize-bigcommerce/</guid>
-      <description>Configure Caching and HTML Streaming  Set the static caching and HTML Streaming features toggles to true.  sub vcl_recv {# Section feature toggles.if (!req.http.section-enable-static-caching) {set req.http.section-enable-static-caching = &amp;quot;true&amp;quot;;}if (!req.http.section-enable-html-streaming) {set req.http.section-enable-html-streaming = &amp;quot;true&amp;quot;;}}Configure HTML Streaming by whitelisting paths.   # SWITCH for HTML streaming,if(req.http.section-enable-html-streaming == &amp;quot;true&amp;quot; &amp;amp;&amp;amp; (req.url ~ &amp;quot;(?i)^/(?=\?|&amp;amp;|$)&amp;quot; ||req.url ~ &amp;quot;\/sale\/shoes\/.*&amp;quot; ||req.url ~ &amp;quot;\/outlet\/promotion\/.*&amp;quot; || req.</description>
-    </item>
-    
-    <item>
-      <title>TTFB Bigcommerce with Section</title>
-      <link>https://www.section.io/docs/tutorials/integrations/bigcommerce/ttfb-bigcommerce/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.section.io/docs/tutorials/integrations/bigcommerce/ttfb-bigcommerce/</guid>
-      <description>Time To First Byte (TTFB) Time To First Byte is an important metric for user experience as people do not wait for slow pages to load.
- TTFB is a metric of the time taken for a user to receive the first byte. Start render time is crucial because it represents the time the user is waiting while looking at a blank screen. There is a high correlation between start render time and bounce rate, so significantly improving this metric has tangible business benefits.</description>
-    </item>
-    
-    <item>
-      <title>Set up Bigcommerce on Section</title>
-      <link>https://www.section.io/docs/tutorials/integrations/bigcommerce/set-up-bigcommerce/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.section.io/docs/tutorials/integrations/bigcommerce/set-up-bigcommerce/</guid>
-      <description>Bigcommerce optimization on Section with caching, location optimization and HTML Streaming are paid features and managed services, please contact us to learn more.
-Create a Bigcommerce store Sign-up at Bigcommerce to set up a store and assign a domain.
- Sign up &amp;amp; create a store at Bigcommerce. Use the final DNS name that your site will be accessed. Follow the standard Bigcommerce instructions to add the domain to the Bigcommerce site.</description>
-    </item>
-    
-  </channel>
-</rss>

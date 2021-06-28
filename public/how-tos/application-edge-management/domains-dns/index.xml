@@ -1,60 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Domain and DNS  on Section</title>
-    <link>https://www.section.io/docs/how-tos/application-edge-management/domains-dns/</link>
-    <description>Recent content in Domain and DNS  on Section</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Copyright © 2021 Section.</copyright><atom:link href="https://www.section.io/docs/how-tos/application-edge-management/domains-dns/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Check your current DNS setup</title>
-      <link>https://www.section.io/docs/how-tos/application-edge-management/domains-dns/check-your-current-dns-setup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.section.io/docs/how-tos/application-edge-management/domains-dns/check-your-current-dns-setup/</guid>
-      <description>From a terminal   Run dig +trace www.yourdomain.com. If you are unable to run this command locally, leverage an online tool such as Kloth.   Click to expand an example   $ dig +trace www.example.com; &amp;lt;&amp;lt;&amp;gt;&amp;gt; DiG 9.11.0-P5 &amp;lt;&amp;lt;&amp;gt;&amp;gt; +trace www.example.com;; global options: +cmd. 488165 IN NS f.root-servers.net.. 488165 IN NS g.root-servers.net.. 488165 IN NS h.root-servers.net.. 488165 IN NS i.root-servers.net.. 488165 IN NS j.</description>
-    </item>
-    
-    <item>
-      <title>Configuring a new domain</title>
-      <link>https://www.section.io/docs/how-tos/application-edge-management/domains-dns/configuring-a-new-domain/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.section.io/docs/how-tos/application-edge-management/domains-dns/configuring-a-new-domain/</guid>
-      <description>Overview This guide will walk you through the steps needed to add a domain to an existing Section environment. For help understanding whether adding an new domain to an existing environment is best for your use case, please visit this guide. If you wish to set up an entirely separate application for this domain or have reached this page without following the going live tutorial please see the getting started guide for a comprehensive guide to every step of the go live process.</description>
-    </item>
-    
-    <item>
-      <title>Make bare domain CNAME records</title>
-      <link>https://www.section.io/docs/how-tos/application-edge-management/domains-dns/make-bare-domain-cname/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.section.io/docs/how-tos/application-edge-management/domains-dns/make-bare-domain-cname/</guid>
-      <description>Bare Domains are DNS records without www, also called Zone Apex, Naked Domain and Root Domain. In order to go live on Section, you need to setup a CNAME record pointing to the Section platform. While this is simple to do for any subdomain such as www, creating a CNAME record for a bare domain can cause some problems. This is because a CNAME record trumps all other records and can cause issues with MX records — potentially leading to broken email etc.</description>
-    </item>
-    
-    <item>
-      <title>Use Section hosted DNS</title>
-      <link>https://www.section.io/docs/how-tos/application-edge-management/domains-dns/set-up-dns-on-section/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.section.io/docs/how-tos/application-edge-management/domains-dns/set-up-dns-on-section/</guid>
-      <description>To simplify management for your websites, Section can provide DNS hosting. This is especially useful for pointing a zone-apex record (ie bare domain) at a Section endpoint if your current DNS hosting provider does not support the ALIAS or ANAME record types.
-Hosting your DNS with Section also provides convenient access to DNS management within the Aperture portal.
-Begin hosting DNS with Section To enable Hosted DNS with Section:
-  Navigate to the DNS page for your Section application&amp;rsquo;s hosted environment (eg Production).</description>
-    </item>
-    
-    <item>
-      <title>Use Section with outside DNS</title>
-      <link>https://www.section.io/docs/how-tos/application-edge-management/domains-dns/set-up-dns-on-other-provider/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.section.io/docs/how-tos/application-edge-management/domains-dns/set-up-dns-on-other-provider/</guid>
-      <description>To use Section with outside DNS, simply go to your DNS hosting provider&amp;rsquo;s console and perform the steps necessary to add a new domain to Section. If you have not yet gone through the going live tutorial please visit it for a more in depth view of the entire process
-DNS Resources Each registrar has its own method of adding CNAME records. Below are some links to instructions on adding DNS records for common hosts and DNS providers.</description>
-    </item>
-    
-  </channel>
-</rss>
