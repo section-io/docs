@@ -10,9 +10,6 @@ aliases:
   - /graphite/
   - /topic-guides/platform-monitoring/http-logs/
 ---
-
-## HTTP Logs
-
 Clicking on "HTTP Logs"  in the left navigation bar opens up a view of Kibana. Kibana will allow you to search through your logs to dig deeper into trends you found in Graphite or Grafana. To open Kibana in its own window, click the “open in new window” button at the top of the Kibana frame.
 
 On the Discover view in Kibana, you can either select items from the left nav, or type searches into the search bar. Here are a fields that are useful to know:

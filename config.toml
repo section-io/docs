@@ -14,23 +14,23 @@ googleAnalytics = "" # paste your analytics ID here. (Ex: UA-123-45)
 unsafe = true
 
 ############################# Algolia Search ##############################
-[outputs]
-home = ["HTML","RSS","Algolia"]
-
 [outputFormats.Algolia]
-  mediaType = "application/json"
   baseName = "algolia"
   isPlainText = true
+  mediaType = "application/json"
   notAlternative = true
 
 [params.algolia]
-vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
-params = ["categories", "tags"]
+  vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+  params = ["categories", "tags"]
+
+[outputs]
+  home = ["HTML", "RSS", "Algolia"]
 
 ############################# Default Parameters ##########################
 [params]
 # logo is for all page
-logo = ""
+logo = "images/section-logo.png"
 # logo white is for homepage logo, you can use colorful logo too...
 logo_white = ""
 # when logo is empty, it will shown your site title
@@ -82,7 +82,7 @@ copyright = "Copyright © 2021 Section."
 title = "Section Documentation"
 subtitle = "Find advice and answers from our support team fast or get in touch"
 bg_image = "images/banner.jpg"
-placeholder = "Have a question? Just ask here or enter terms"
+placeholder = "Search the docs..."
 
 # call to action
 [Languages.en.params.cta]
