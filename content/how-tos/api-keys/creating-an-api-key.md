@@ -9,8 +9,8 @@ aliases:
 ---
 ## Introduction
 Section allows you to create API Tokens that belongs to your user. 
-API Tokens will have the same permissions as your user has at the time of creation. 
-When your user is deleted, this key will persist.
+API Tokens have the same permissions as your user. 
+When your user account is deleted, these key will persist.
 
 ## Creating an API Token
 
