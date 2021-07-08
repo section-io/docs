@@ -5,12 +5,13 @@ keywords: Section, training, platform overview, api keys
 weight: 2
 aliases:
   - /api/api-keys/
-
 ---
+
 ## Introduction
-Section allows you to create API Tokens that belongs to your user. 
-API Tokens have the same permissions as your user. 
-When your user account is deleted, these key will persist.
+
+Section allows you to create API Tokens that belongs to your user.
+API Tokens have the same permissions as your user.
+When your user is deleted, these key will persist.
 
 ## Creating an API Token
 
@@ -18,13 +19,13 @@ Go to the [User Setting page](https://aperture.section.io/new/configure/user) by
 
 ![Create API Token](/docs/images/api-token-create.png)
 
-Enter a description for what this API Token will be used for, and then click the *Add* button:
+Enter a description for what this API Token will be used for, and then click the _Add_ button:
 
 ![Create API Token Result](/docs/images/api-token-create-after.png)
 
-Copy the token value and store it somewhere securely. 
-As the warning says, this value cannot be retrieved later. 
+Copy the token value and store it somewhere securely.
+As the warning says, this value cannot be retrieved later.
 If you loose this value you will need to create a new token and delete the old one.
 
 The API Tokens you have created will be listed on this page.
-They can be deleted by clicking the *X* button next to the Token description.
+They can be deleted by clicking the _X_ button next to the Token description.
