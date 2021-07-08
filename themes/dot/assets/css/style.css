@@ -286,8 +286,8 @@ pre {
 }
 
 .navbar-brand img {
-  max-width: 100px;
-  margin-bottom: 0;
+  max-width: 20%;
+  margin: 10px;
 }
 
 .navbar .nav-item .nav-link {

@@ -1,66 +1,8 @@
 {{ "<!-- banner -->" | safeHTML }}
-<div class="container section">
+<div class="section container">
 	<div class="row">
 		<div class="col-lg-8 text-center mx-auto">
 			<h1 class="text-white mb-3">{{ .Site.Params.banner.title | markdownify }}</h1>
 			<p class="text-white mb-4">{{ .Site.Params.banner.subtitle | markdownify }}</p>
-			<div class="position-relative">
-				<input id="searchbox" class="form-control" placeholder="{{ .Site.Params.banner.placeholder }}">
-				<i class="ti-search search-icon"></i>
-				<!-- Javascript -->
-				{{ $currentNode := . }}
-				{{ $currentNode.Scratch.Set "pages" .Site.Pages }}
-				{{ $pages := ($currentNode.Scratch.Get "pages") }}
-				<script src="https://cdn.jsdelivr.net/npm/algoliasearch@3/dist/algoliasearchLite.min.js"></script>
-				<script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
-				<script>
-					var client = algoliasearch('U9TVGEEYLL', 'dc8c3492cfc6e95f2702c159d0117c7a');
-					var index = client.initIndex('section');
-					autocomplete('#searchbox', { hint: true }, [
-						{
-						source: autocomplete.sources.hits(index, { hitsPerPage: 10 }),
-							displayKey: 'title, content',
-							templates: {
-								suggestion: function(suggestion) {
-									return suggestion._highlightResult.title.value;
-								},
-								//  .data( "ui-autocomplete" )._renderItem = function( ul, item ) {
-								// 	return $( "<li>" )
-								// 	.append( "<a href=" + item.url + " + \" &quot;\" +  >" + item.value + "</a>" + item.label )
-								// 	.appendTo( ul );
-								// 	};
-								// },
-								empty: function(suggestion) {
-									return 'No result';
-								}
-							}
-						}
-						]).on("autocomplete:selected",function(event, suggestion, dataset, context) {
-						console.log(event, suggestion, dataset, context);
-						window.location.assign(suggestion.href);
-						});
-					// $(function() {
-					// var projects = [
-					// 	{{ range $pages }}
-					// 	{
-					// 		value: "{{ .Title }}",
-					// 		label: "<p>{{.Plain}}</p>{{range.Params.Keywords}}<p>{{.}}</p>{{end}}",
-					// 		url:"{{ .Permalink }}"
-					// 	},
-					// 	{{ end }}
-					// ];
-					// $( "#search" ).autocomplete({
-					// 	source: projects
-					// })
-					// .data( "ui-autocomplete" )._renderItem = function( ul, item ) {
-					// 	return $( "<li>" )
-					// 	.append( "<a href=" + item.url + " + \" &quot;\" +  >" + item.value + "</a>" + item.label )
-					// 	.appendTo( ul );
-					// };
-					// });
-				</script>
-			</div>
-		</div>
-	</div>
-</div>
+{{ partial "search.html" . }}
 {{ "<!-- /banner -->" | safeHTML }}

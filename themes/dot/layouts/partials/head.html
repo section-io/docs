@@ -34,6 +34,11 @@
 {{ "<!-- Main Stylesheet -->" | safeHTML }}
 {{ $css := resources.Get "css/style.css" | minify }}
 <link href="{{ $css.Permalink }}" rel="stylesheet" media="screen"/>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
   
 {{ "<!-- ** JS Plugins Needed for the Project ** -->" | safeHTML }}
 
