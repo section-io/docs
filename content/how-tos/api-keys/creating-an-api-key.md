@@ -9,7 +9,7 @@ aliases:
 ---
 ## Introduction
 Section allows you to create API Tokens that belongs to your user. 
-API Tokens have the same permissions as your account. 
+API Tokens have the same permissions as your user. 
 When your user account is deleted, these key will persist.
 
 ## Creating an API Token
