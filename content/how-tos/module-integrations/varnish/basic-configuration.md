@@ -1,6 +1,7 @@
 ---
-title: Using the quick configuration
+title: Using the Quick Configuration
 description: How to use Section toggles to update your Varnish Cache and modsecurity configurations.
+type: "docs"
 keywords: website performance, page speed, webpage speed, website security, varnish, VCL, modsecurity, CDN configuration
 aliases:
   - /modules/varnish-cache/how-tos/basic-configuration/

@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "atomic-algolia": "^0.3.19"
+  }
+}

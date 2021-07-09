@@ -2,6 +2,7 @@
 title: Improve Varnish Cache Hit Rate
 description: Guide for understanding Varnish Cache  hit rate, metrics, and logs.
 keywords: varnish, Varnish Cache , cache, cached data, hit rates, Varnish Cache hit rates, vcl, Varnish Cache configuration language, metrics
+type: "docs"
 aliases:
   - /modules/varnish-cache/how-tos/varnish-cache-hit-rate/
   - /varnish-cache-hit-rate/

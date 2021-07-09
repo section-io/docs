@@ -1,6 +1,7 @@
 ---
 title: HTTP Logs
 description: An overview of the platform's HTTP logging functionality.
+type: "docs"
 keywords: monitoring, graphite, metrics, logs
 weight: 1
 aliases:

@@ -1,6 +1,7 @@
 ---
 title: HTTP Error Messages
 description: How to review http response codes. How to upload a custom error page for your website with Section.
+type: "docs"
 keywords: website performance, error message, http response code, content delivery network, CDN
 aliases:
   - /debugging/reference/http-error-messages/
