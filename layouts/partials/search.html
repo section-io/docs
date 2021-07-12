@@ -9,7 +9,7 @@
 	  height: 37px;
 	  white-space: nowrap;
 	  box-sizing: border-box;
-	  font-size: 13px;
+	  font-size: 10px;
 	  font-family: arial, sans-serif;
 	}
 	.searchbox .algolia-autocomplete {
@@ -202,23 +202,25 @@
 		padding: 8px 8px 8px;
 	}
 	.aa-dropdown-menu * {
-		box-sizing: border-box;
+		box-sizing: content-box;
 	}
 	.aa-suggestion {
-	  font-size: 1.1em;
+	  font-size:0.9em;
+    margin: 0 auto;
 	  padding: 4px 4px 0;
-	  display: block;
-	  width: 100%;
+	  display:inline-block;
+	  width: 95%;
 	  height: 38px;
 	  clear: both;
 	}
 	.aa-suggestion span {
-		white-space: nowrap!important;
+		white-space: pre-line!important;
 		text-overflow: ellipsis;
 		overflow: hidden;
 		display: block;
 		float: left;
-		line-height: 2em;
+		/* line-height:0.1em; */
+    /* margin-bottom: 0.1em; */
 		width: calc(100% - 30px);
 		background: #fff;
 	}

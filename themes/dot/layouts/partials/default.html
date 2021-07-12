@@ -4,7 +4,11 @@
     <div class="row">
       <div class="col-lg-3">
         <div class="sidebar">
+          <div>
+            {{ partial "search.html" . }}
+          </div>
         <a class="back-btn" href="{{ .Site.BaseURL | relLangURL }}" aria-label="back"></a>
+        
           <ul class="list-styled">
             {{ $currentNode := . }}
             {{range .Site.Home.Sections.ByWeight}}
