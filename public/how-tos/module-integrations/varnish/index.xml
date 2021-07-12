@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Set up Varnish on Section</title>
+    <link>https://www.section.io/docs/how-tos/module-integrations/varnish/</link>
+    <description>Recent content in Set up Varnish on Section</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2021 Section.</copyright><atom:link href="https://www.section.io/docs/how-tos/module-integrations/varnish/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>API Caching</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/varnish/api-caching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/varnish/api-caching/</guid>
+      <description>Overview Varnish Cache can be used to cache an API. By caching a JSON RESTFul API an application running on the edge can be made to run faster.
+This how-to describes using the Varnish Module on the Section platform to cache an Application Programming Interface (API).
+For example, an application running in a Section Node.js Module on the Edge can cache commonly used API routes in a &amp;ldquo;varnishapi&amp;rdquo; Varnish Cache Module.</description>
+    </item>
+    
+    <item>
+      <title>Block a request</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/varnish/block-a-request/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/varnish/block-a-request/</guid>
+      <description>Overview Varnish Cache allows you to create synthetic HTTP responses with the use of vcl_synth. This can be used to deliver a 403 forbidden status code. These config changes are typically made under Advanced Config -&amp;gt; varnish -&amp;gt; default.vcl for the respective branch.
+VCL syntax Below is an example of how to deliver a synthetic 403 response using VCL syntax 4.0. This example will deliver a 403 response if the request matches the URI path &amp;ldquo;/admin&amp;rdquo;:</description>
+    </item>
+    
+    <item>
+      <title>Configure Dynamic Content Caching</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/varnish/dynamic-caching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/varnish/dynamic-caching/</guid>
+      <description>Caching is so effective at boosting website performance because delivering web content involves extreme repetition. Web servers receive requests for identical static assets and HTML documents thousands (or hundreds of thousands) of times per day. Caching allows the web server delegate this repetition to the caching layer and only respond to a small fraction of these requests. Eliminating this repetition makes your web server significantly more efficient and can drastically reduce server costs.</description>
+    </item>
+    
+    <item>
+      <title>Configure GEO-based origin selection</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/varnish/geo-based-origin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/varnish/geo-based-origin/</guid>
+      <description>GEO based origin selection Below is an example of how to configure your Content Delivery Grid to direct requests to different origins based on the requesting user&amp;rsquo;s GEO location.
+Prerequisites:
+ Section account Section application running Varnish A separate origin with content for users of different GEO locations  In your default.vcl file you can set a header that&amp;rsquo;s recognizable in Section last-proxy to determine which origin address and host header to make the request with.</description>
+    </item>
+    
+    <item>
+      <title>Configure static asset origin</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/varnish/static-asset-origin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/varnish/static-asset-origin/</guid>
+      <description>Static asset origin Below is an example of how to configure your Content Delivery Grid to direct all requests for static assets to a separate origin.
+Prerequisites:
+ Section account Section application running Varnish A separate origin for your static assets (e.g. S3 bucket)  In your default.vcl file you can set a header that&amp;rsquo;s recognizable in Section last-proxy to determine which origin address and host header to make the request with.</description>
+    </item>
+    
+    <item>
+      <title>Deliver a synthetic response</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/varnish/deliver-a-synthetic-response/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/varnish/deliver-a-synthetic-response/</guid>
+      <description>Overview Varnish Cache allows you to create synthetic HTTP responses with the use of vcl_synth. This is useful when you want to perform a redirect, deliver a 404, a custom error page, etc.
+Synthetic Responses Below is a basic example of how to deliver a synthetic response using VCL syntax 4.0. This example will deliver a 200 response with the body content &amp;ldquo;Hello World&amp;rdquo; if a request matches the URI path &amp;ldquo;/hello&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Device based origin selection</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/varnish/device-based-origin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/varnish/device-based-origin/</guid>
+      <description>Device based origin selection Below is an example of how to configure your Content Delivery Grid to direct requests to different origins based on the requesting user&amp;rsquo;s device type.
+Prerequisites:
+ Section account Section application running Varnish A separate origin with content for different devices  In your default.vcl file you can set a header that&amp;rsquo;s recognizable in Section last-proxy to determine which origin address and host header to make the request with.</description>
+    </item>
+    
+    <item>
+      <title>Exclude URL from Varnish cache</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/varnish/exclude-url-from-cache/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/varnish/exclude-url-from-cache/</guid>
+      <description>Requests to particular URLs can be excluded from Varnish cache.
+Exclude a particular URL Use the following code snippet to exclude an exact match to a URL. This code is for VCL4.0.
+sub vcl_recv {if (req.url == &amp;quot;/example.html&amp;quot;) {return(pass);}}sub vcl_backend_response {if (bereq.url == &amp;quot;/example.html&amp;quot;) {set beresp.uncacheable = true;set beresp.ttl = 120s;return(deliver);}}Exclude a URL pattern You can also use regex expressions to exclude URLs based on a pattern.</description>
+    </item>
+    
+    <item>
+      <title>Generate a 404 response</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/varnish/respond-with-a-404/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/varnish/respond-with-a-404/</guid>
+      <description>Overview Varnish Cache allows you to create synthetic HTTP responses with the use of vcl_synth. This can be used to deliver a 404 not found or 410 permanently removed status code for a particular asset.
+VCL syntax Below is an example of how to deliver a synthetic 404 response using VCL syntax 4.0. This example will deliver a 404 response if the request matches the URI path &amp;ldquo;/hello.jpg&amp;rdquo;
+sub vcl_recv { if (req.</description>
+    </item>
+    
+    <item>
+      <title>How to clear the cache</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/varnish/clearing-the-cache/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/varnish/clearing-the-cache/</guid>
+      <description>There are three ways to remove objects from the Varnish Cache :
+ Clear the cache by a particular url. Clearing the entire cache. Fine tuned control of the cache with Varnish Cache ban expressions.  Clear a particular URL You can remove particular URLs from the cache by entering the URL and clicking Purge. This form accepts wildcards in the form of *, so entering /images* will purge all URLs starting with /images.</description>
+    </item>
+    
+    <item>
+      <title>How to clear the cache using the API</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/varnish/clearing-the-cache-using-the-api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/varnish/clearing-the-cache-using-the-api/</guid>
+      <description>From the management console, click API in the top menu. This will bring you to a UI for all our API routes grouped by category.  Scroll through the list, Click Show/Hide on the Proxy group, then click on the POST method ending with state.  Here, you&amp;rsquo;ll see an interface to help build your API call. Enter your account id, application id, environment name, and proxy name.These can be obtained from the URL in the management console (go to your aperture homepage and look at the URL - the numbers go accountId -&amp;gt; applicationId -&amp;gt; environmentId).</description>
+    </item>
+    
+    <item>
+      <title>Improve Varnish Cache Hit Rate</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/varnish/varnish-cache-hit-rate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/varnish/varnish-cache-hit-rate/</guid>
+      <description>The Varnish Cache project provides some high level instructions on improving cache hit rate.
+The following describes the work flow with Section metrics and development processes to achieve optimal cache hit ratios.
+  Review Section Varnish Cache metrics Review http logs Make changes to VCL locally Confirm change has been effective -&amp;gt; Logs Promote changes to Production Confirm change has been effective -&amp;gt; Metrics Rinse and repeat   Review Varnish Cache Metrics Your Section Varnish Cache metrics provide an overview of cache hit ratios for all asset types in addition to cache hit ratios by type.</description>
+    </item>
+    
+    <item>
+      <title>Process ESI Directives in JSON responses</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/varnish/configure-varnish-cache-to-process-esi-directives-in-json-responses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/varnish/configure-varnish-cache-to-process-esi-directives-in-json-responses/</guid>
+      <description>If you use Varnish Cache for Content composition using Edge Side Includes you may need to configure Varnish Cache to process ESI directives in files that don&amp;rsquo;t look like XML.
+For example, if you are using ESI in an AJAX call that returns some JSON, you might need to enable disable Varnish&amp;rsquo;s XML check.
+To do this:
+ Create a file in the varnish directory named proxy-features.json. Add the following content:  {&amp;quot;feature/esi_disable_xml_check&amp;quot;: true}```.</description>
+    </item>
+    
+    <item>
+      <title>Redirect a request</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/varnish/redirect-a-request/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/varnish/redirect-a-request/</guid>
+      <description>Overview Varnish Cache allows you to create synthetic HTTP redirect responses with the use of vcl_synth.
+Redirect syntax Below is an example of how to deliver a synthetic redirect 301 response using VCL syntax 4.0. This example will deliver a 301 response with a location header to redirect to &amp;ldquo;/world&amp;rdquo; if a request matches the URI path &amp;ldquo;/hello&amp;rdquo;
+sub vcl_recv { if (req.url ~ &amp;#34;/hello&amp;#34;) { return (synth(801, &amp;#34;/world&amp;#34;)); } } sub vcl_synth { if (resp.</description>
+    </item>
+    
+    <item>
+      <title>Serve stale content while the backend is offline</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/varnish/configure-varnish-cache-to-serve-content-while-the-backend-is-offline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/varnish/configure-varnish-cache-to-serve-content-while-the-backend-is-offline/</guid>
+      <description>Configuring Varnish Cache to serve stale content is very useful for when your origin crashes. This behavior is achievable when running Varnish Cache as a reverse proxy within the Section Content Delivery Grid.
+Prerequisites Make sure you have an account on Section, and have selected Varnish Cache to run in your proxy stack.
+Note: This guide will be using VCL 4 syntax, so if you are interested in VCL 3 syntax please reach out to us at support@section.</description>
+    </item>
+    
+    <item>
+      <title>Setting and unsetting HTTP headers</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/varnish/set-and-unset-headers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/varnish/set-and-unset-headers/</guid>
+      <description>Overview Varnish Cache gives you the ability to modify, add, and remove HTTP headers on the request and response object.
+Request Headers The vcl_recv sub routine is called at the beginning of a request and this is where we will be modifying the request headers. We will be adding the header hello with value of world, and removing the user-agent header.
+sub vcl_recv { ... set req.http.hello = &amp;#34;world&amp;#34;; unset req.</description>
+    </item>
+    
+    <item>
+      <title>Use Varnish Cache snippets</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/varnish/sample-varnish-snippets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/varnish/sample-varnish-snippets/</guid>
+      <description>Varnish Cache Configuration Advanced configuration is done via the Varnish Cache Control Language file default.vcl. You can access this file by going to Repository under the Configuration menu in the left nav of Aperture and then clicking on the Varnish Cache file.
+To help you get started, we&amp;rsquo;ve written some VCL snippets that cover some basic aspects of functionality for you to review.
+Cache Static Content  Normalise Accept-Encoding  Enforce HTTPS  Block Access  Cache Everything  Wordpress Caching  For more information on how to write VCL, visit Varnish documentation, where each version has its own user guide.</description>
+    </item>
+    
+    <item>
+      <title>Using the Quick Configuration</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/varnish/basic-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/varnish/basic-configuration/</guid>
+      <description>To make it easy to get started configuring your reverse proxies, Section offers a few basic confguration options for Varnish and Modsecurity. Check out our guide on Advanced Configuration for more advanced configuration topics.
+Varnish To make getting your CDN setup easier we have a number of configuration options you can enable without having to know how to use Varnish&amp;rsquo;s VCL programming language. To use these go to the Proxy page under the Configuration menu in Aperture.</description>
+    </item>
+    
+    <item>
+      <title>Varnish Cache Quick Config</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/varnish/configure-varnish-with-gui/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/varnish/configure-varnish-with-gui/</guid>
+      <description>Learning VCL can be a tricky thing so we have made a GUI that let&amp;rsquo;s you cache your static assets and HTML documents without knowing VCL.
+In the left hand side of your Aperture dashboard there is a section called Quick Config which contains the toggles and inputs to configure Varnish Cache.
+  Varnish Cache Quick Config   Configure static asset caching Static asset caching is enabled by default to cache your statics for 6 hours and retain your origin cache control headers for the browser cache.</description>
+    </item>
+    
+    <item>
+      <title>View Varnish Cache Metrics</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/varnish/varnish-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/varnish/varnish-metrics/</guid>
+      <description>Out of the box, Section brings up Varnish Cache metrics. The following is a description of these metrics.
+Varnish Cache Glossary Key Varnish Cache concepts are described in the Varnish Cache Glossary.
+Varnish Cache Counters Further detail with respect to key Varnish Cache Counters (Source; [Mankier])
+Counter Levels Info- Informational counters
+Counters giving runtime information
+Diag- Diagnostic counters
+Counters giving diagnostic information
+Debug- Debug counters
+Counters giving Varnish Cache internals debug information</description>
+    </item>
+    
+  </channel>
+</rss>

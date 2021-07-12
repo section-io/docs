@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Set up ThreatX on Section</title>
+    <link>https://www.section.io/docs/how-tos/module-integrations/threatx/</link>
+    <description>Recent content in Set up ThreatX on Section</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2021 Section.</copyright><atom:link href="https://www.section.io/docs/how-tos/module-integrations/threatx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blacklist an IP address or a CIDR range</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/threatx/blacklist-an-ip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/threatx/blacklist-an-ip/</guid>
+      <description>Overview The ThreatX portal allows you to easily block an IP Address or a CIDR range by adding it to blacklist.
+Blacklist an IP Address/CIDR range As first step you will have to log into the ThreatX portal at x.threatx.io and access Settings &amp;gt; IWAF from the navbar.
+Select the Blacklist tab and click on Add Entry in the top right corner.
+This will present you with a pop to add the IP address or the CIDR range.</description>
+    </item>
+    
+    <item>
+      <title>Whitelist an IP Address or a CIDR Range</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/threatx/whitelist-an-ip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/threatx/whitelist-an-ip/</guid>
+      <description>Overview By whitelisting an IP address or a CIDR range you can instruct Threat-X to not inspect requests from those IPs. The ThreatX portal allows you to easily whitelist an IP Address or a CIDR range.
+Whitelist an IP Address/CIDR range As first step you will have to log into the ThreatX portal at x.threatx.io and access Settings &amp;gt; IWAF from the navbar.
+Select the Whitelist tab and click on Add Entry in the top right corner.</description>
+    </item>
+    
+  </channel>
+</rss>

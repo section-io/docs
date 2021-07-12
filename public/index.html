@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <title>Section Docs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="generator" content="Hugo 0.79.0" />
+  <meta name="description" content="Section Docs - Section ">
+  
+  <!-- ** CSS Plugins Needed for the Project ** -->
+  
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://www.section.io/docs/plugins/bootstrap/bootstrap.min.css">
+
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="https://www.section.io/docs/plugins/themify-icons/themify-icons.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="https://www.section.io/docs/images/favicon.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+  
+  <style>
+  :root{
+    --primary-color:#087830;
+    --body-color:#f9f9f9;
+    --text-color:#636363;
+    --text-color-dark:#242738;
+    --white-color:#ffffff;
+    --light-color:#f8f9fa;
+    --font-family:Lato;
+  }
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link href="https://www.section.io/docs/css/style.min.css" rel="stylesheet" media="screen"/>
+  
+<!-- ** JS Plugins Needed for the Project ** -->
+
+<!-- jquiry -->
+<script src="https://www.section.io/docs/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="https://www.section.io/docs/plugins/jquery/jquery-ui.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://www.section.io/docs/plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- match-height JS -->
+<script src="https://www.section.io/docs/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+
+  
+
+  <!-- create /layouts/partials/overrides/header.html in your own theme or root directory to add your custom content here -->
+
+
+
+
+
+
+
+
+<meta name="twitter:title" content="Section Docs"/>
+<meta name="twitter:description" content="This is meta description"/>
+
+
+
+<meta property="og:title" content="Section Docs" />
+<meta property="og:description" content="This is meta description" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.section.io/docs/" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Section Docs"/>
+<meta name="twitter:description" content="This is meta description"/>
+
+
+</head>
+
+  
+  <body>
+    
+    <!-- header -->
+    <header class="banner overlay bg-cover" data-background="https://www.section.io/docs/images/banner.jpg">
+      <nav class="navbar navbar-expand-md navbar-dark">
+  <div class="container">
+    <a class="navbar-brand px-2" href="/docs">
+      
+      
+      
+      Section
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://www.section.io/docs/">Home</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            docs
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://www.section.io/docs/how-tos">How-Tos</a>
+            
+            <a class="dropdown-item" href="https://www.section.io/docs/tutorials">Tutorials</a>
+            
+            <a class="dropdown-item" href="https://www.section.io/docs/explanations">Explanations</a>
+            
+            <a class="dropdown-item" href="https://www.section.io/docs/reference">Reference</a>
+            
+          </div>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+      <!-- banner -->
+<div class="container section">
+	<div class="row">
+		<div class="col-lg-8 text-center mx-auto">
+			<h1 class="text-white mb-3">Section Documentation</h1>
+			<p class="text-white mb-4">Find advice and answers from our support team fast or get in touch</p>
+			<div class="position-relative">
+				<input id="search" class="form-control" placeholder="Search the docs...">
+				<i class="ti-search search-icon"></i>
+				
+				
+				
+				
+				<script>
+					var client = algoliasearch('U9TVGEEYLL', 'dc8c3492cfc6e95f2702c159d0117c7a');
+					var index = client.initIndex('section');
+					autocomplete('#search', { hint: true }, [
+						{
+						source: autocomplete.sources.hits(index, { hitsPerPage: 10 }),
+							displayKey: 'title, content',
+							templates: {
+								suggestion: function(suggestion) {
+								return suggestion._highlightResult.title.value;
+								},
+								empty: function(suggestion) {
+								return 'No result';
+								}
+							}
+						}
+						]).on("autocomplete:selected",function(event, suggestion, dataset, context) {
+						console.log(event, suggestion, dataset, context);
+						window.location.assign(suggestion.href);
+						});
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</script>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /banner -->
+    </header>
+    <!-- /header -->
+    
+    
+
+  <!-- topics -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h2 class="section-title"></h2>
+        </div>
+        <!-- topic-item -->
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="https://www.section.io/docs/tutorials/going-live/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            
+            <h3 class="mb-3 mt-0">Going Live</h3>
+            <p class="mb-0">A step-by-step guide on how to get started with Section CDG.</p>
+          </a>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="https://www.section.io/docs/explanations/section/https-logs/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            
+            <h3 class="mb-3 mt-0">HTTP Logs</h3>
+            <p class="mb-0">An overview of the platform&rsquo;s HTTP logging functionality.</p>
+          </a>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="https://www.section.io/docs/tutorials/launching-a-nodejs-app/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            
+            <h3 class="mb-3 mt-0">Launching a Node.js app</h3>
+            <p class="mb-0">A step-by-step guide on how to launch a Node.js app on Section.</p>
+          </a>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="https://www.section.io/docs/tutorials/integrations/bigcommerce/optimize-bigcommerce/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            
+            <h3 class="mb-3 mt-0">Optimize Bigcommerce with Section</h3>
+            <p class="mb-0">A guide to optimize Bigcommerce on the Section platform.</p>
+          </a>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="https://www.section.io/docs/reference/modules/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            
+            <h3 class="mb-3 mt-0">Modules</h3>
+            <p class="mb-0">Information on which modules and reverse proxies are available to use on Section edge platform.</p>
+          </a>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="https://www.section.io/docs/reference/bare-domains/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            
+            <h3 class="mb-3 mt-0">Bare Domains</h3>
+            <p class="mb-0">How to set up bare domains with the Section platform.</p>
+          </a>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="https://www.section.io/docs/tutorials/monitoring/grafana/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            
+            <h3 class="mb-3 mt-0">Grafana Metric Visualization</h3>
+            <p class="mb-0">An overview of the Grafana tool and its application within the Section platform</p>
+          </a>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="https://www.section.io/docs/reference/http-error-messages/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            
+            <h3 class="mb-3 mt-0">HTTP Error Messages</h3>
+            <p class="mb-0">How to review http response codes. How to upload a custom error page for your website with Section.</p>
+          </a>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/varnish-cache-hit-rate/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            
+            <h3 class="mb-3 mt-0">Improve Varnish Cache Hit Rate</h3>
+            <p class="mb-0">Guide for understanding Varnish Cache  hit rate, metrics, and logs.</p>
+          </a>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/sample-varnish-snippets/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            
+            <h3 class="mb-3 mt-0">Use Varnish Cache snippets</h3>
+            <p class="mb-0">A collection of Varnish Cache snippets to help get your Varnish Cache proxy up and running.</p>
+          </a>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/basic-configuration/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            
+            <h3 class="mb-3 mt-0">Using the Quick Configuration</h3>
+            <p class="mb-0">How to use Section toggles to update your Varnish Cache and modsecurity configurations.</p>
+          </a>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/varnish-metrics/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            
+            <h3 class="mb-3 mt-0">View Varnish Cache Metrics</h3>
+            <p class="mb-0">Guide for understanding Varnish Cache Counters and other Varnish Cache  metrics.</p>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- /topics -->
+
+  
+  
+  <!-- call to action -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section px-3 bg-white shadow text-center">
+          <h2 class="mb-4">Didn&rsquo;t find an answer to your question?</h2>
+          <p class="mb-4">Please contact a Section engineer by emailing <a href="mailto:support@section.io">support@section.io</a>.</p>
+          
+          
+          <a href="/docs/contact" class="btn btn-primary">contact us</a>
+          
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /call to action -->
+  
+  
+
+
+    <!-- footer -->
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+       <p class="mb-md-0 mb-4">Copyright © 2021 Section.</p>
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline">
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.section.io/" aria-label="Section"><i class="ti-home"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://github.com/section-io/docs" aria-label="Github"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://community.section.io/" aria-label="Community"><i class="ti-comments-smiley"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+
+<script src="https://www.section.io/docs/js/script.min.js"></script>
+  </body>
+
+</html>

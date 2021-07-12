@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/section/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/virtual-waiting-room/go-squared-credentials/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/reference/aperture/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/threatx/blacklist-an-ip/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/optidash/change-image-quality/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/optidash/how-to-clear-cache/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/reference/configurations-with-git/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/modules/consistent-hash/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/virtual-waiting-room/control-user-threshold/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/going-live/create-application-edge/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/modules/csp-report/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/virtual-waiting-room/edit-waiting-room-html/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/developer-workflow/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/reference/example-proxy-stacks/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/csp-report/find-a-csp-violation-report/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/going-live/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/going-live/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/section/https-logs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/modules/modsecurity/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/modules/openresty/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/optidash/optidash-advanced-config/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/modules/radware-bot-manager/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/performance-optimization/review-your-metrics/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/consistent-hash/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/modsecurity/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/optidash/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/radware-bot-manager/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/signal-sciences/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/sitespect/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/launching-a-nodejs-app/set-up-sectionctl/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/threatx/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/developer-workflow/setting-up-your-developer-pop/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/modules/signal-sciences/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/modules/sitespect/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/modules/threat-x/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/virtual-waiting-room/toggle-virtual-waiting-room/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/performance/understand-if-your-varnish-cache-is-effective/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/virtual-waiting-room/virtual-waiting-room-advanced-configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/modules/varnish-cache/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/modules/virtual-waiting-room/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/threatx/whitelist-an-ip/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/section/better-than-a-cdn/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/account-configuration/create-a-new-environment/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/api-keys/creating-an-api-key/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/performance/discover-your-quick-cache-wins/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/integrations/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/launching-a-nodejs-app/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/developer-workflow/loading-your-setup-into-the-developer-pop/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/launching-a-nodejs-app/set-up-an-example-nodejs-app/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/cloudinary/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/csp-report/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/going-live/set-up-dns/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/varnish/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/virtual-waiting-room/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/performance-optimization/setup-your-local-environment/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/additional-information/support/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/api-keys/using-an-api-key/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/section/agency-ready/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/domains-dns/check-your-current-dns-setup/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/launching-a-nodejs-app/deploy-your-nodejs-app/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/developer-workflow/developing-with-the-developer-pop/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/going-live/enable-automatic-ssl/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/performance-optimization/optimize-your-configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/performance/uncover-how-often-you-are-using-https/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/section/global-network/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/performance-optimization/track-your-changes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/performance-optimization/monitor-your-website/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/section/proxy-options/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/section/developer-ready/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/section/devops-ready/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/section/dns-options/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/section/https-options/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/integrations/bigcommerce/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/integrations/drupal-setup/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/integrations/magento-setup/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/integrations/bigcommerce/optimize-bigcommerce/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/integrations/magento-setup/set-up-magento-2/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/integrations/drupal-setup/set-up-drupal-8/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/integrations/bigcommerce/ttfb-bigcommerce/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/performance-optimization/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/integrations/magento-setup/set-up-magento-1/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/integrations/bigcommerce/set-up-bigcommerce/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/account-configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/api-keys/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/performance/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/monitoring/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/debugging/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/developer-workflow/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/modules/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/user-management/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/reference/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/reference/platform-checklist/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/reference/modules/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/domains-dns/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/https-tls/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/additional-information/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/user-management/add-a-user-to-your-account/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/reference/new-app-or-env/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/section/monitoring/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/varnish/api-caching/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/reference/bare-domains/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/debugging/basic-logging/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/user-management/billing-portal/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/varnish/block-a-request/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/account-configuration/blocking-requests/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/account-configuration/change-origin/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/https-tls/check-your-current-https-setup/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/modules/cloudinary/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/additional-information/commercial-terms/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/varnish/dynamic-caching/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/varnish/geo-based-origin/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/varnish/static-asset-origin/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/domains-dns/configuring-a-new-domain/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/developer-workflow/connect-to-aperture/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/https-tls/create-a-free-tls-certificate-using-letsencrypt/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/https-tls/create-a-letsencrypt-certificate-before-your-dns-change/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/debugging/custom-logging/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/reference/debug-headers/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/debugging/debug-slow-website/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/account-configuration/deleting-an-app/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/account-configuration/deleting-an-environment/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/varnish/deliver-a-synthetic-response/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/https-tls/determine-tls-certificate-order/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/varnish/device-based-origin/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/reference/dns-with-multiple-domains/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/reference/edge-proxy/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/user-management/enable-two-factor-authentication-on-your-account/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/varnish/exclude-url-from-cache/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/monitoring/extract-domain-based-metrics/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/debugging/filter-http-logs-by-uri-path/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/varnish/respond-with-a-404/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/monitoring/grafana/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/monitoring/graphite/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/reference/health-check/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/varnish/clearing-the-cache/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/varnish/clearing-the-cache-using-the-api/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/reference/http-error-messages/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/varnish/varnish-cache-hit-rate/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/account-configuration/install-a-new-proxy/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/reference/magento-metrics-extension/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/monitoring/make-grafana-dashboard/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/domains-dns/make-bare-domain-cname/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/explanations/modules/nodejs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/https-tls/passthrough-acme-challenge/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/reference/payment-methods/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tutorials/monitoring/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/varnish/configure-varnish-cache-to-process-esi-directives-in-json-responses/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/reference/proxy-contract/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/debugging/testing-effectively/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/varnish/redirect-a-request/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/user-management/remove-a-user/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/account-configuration/remove-a-proxy/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/account-configuration/multiple-origins/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/debugging/testing-via-internet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/developer-workflow/dev-pop-with-local-server/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/debugging/search-logs-using-section-io-id/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/varnish/configure-varnish-cache-to-serve-content-while-the-backend-is-offline/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/https-tls/setup-https/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/nodejs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/account-configuration/outage-pages/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/performance/rum/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/varnish/set-and-unset-headers/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/additional-information/sub-processors/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/debugging/testing-locally/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/developer-workflow/troubleshoot-developerpop/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/developer-workflow/update-git-for-a-different-developer-pop-ip-address/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/https-tls/upload-a-custom-certificate/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/domains-dns/set-up-dns-on-section/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/domains-dns/set-up-dns-on-other-provider/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/varnish/sample-varnish-snippets/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/varnish/basic-configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/varnish/configure-varnish-with-gui/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/debugging/view-response-metrics-by-region/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/module-integrations/varnish/varnish-metrics/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.section.io/docs/how-tos/application-edge-management/account-configuration/whitelist-section-traffic-on-origin/</loc>
+  </url>
+  
+</urlset>

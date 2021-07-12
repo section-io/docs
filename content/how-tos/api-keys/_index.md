@@ -1,7 +1,7 @@
 ---
 title: "API Keys"
 description: ""
-weight: 80
+weight: 50
 aliases:
   - /api/
 ---

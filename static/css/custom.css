@@ -1,3 +1,4 @@
+
 @font-face {
 	font-family: "GTAmerica";
 	src: url("../fonts/GTAmerica-Regular.eot"); /* IE9 Compat Modes */
@@ -13,7 +14,28 @@
     font-weight: bold;
 }
 
+a.navbar-brand.px-2 .img-fluid {
+	max-width: 60px;
+	margin-top: 15px;
+}
+
+.ui-autocomplete-input {
+	border-bottom: 1px solid rgb(212, 212, 212) !important;
+  }
+  
+  .ui-autocomplete-input.active {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+  }
+
 /* override sidebar color */
+#autocomplete {
+	--aa-background-color-rgb: 255, 255, 255;
+	height: 50px !important;
+    border-radius: 25px !important;
+    border: 0 !important;
+    padding: 0 20px !important;
+}
 #sidebar {
 	background-color: #E8E9E9;
 }

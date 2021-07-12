@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Debugging on Section</title>
+    <link>https://www.section.io/docs/how-tos/debugging/</link>
+    <description>Recent content in Debugging on Section</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2021 Section.</copyright><atom:link href="https://www.section.io/docs/how-tos/debugging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic Logging</title>
+      <link>https://www.section.io/docs/how-tos/debugging/basic-logging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/debugging/basic-logging/</guid>
+      <description>In this document and video we get a basic demo of how to search the HTTP Logs in Section&amp;rsquo;s dashboard called Aperture.
+Use the Kibana 4 HTTP Logs to debug the proxy stack for possible issues with origin or the application in Section.
+   Intro 0:00 First time setup 1:33 Basics 2:17 Filters 3:26 Manual search 5:28 Tip 1 - faster work flow 6:52 Tip 2 - CSV exporter 7:24  HTTP Logs Login to Section&amp;rsquo;s dashboard Aperture and click the HTTP Logs link.</description>
+    </item>
+    
+    <item>
+      <title>Custom Logging</title>
+      <link>https://www.section.io/docs/how-tos/debugging/custom-logging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/debugging/custom-logging/</guid>
+      <description>A Guide to logging custom information using Varnish Cache or at the Edge. To help with debugging Section allows several ways to log custom information then allow this information to be recorded and searchable in Kibana.
+  1) Log using HTTP response header Any section-io-tag HTTP response header received by Edge will be logged and indexed in Kibana edge-access-log documents as the section_io_tag field. This header can be set by origin or any proxy upstream of Edge.</description>
+    </item>
+    
+    <item>
+      <title>Debugging a slow website</title>
+      <link>https://www.section.io/docs/how-tos/debugging/debug-slow-website/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/debugging/debug-slow-website/</guid>
+      <description>Overview When investigating a website slowdown, you first want to determine whether the slowdown is originating within the Section platform or at the origin server. The following guide will help you create a visualization of website performance data.
+Step 1 - Creating the visualization  Visit your Section portal and view the HTTP Logs section of your application. This will open up the Kibana view in it&amp;rsquo;s default state. Proceed to click the visualize tab in the upper nav bar which will prompt you to Create a visualization.</description>
+    </item>
+    
+    <item>
+      <title>Filter HTTP logs by URI path</title>
+      <link>https://www.section.io/docs/how-tos/debugging/filter-http-logs-by-uri-path/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/debugging/filter-http-logs-by-uri-path/</guid>
+      <description>Overview If you with to filter your HTTP Logs by a particular URI path, you&amp;rsquo;ll first need to open up Kibana located under the HTTP Logs section for your application.
+Accessing logs  You&amp;rsquo;ll first want to start out by searching for the URI path in the search bar by using the following syntax:  uri_path:&amp;quot;/some/uri/path&amp;quot; Note: do not include any query strings   This is bring up a list of all logs where that URI path strictly equals the value to searched for.</description>
+    </item>
+    
+    <item>
+      <title>Recommended Test Suite</title>
+      <link>https://www.section.io/docs/how-tos/debugging/testing-effectively/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/debugging/testing-effectively/</guid>
+      <description>The following steps will enable you to prime the CDN caches and follow a process that identifies caching issues for resolution ahead of actual customer traffic:
+1 Load your site&amp;rsquo;s Homepage 3-4 times This will ensure that assets are stored in cache and any optimizations that are being applied are activated
+2 Browse to another page (eg product page) If your site is an ecommerce site add a product to cart (or perform a similar action that personalizes the users experience)</description>
+    </item>
+    
+    <item>
+      <title>Run WebPagetest On Your Website</title>
+      <link>https://www.section.io/docs/how-tos/debugging/testing-via-internet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/debugging/testing-via-internet/</guid>
+      <description>This is a guide to help you run some basic tests against your website using webpagetest.org, a free real browser synthetic testing agent.
+While synthetic tests do not necessarily provide an accurate indication of how fast your site will be in the hands of your users, they can be useful to help you understand which items you can work on to the improve performance of individual pages. By focusing on key pages, you can improve the overall performance of your website.</description>
+    </item>
+    
+    <item>
+      <title>Searching HTTP logs using section-io-id</title>
+      <link>https://www.section.io/docs/how-tos/debugging/search-logs-using-section-io-id/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/debugging/search-logs-using-section-io-id/</guid>
+      <description>In this document and video we show you how to search the HTTP Logs in Section&amp;rsquo;s dashboard by using the value of the `section-io-id&#39; HTTP response header which is present on every response served by Section platform.
+Obtain the section-io-id header value. If you are using a broswer, you shoulw be able to open up broswer Dev-Tools -&amp;gt; Network, load the page then you should see all the requests the browser made.</description>
+    </item>
+    
+    <item>
+      <title>Test Website Performance Locally</title>
+      <link>https://www.section.io/docs/how-tos/debugging/testing-locally/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/debugging/testing-locally/</guid>
+      <description>Instead of using WebPageTest, you may wish to test the site through Section locally using your own browser. You can achieve this by changing how DNS to the site is resolved on your local test machine.
+Check out our set of recommended tests for help ensuring that you&amp;rsquo;ve covered all your bases.
+1 Obtaining a test IP For our managed customers, our engineers will provide you with a test IP and you can skip to part 2.</description>
+    </item>
+    
+    <item>
+      <title>View response metrics by region</title>
+      <link>https://www.section.io/docs/how-tos/debugging/view-response-metrics-by-region/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/debugging/view-response-metrics-by-region/</guid>
+      <description>Overview This is a guide to help you test the response times in milliseconds across different regions. You will be utilizing the Kibana/HTTP Logs view to break down the time_taken_ms field on the edge-access-log type by the geoip.country_code2 field.
+Step 1 - Creating the visualization  Visit your Section portal and view the HTTP Logs section of your application. This will open up the Kibana view in it&amp;rsquo;s default state. Proceed to click the visualize tab in the upper nav bar which will prompt you to Create a visualization.</description>
+    </item>
+    
+  </channel>
+</rss>

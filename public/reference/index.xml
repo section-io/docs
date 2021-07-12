@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reference on Section</title>
+    <link>https://www.section.io/docs/reference/</link>
+    <description>Recent content in Reference on Section</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2021 Section.</copyright><atom:link href="https://www.section.io/docs/reference/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aperture overview</title>
+      <link>https://www.section.io/docs/reference/aperture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/reference/aperture/</guid>
+      <description>Aperture is the Section management dashboard; a web user interface to manage applications, domains and all other components of a customers account.
+Section also provides an API API for programmatic interaction with the Section platform.
+  </description>
+    </item>
+    
+    <item>
+      <title>Configurations with GIT</title>
+      <link>https://www.section.io/docs/reference/configurations-with-git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/reference/configurations-with-git/</guid>
+      <description>Configuration When you are ready to start creating more advanced configurations for your proxies, you can start editing the configuration files directly. All of the files in your repository can be accessed by visiting Advanced Config under the Application Edge menu in the left nav of Aperture. For more information on more basic configurations done through our GUI, check out quick configuration.
+In the repository you can see all the files in your repository, commits to those files, stats, and a branching diagram.</description>
+    </item>
+    
+    <item>
+      <title>Example Proxy Stacks</title>
+      <link>https://www.section.io/docs/reference/example-proxy-stacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/reference/example-proxy-stacks/</guid>
+      <description>Proxy Stack Proxy Stacks are chained Proxies (or Reverse Proxies) and are composed of pre-packaged by Section Modules. These Modules are chained together to give combined functionality.
+A simple proxy stack   Simple proxy stack   A medium proxy stack   Medium proxy stack   A complex proxy stack   Complex proxy stack   </description>
+    </item>
+    
+    <item>
+      <title>Terminology</title>
+      <link>https://www.section.io/docs/reference/platform-checklist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/reference/platform-checklist/</guid>
+      <description>Overview of the key entities and account structure referred to throughout Section.
+   Component Function Description     Account Organization Users can be associated with one or many accounts. Accounts represent organizations like businesses. The Account is the master structure of Section. Accounts may contain many Applications and Users.   API API Section JSON RESTful API to manage the users, accounts, applications, environments, domains and logging.</description>
+    </item>
+    
+    <item>
+      <title>Modules</title>
+      <link>https://www.section.io/docs/reference/modules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/reference/modules/</guid>
+      <description>Section offers a number of different modules that can be used in your edge deployment.
+Section also allows you to build your own modules and run custom workloads on our edge network throughout the world. You can get started with building your own module with the example module assets provided by Section : Module Build Assets.
+A module template is a combination of the module software (eg. Varnish Cache) and a set of default files to configure the module (eg.</description>
+    </item>
+    
+    <item>
+      <title>Adding a New Domain to Section</title>
+      <link>https://www.section.io/docs/reference/new-app-or-env/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/reference/new-app-or-env/</guid>
+      <description>When you want to add a domain to Section, it is sometimes unclear where that domains should fit into your existing account, application, and environment structure. This guide will help you decide whether it is most appropriate to create a new application, create a new environment, or add a new domain to an existing environment.
+My new website is a staging/uat site for a production site that I have running or want to run on Section The purpose of Section&amp;rsquo;s application-environment structure is to streamline the configuration testing and promotion process for modules in your stack.</description>
+    </item>
+    
+    <item>
+      <title>Bare Domains</title>
+      <link>https://www.section.io/docs/reference/bare-domains/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/reference/bare-domains/</guid>
+      <description>Bare domains (sometimes called naked domains, or apex domains) present a challenge to DNS, because they do not permit the use of CNAME records at the zone apex.
+Your website runs on as a bare domain if you are using a name like https://example.com. Notice there is no prefix like &amp;ldquo;www.&amp;rdquo; or &amp;ldquo;shop.&amp;rdquo; before example.com.
+In most situations, we recommend moving off your bare domain so that your website uses a prefix.</description>
+    </item>
+    
+    <item>
+      <title>Debug Headers</title>
+      <link>https://www.section.io/docs/reference/debug-headers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/reference/debug-headers/</guid>
+      <description>Overview Section provides a range of debug-headers that are disabled by default. These headers can be enabled by sending the section-debug header set to any value. Section provides the following debug headers :
+ section-origin-status section-origin-failure section-origin-dns-failure section-origin-time-seconds  section-origin-status   When no bytes are received from the origin web server (e.g. DNS failures) s​ection-origin-status header is set to &amp;ldquo;000&amp;rdquo;.
+  When a response is received from the origin web server section-origin-status is set to upstream status when the upstream-status is a single status code and the last value when the upstream-status is an array of response codes (e.</description>
+    </item>
+    
+    <item>
+      <title>DNS with multiple domains</title>
+      <link>https://www.section.io/docs/reference/dns-with-multiple-domains/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/reference/dns-with-multiple-domains/</guid>
+      <description>The Section platform will only accept requests with a domain name that is explicitly added to an environment. For example, if you add www.example.com to Section as www.example.com but then choose to create a blog.example.com CNAME record pointing at www.example.com.c.section.io., visitors to http://blog.example.com will receive an error page displaying HTTP 409 Conflict.
+This is because blog.example.com has not been explicitly associated with a Section environment.In this case you would need to add blog.</description>
+    </item>
+    
+    <item>
+      <title>Edge Proxy</title>
+      <link>https://www.section.io/docs/reference/edge-proxy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/reference/edge-proxy/</guid>
+      <description>Ingress / Edge Proxy Every Section application proxy stack implicitly begins with the Edge proxy. The Edge proxy is the endpoint to which the User-Agent (eg web browser) connects and it has a few responsibilities:
+ Performing the TLS handshake for HTTPS connections Routing requests to the corresponding application proxy stack Implementing the HTTP/2 protocol Request correlation Serving custom error pages  This enables a consistent experience on the Section platform regardless of which proxies are in your application&amp;rsquo;s stack or in which sequence they appear.</description>
+    </item>
+    
+    <item>
+      <title>Health Checks</title>
+      <link>https://www.section.io/docs/reference/health-check/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/reference/health-check/</guid>
+      <description>Section platform has a default built-in HTTP health check that monitors the health of the environment across multiple locations in the world.
+Section uses a health check that queries the path /.well-known/section-io/aee-hc/healthz?ts=&amp;lt;timestamp&amp;gt; to check for health of the entire stack of modules and it&amp;rsquo;s ability to handle HTTP traffic.
+Section uses multiple remote-agents throughout the world to query the environment and then the individiual health responses are aggregated. An individual health response is calculated according to the following conditions :</description>
+    </item>
+    
+    <item>
+      <title>HTTP Error Messages</title>
+      <link>https://www.section.io/docs/reference/http-error-messages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/reference/http-error-messages/</guid>
+      <description>Have a look in Chrome&amp;rsquo;s development tools, on the network tab, to discover the HTTP response code for a request.
+HTTP 522 This is a modified HTTP 502 status code and means that we had trouble establishing a TCP connection to your server.
+Here are some things to check:
+ Is your server running? Sometimes your web server (for example, Apache or nginx) may not be running. It may be refusing TCP connections.</description>
+    </item>
+    
+    <item>
+      <title>Magento Metrics</title>
+      <link>https://www.section.io/docs/reference/magento-metrics-extension/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/reference/magento-metrics-extension/</guid>
+      <description>Section has an extension for Magento customers that allows business managers to access Section site metrics. These metrics provide visibility into the impact caching has on your website, without having to login to the Section application. You can get the extension for your Magento website by going to the Magento Marketplace.
+There are three metrics we show in the extension: Overall Cache Hit, HTML Cache Hit, and HTTP Response Codes. The extension in Magento is meant to give you an overview on the current status, but by having a developer look into your Varnish Cache configuration settings or your logs in the in the Section application, you can improve all of these metrics.</description>
+    </item>
+    
+    <item>
+      <title>Payment Methods</title>
+      <link>https://www.section.io/docs/reference/payment-methods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/reference/payment-methods/</guid>
+      <description>Section supports a number of payment methods.
+Credit Card The default payment method is by credit card which can be added to your account in the billing portal.
+Section stores all credit card details in secure vaults provided by our payment gateway providers. We do not store any credit card information on the Section platform.
+Add or Update your credit card, visit the Section Billing Portal: first click on the &amp;ldquo;gear&amp;rdquo; icon in your menu then navigate to &amp;ldquo;Account&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Proxy Contract</title>
+      <link>https://www.section.io/docs/reference/proxy-contract/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/reference/proxy-contract/</guid>
+      <description>Proxy Requirements The following defines the interaction between the proxy container and the Section proxy hosting platform:
+Essential  Proxy should listen on TCP port 80 for HTTP/1.1 on its public interface — never HTTPS or any other port. It may listen on other ports on its loopback interface for internal use only. Proxy must connect upstream to next-hop:80 as HTTP, never HTTPS. The platform will ensure &amp;ldquo;next-hop&amp;rdquo; resolves to the next proxy in the chain or the origin — whichever is next upstream.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,6 +1,7 @@
 ---
 title: Modules
 description: Information on which modules and reverse proxies are available to use on Section edge platform.
+type: "docs"
 keywords: content delivery network, CDN, varnish, turpentine, modsecurity, reverse proxies, proxy, proxy template
 aliases:
   - /modules/

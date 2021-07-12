@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Module Integrations on Section</title>
+    <link>https://www.section.io/docs/how-tos/module-integrations/</link>
+    <description>Recent content in Module Integrations on Section</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2021 Section.</copyright><atom:link href="https://www.section.io/docs/how-tos/module-integrations/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Set up Consistent Hash</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/consistent-hash/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/consistent-hash/</guid>
+      <description>Overview This tutorial will guide you through the process of adding the Consistent Hashing module to your proxy stack with default configuration files. This tutorial assumes you&amp;rsquo;ve cloned your application&amp;rsquo;s git repository to your local machine.
+Step 1 - Updating section.config.json  Add the following object to your proxystack array in your section.config.json file located in the root of your repository.  { &amp;quot;name&amp;quot;: &amp;quot;consistenthash&amp;quot;, &amp;quot;image&amp;quot;: &amp;quot;consistenthash:1.0.0&amp;quot; }  Typically this is added downstream of the module you want to load balance traffic to based on the consistent hash.</description>
+    </item>
+    
+    <item>
+      <title>Set up Modsecurity</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/modsecurity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/modsecurity/</guid>
+      <description>Please contact a Section engineer by emailing support@section.io.</description>
+    </item>
+    
+    <item>
+      <title>Set up Radware Bot Manager</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/radware-bot-manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/radware-bot-manager/</guid>
+      <description>Overview This tutorial will guide you through the process to adding the Radware Bot Manager module to your proxy stack with default configuration files. This tutorial assumes you&amp;rsquo;ve cloned your application&amp;rsquo;s git repository to your local machine.
+Step 1 - Updating section.config.json  Add the following object to your proxystack array in your section.config.json file located in the root of your repository.  { &amp;quot;name&amp;quot;: &amp;quot;radwarebotmanager&amp;quot;, &amp;quot;image&amp;quot;: &amp;quot;radware-bot-manager:5.3.4&amp;quot; }  You can add this module at any index in your proxystack array.</description>
+    </item>
+    
+    <item>
+      <title>Set up Signal Sciences</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/signal-sciences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/signal-sciences/</guid>
+      <description>Overview This tutorial will guide you through the process to adding the Signal Sciences module to your proxy stack with default configuration files.
+Setting up Signal Sciences when setting up an application When creating your application you will want to select the Signal Sciences on the second page of the setup process.
+  Setting up Signal Sciences on an existing application Step 1 - Adding default files  Clone the application repository by selecting the Advanced Config option in the left sidebar and copying the repo URL.</description>
+    </item>
+    
+    <item>
+      <title>Set up Sitespect</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/sitespect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/sitespect/</guid>
+      <description>Please contact a Section engineer by emailing support@section.io.</description>
+    </item>
+    
+    <item>
+      <title>Set up Cloudinary</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/cloudinary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/cloudinary/</guid>
+      <description>Table of contents  Please contact a Section engineer by emailing support@section.io.</description>
+    </item>
+    
+    <item>
+      <title>Set up Node.js</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/nodejs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/nodejs/</guid>
+      <description>Section&amp;rsquo;s Node.js module allows you to deploy your own Node.js code at the Edge. Below are the following steps you will need to take to get your Node.js app up and running within your Section application.
+Step 1: Add Node.js module to Section application Pull your Section application repository to your local machine. In the root of your repository, add a directory titled nodejs. Then edit section.config.json file in the root directory and insert the following object into the proxychain object located in the json file.</description>
+    </item>
+    
+  </channel>
+</rss>

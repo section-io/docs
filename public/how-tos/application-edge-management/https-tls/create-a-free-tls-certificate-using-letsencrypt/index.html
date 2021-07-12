@@ -1,0 +1,5526 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <title>Create a Free Certificate using Let&#39;s Encrypt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="generator" content="Hugo 0.79.0" />
+  <meta name="description" content="Create a Free Certificate using Let&#39;s Encrypt - Section ">
+  
+  <!-- ** CSS Plugins Needed for the Project ** -->
+  
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://www.section.io/docs/plugins/bootstrap/bootstrap.min.css">
+
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="https://www.section.io/docs/plugins/themify-icons/themify-icons.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="https://www.section.io/docs/images/favicon.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+  
+  <style>
+  :root{
+    --primary-color:#087830;
+    --body-color:#f9f9f9;
+    --text-color:#636363;
+    --text-color-dark:#242738;
+    --white-color:#ffffff;
+    --light-color:#f8f9fa;
+    --font-family:Lato;
+  }
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link href="https://www.section.io/docs/css/style.min.css" rel="stylesheet" media="screen"/>
+  
+<!-- ** JS Plugins Needed for the Project ** -->
+
+<!-- jquiry -->
+<script src="https://www.section.io/docs/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="https://www.section.io/docs/plugins/jquery/jquery-ui.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://www.section.io/docs/plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- match-height JS -->
+<script src="https://www.section.io/docs/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+
+  
+
+  <!-- create /layouts/partials/overrides/header.html in your own theme or root directory to add your custom content here -->
+
+
+
+
+
+
+
+
+<meta name="twitter:title" content="Create a Free Certificate using Let&#39;s Encrypt"/>
+<meta name="twitter:description" content="How to provision a free SSL certificate in Section portal."/>
+
+
+
+<meta property="og:title" content="Create a Free Certificate using Let&#39;s Encrypt" />
+<meta property="og:description" content="How to provision a free SSL certificate in Section portal." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.section.io/docs/how-tos/application-edge-management/https-tls/create-a-free-tls-certificate-using-letsencrypt/" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Create a Free Certificate using Let&#39;s Encrypt"/>
+<meta name="twitter:description" content="How to provision a free SSL certificate in Section portal."/>
+
+
+</head>
+
+  
+  <body>
+    
+    <!-- header -->
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container">
+    <a class="navbar-brand px-2" href="/docs">
+      
+      
+      
+      Section
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://www.section.io/docs/">Home</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            docs
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://www.section.io/docs/how-tos">How-Tos</a>
+            
+            <a class="dropdown-item" href="https://www.section.io/docs/tutorials">Tutorials</a>
+            
+            <a class="dropdown-item" href="https://www.section.io/docs/explanations">Explanations</a>
+            
+            <a class="dropdown-item" href="https://www.section.io/docs/reference">Reference</a>
+            
+          </div>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    <!-- /header -->
+    
+    
+
+<!-- details page -->
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+        <a class="back-btn" href="/docs" aria-label="back"></a>
+          <ul class="list-styled">
+            
+            
+              
+            
+              
+            
+              
+              
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/" title="How-Tos" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/">
+    How-Tos
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/" title="Application Edge Management" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/">
+    Application Edge Management
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/going-live/" title="Going Live" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/going-live/">
+    Going Live
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/account-configuration/" title="Account Configuration" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/account-configuration/">
+    Account Configuration
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/account-configuration/create-a-new-environment/" title="Create a New Environment" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/account-configuration/create-a-new-environment/">
+    Create a New Environment
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/account-configuration/blocking-requests/" title="Block IP" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/account-configuration/blocking-requests/">
+    Block IP
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/account-configuration/change-origin/" title="Change your Origin Address" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/account-configuration/change-origin/">
+    Change your Origin Address
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/account-configuration/deleting-an-app/" title="Deleting an Application" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/account-configuration/deleting-an-app/">
+    Deleting an Application
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/account-configuration/deleting-an-environment/" title="Deleting an Environment" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/account-configuration/deleting-an-environment/">
+    Deleting an Environment
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/account-configuration/install-a-new-proxy/" title="Install A New Proxy" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/account-configuration/install-a-new-proxy/">
+    Install A New Proxy
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/account-configuration/remove-a-proxy/" title="Removing a module from your proxy stack" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/account-configuration/remove-a-proxy/">
+    Removing a module from your proxy stack
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/account-configuration/multiple-origins/" title="Run multiple origins in one environment" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/account-configuration/multiple-origins/">
+    Run multiple origins in one environment
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/account-configuration/outage-pages/" title="Set up Outage Pages" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/account-configuration/outage-pages/">
+    Set up Outage Pages
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/account-configuration/whitelist-section-traffic-on-origin/" title="Whitelist Section traffic to origin infrastructure" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/account-configuration/whitelist-section-traffic-on-origin/">
+    Whitelist Section traffic to origin infrastructure
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/user-management/" title="User Management" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/user-management/">
+    User Management
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/user-management/add-a-user-to-your-account/" title="Add a user to your account" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/user-management/add-a-user-to-your-account/">
+    Add a user to your account
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/user-management/billing-portal/" title="Billing Portal" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/user-management/billing-portal/">
+    Billing Portal
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/user-management/enable-two-factor-authentication-on-your-account/" title="Enable Two Factor Authentication on Your Account" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/user-management/enable-two-factor-authentication-on-your-account/">
+    Enable Two Factor Authentication on Your Account
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/user-management/remove-a-user/" title="Remove a user from your account" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/user-management/remove-a-user/">
+    Remove a user from your account
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/domains-dns/" title="Domain and DNS " class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/domains-dns/">
+    Domain and DNS 
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/domains-dns/check-your-current-dns-setup/" title="Check your current DNS setup" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/domains-dns/check-your-current-dns-setup/">
+    Check your current DNS setup
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/domains-dns/configuring-a-new-domain/" title="Configuring a new domain" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/domains-dns/configuring-a-new-domain/">
+    Configuring a new domain
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/domains-dns/make-bare-domain-cname/" title="Make bare domain CNAME records" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/domains-dns/make-bare-domain-cname/">
+    Make bare domain CNAME records
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/domains-dns/set-up-dns-on-section/" title="Use Section hosted DNS" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/domains-dns/set-up-dns-on-section/">
+    Use Section hosted DNS
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/domains-dns/set-up-dns-on-other-provider/" title="Use Section with outside DNS" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/domains-dns/set-up-dns-on-other-provider/">
+    Use Section with outside DNS
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/https-tls/" title="HTTPS and TLS" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/https-tls/">
+    HTTPS and TLS
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/https-tls/check-your-current-https-setup/" title="Check your current HTTPS setup" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/https-tls/check-your-current-https-setup/">
+    Check your current HTTPS setup
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/https-tls/create-a-free-tls-certificate-using-letsencrypt/" title="Create a Free Certificate using Let&#39;s Encrypt" class="sidelist
+  active">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/https-tls/create-a-free-tls-certificate-using-letsencrypt/">
+    Create a Free Certificate using Let&#39;s Encrypt
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/https-tls/create-a-letsencrypt-certificate-before-your-dns-change/" title="Create a Let&#39;s Encrypt Certificate Before your DNS Change" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/https-tls/create-a-letsencrypt-certificate-before-your-dns-change/">
+    Create a Let&#39;s Encrypt Certificate Before your DNS Change
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/https-tls/determine-tls-certificate-order/" title="Determine TLS Certificate Order" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/https-tls/determine-tls-certificate-order/">
+    Determine TLS Certificate Order
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/https-tls/passthrough-acme-challenge/" title="Passthrough ACME Challenge HTTP Request" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/https-tls/passthrough-acme-challenge/">
+    Passthrough ACME Challenge HTTP Request
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/https-tls/setup-https/" title="Set up HTTPS and HTTP/2" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/https-tls/setup-https/">
+    Set up HTTPS and HTTP/2
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/application-edge-management/https-tls/upload-a-custom-certificate/" title="Upload a Custom SSL Certificate" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/application-edge-management/https-tls/upload-a-custom-certificate/">
+    Upload a Custom SSL Certificate
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/api-keys/" title="API Keys" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/api-keys/">
+    API Keys
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/api-keys/creating-an-api-key/" title="Creating an API Key" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/api-keys/creating-an-api-key/">
+    Creating an API Key
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/api-keys/using-an-api-key/" title="Using an API Key" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/api-keys/using-an-api-key/">
+    Using an API Key
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/performance/" title="Performance Evaluation" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/performance/">
+    Performance Evaluation
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/performance/understand-if-your-varnish-cache-is-effective/" title="Understanding Cache Effectiveness" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/performance/understand-if-your-varnish-cache-is-effective/">
+    Understanding Cache Effectiveness
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/performance/discover-your-quick-cache-wins/" title="Discover your quick Cache Wins" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/performance/discover-your-quick-cache-wins/">
+    Discover your quick Cache Wins
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/performance/uncover-how-often-you-are-using-https/" title="Uncover how often you are using HTTPS" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/performance/uncover-how-often-you-are-using-https/">
+    Uncover how often you are using HTTPS
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/performance/rum/" title="Set up Real User Monitoring" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/performance/rum/">
+    Set up Real User Monitoring
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/monitoring/" title="Monitoring" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/monitoring/">
+    Monitoring
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/monitoring/extract-domain-based-metrics/" title="Extract domain based metrics" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/monitoring/extract-domain-based-metrics/">
+    Extract domain based metrics
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/monitoring/make-grafana-dashboard/" title="Make a Custom Grafana Dashboard" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/monitoring/make-grafana-dashboard/">
+    Make a Custom Grafana Dashboard
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/debugging/" title="Debugging" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/debugging/">
+    Debugging
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/debugging/basic-logging/" title="Basic Logging" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/debugging/basic-logging/">
+    Basic Logging
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/debugging/custom-logging/" title="Custom Logging" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/debugging/custom-logging/">
+    Custom Logging
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/debugging/debug-slow-website/" title="Debugging a slow website" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/debugging/debug-slow-website/">
+    Debugging a slow website
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/debugging/filter-http-logs-by-uri-path/" title="Filter HTTP logs by URI path" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/debugging/filter-http-logs-by-uri-path/">
+    Filter HTTP logs by URI path
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/debugging/testing-effectively/" title="Recommended Test Suite" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/debugging/testing-effectively/">
+    Recommended Test Suite
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/debugging/testing-via-internet/" title="Run WebPagetest On Your Website" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/debugging/testing-via-internet/">
+    Run WebPagetest On Your Website
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/debugging/search-logs-using-section-io-id/" title="Searching HTTP logs using section-io-id" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/debugging/search-logs-using-section-io-id/">
+    Searching HTTP logs using section-io-id
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/debugging/testing-locally/" title="Test Website Performance Locally" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/debugging/testing-locally/">
+    Test Website Performance Locally
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/debugging/view-response-metrics-by-region/" title="View response metrics by region" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/debugging/view-response-metrics-by-region/">
+    View response metrics by region
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/developer-workflow/" title="Developer Workflow" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/developer-workflow/">
+    Developer Workflow
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/developer-workflow/connect-to-aperture/" title="Connect Developer PoP to Aperture" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/developer-workflow/connect-to-aperture/">
+    Connect Developer PoP to Aperture
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/developer-workflow/dev-pop-with-local-server/" title="Running Minikube with a Local Origin" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/developer-workflow/dev-pop-with-local-server/">
+    Running Minikube with a Local Origin
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/developer-workflow/troubleshoot-developerpop/" title="Troubleshoot Developer PoP Issues" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/developer-workflow/troubleshoot-developerpop/">
+    Troubleshoot Developer PoP Issues
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/developer-workflow/update-git-for-a-different-developer-pop-ip-address/" title="Update Git for a different developer pop ip address" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/developer-workflow/update-git-for-a-different-developer-pop-ip-address/">
+    Update Git for a different developer pop ip address
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/" title="Module Integrations" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/">
+    Module Integrations
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/consistent-hash/" title="Set up Consistent Hash" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/consistent-hash/">
+    Set up Consistent Hash
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/modsecurity/" title="Set up Modsecurity" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/modsecurity/">
+    Set up Modsecurity
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/optidash/" title="Set up Optidash" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/optidash/">
+    Set up Optidash
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/optidash/change-image-quality/" title="Change optimized image quality" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/optidash/change-image-quality/">
+    Change optimized image quality
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/optidash/how-to-clear-cache/" title="Clear Optidash cache" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/optidash/how-to-clear-cache/">
+    Clear Optidash cache
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/optidash/optidash-advanced-config/" title="Optidash Advanced Configuration" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/optidash/optidash-advanced-config/">
+    Optidash Advanced Configuration
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/radware-bot-manager/" title="Set up Radware Bot Manager" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/radware-bot-manager/">
+    Set up Radware Bot Manager
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/signal-sciences/" title="Set up Signal Sciences" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/signal-sciences/">
+    Set up Signal Sciences
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/sitespect/" title="Set up Sitespect" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/sitespect/">
+    Set up Sitespect
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/threatx/" title="Set up ThreatX" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/threatx/">
+    Set up ThreatX
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/threatx/blacklist-an-ip/" title="Blacklist an IP address or a CIDR range" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/threatx/blacklist-an-ip/">
+    Blacklist an IP address or a CIDR range
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/threatx/whitelist-an-ip/" title="Whitelist an IP Address or a CIDR Range" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/threatx/whitelist-an-ip/">
+    Whitelist an IP Address or a CIDR Range
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/cloudinary/" title="Set up Cloudinary" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/cloudinary/">
+    Set up Cloudinary
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/csp-report/" title="Set up CSP Report" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/csp-report/">
+    Set up CSP Report
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/csp-report/find-a-csp-violation-report/" title="Find a CSP violation report" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/csp-report/find-a-csp-violation-report/">
+    Find a CSP violation report
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/varnish/" title="Set up Varnish" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/">
+    Set up Varnish
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/varnish/api-caching/" title="API Caching" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/api-caching/">
+    API Caching
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/varnish/block-a-request/" title="Block a request" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/block-a-request/">
+    Block a request
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/varnish/dynamic-caching/" title="Configure Dynamic Content Caching" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/dynamic-caching/">
+    Configure Dynamic Content Caching
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/varnish/geo-based-origin/" title="Configure GEO-based origin selection" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/geo-based-origin/">
+    Configure GEO-based origin selection
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/varnish/static-asset-origin/" title="Configure static asset origin" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/static-asset-origin/">
+    Configure static asset origin
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/varnish/deliver-a-synthetic-response/" title="Deliver a synthetic response" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/deliver-a-synthetic-response/">
+    Deliver a synthetic response
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/varnish/device-based-origin/" title="Device based origin selection" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/device-based-origin/">
+    Device based origin selection
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/varnish/exclude-url-from-cache/" title="Exclude URL from Varnish cache" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/exclude-url-from-cache/">
+    Exclude URL from Varnish cache
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/varnish/respond-with-a-404/" title="Generate a 404 response" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/respond-with-a-404/">
+    Generate a 404 response
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/varnish/clearing-the-cache/" title="How to clear the cache" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/clearing-the-cache/">
+    How to clear the cache
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/varnish/clearing-the-cache-using-the-api/" title="How to clear the cache using the API" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/clearing-the-cache-using-the-api/">
+    How to clear the cache using the API
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/varnish/varnish-cache-hit-rate/" title="Improve Varnish Cache Hit Rate" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/varnish-cache-hit-rate/">
+    Improve Varnish Cache Hit Rate
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/varnish/configure-varnish-cache-to-process-esi-directives-in-json-responses/" title="Process ESI Directives in JSON responses" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/configure-varnish-cache-to-process-esi-directives-in-json-responses/">
+    Process ESI Directives in JSON responses
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/varnish/redirect-a-request/" title="Redirect a request" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/redirect-a-request/">
+    Redirect a request
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/varnish/configure-varnish-cache-to-serve-content-while-the-backend-is-offline/" title="Serve stale content while the backend is offline" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/configure-varnish-cache-to-serve-content-while-the-backend-is-offline/">
+    Serve stale content while the backend is offline
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/varnish/set-and-unset-headers/" title="Setting and unsetting HTTP headers" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/set-and-unset-headers/">
+    Setting and unsetting HTTP headers
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/varnish/sample-varnish-snippets/" title="Use Varnish Cache snippets" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/sample-varnish-snippets/">
+    Use Varnish Cache snippets
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/varnish/basic-configuration/" title="Using the Quick Configuration" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/basic-configuration/">
+    Using the Quick Configuration
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/varnish/configure-varnish-with-gui/" title="Varnish Cache Quick Config" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/configure-varnish-with-gui/">
+    Varnish Cache Quick Config
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/varnish/varnish-metrics/" title="View Varnish Cache Metrics" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/varnish/varnish-metrics/">
+    View Varnish Cache Metrics
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/virtual-waiting-room/" title="Set up Virtual Waiting Room" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/virtual-waiting-room/">
+    Set up Virtual Waiting Room
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/virtual-waiting-room/go-squared-credentials/" title="Acquire GoSquared Credentials" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/virtual-waiting-room/go-squared-credentials/">
+    Acquire GoSquared Credentials
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/virtual-waiting-room/control-user-threshold/" title="Control User Threshold" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/virtual-waiting-room/control-user-threshold/">
+    Control User Threshold
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/virtual-waiting-room/edit-waiting-room-html/" title="Design the Waiting Room" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/virtual-waiting-room/edit-waiting-room-html/">
+    Design the Waiting Room
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/virtual-waiting-room/toggle-virtual-waiting-room/" title="Toggle Virtual Waiting Room Module" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/virtual-waiting-room/toggle-virtual-waiting-room/">
+    Toggle Virtual Waiting Room Module
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/virtual-waiting-room/virtual-waiting-room-advanced-configuration/" title="Using Virtual Waiting Room Advanced Configuration" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/virtual-waiting-room/virtual-waiting-room-advanced-configuration/">
+    Using Virtual Waiting Room Advanced Configuration
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.section.io/docs/how-tos/module-integrations/nodejs/" title="Set up Node.js" class="sidelist
+  ">
+  <a href="https://www.section.io/docs/how-tos/module-integrations/nodejs/">
+    Set up Node.js
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white">
+          <h2 class="mb-5">Create a Free Certificate using Let&#39;s Encrypt</h2>
+          
+          <div class="content"><h2 id="get-started">Get started</h2>
+<p>Log into your Aperture dashboard and under <strong>Set up</strong> navigate to the <strong>HTTPS</strong> page.</p>
+<figure>
+    <img src="/docs/images/https/https-aperture.gif"/> <figcaption>
+            <h4>HTTPS in Aperture</h4>
+        </figcaption>
+</figure>
+
+<h2 id="select-domain">Select domain</h2>
+<figure>
+    <img src="/docs/images/https/https-pulldown.gif"/> <figcaption>
+            <h4>HTTPS Pulldown</h4>
+        </figcaption>
+</figure>
+
+<p>The SSL information for the first domain in this application will automatically load. If you have setup multiple domains on a single application, click the drop down box &ldquo;Select your domain&rdquo; and select the domain you wish to upload a certificate for.</p>
+<h2 id="provision-certificate">Provision certificate</h2>
+<p>Click the &ldquo;<strong>Renew certificate</strong>&rdquo; button.</p>
+<p>If you previously used a custom certificate, click the &ldquo;<strong>Switch to Let&rsquo;s Encrypt</strong>&rdquo; button.
+Let&rsquo;s Encrypt will run validation tests over the domain then provision a new certificate once validation is complete.</p>
+<p>If you have only recently performed <a href="">Go-Live </a> (pointed DNS at Section) the validation process might require multiple attempts, as DNS propagation can take some time. So if your free certificate doesn&rsquo;t provision straightaway, click the &ldquo;Renew certificate&rdquo; button again in a few minutes. If it still doesn&rsquo;t provision after 3 or 4 attempts, contact our support team.</p>
+<p>Once the certificate has been provisioned, it will automatically renew every 3 months.</p>
+<h2 id="aaaa-dns-records">AAAA DNS records</h2>
+<p>Domains that use both A and AAAA records will need to remove the AAAA record before attempting to provision the certificate. 
+This is because Section platform uses IPv4 and AAAA records are IPv6 which will be not pointing at Section platform leading to provision failure.</p>
+</div>
+          
+          <nav class="pagination mt-3">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="https://www.section.io/docs/how-tos/application-edge-management/https-tls/check-your-current-https-setup/" aria-label="Previous page" ><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Check your current HTTPS setup</span></a>
+            
+            
+            <a class="nav nav-next" href="https://www.section.io/docs/how-tos/application-edge-management/https-tls/create-a-letsencrypt-certificate-before-your-dns-change/" aria-label="Previous page" > <span class="d-none d-md-block">Create a Let&#39;s Encrypt Certificate Before your DNS Change</span><i class="ti-arrow-right ml-2"></i></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /details page -->
+
+
+
+
+
+    <!-- footer -->
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+       <p class="mb-md-0 mb-4">Copyright © 2021 Section.</p>
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline">
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.section.io/" aria-label="Section"><i class="ti-home"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://github.com/section-io/docs" aria-label="Github"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://community.section.io/" aria-label="Community"><i class="ti-comments-smiley"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+
+<script src="https://www.section.io/docs/js/script.min.js"></script>
+  </body>
+
+</html>

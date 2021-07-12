@@ -1,6 +1,6 @@
 ---
-title: Aperture Overview Page
-description:
+title: Aperture Overview
+description: 
 keywords: metrics, grafana, graphite, kibana, varnish, modsecurity, website performance, website security, content delivery network, CDN
 aliases:
   - /monitoring/overview/overview-page/

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Set up Optidash on Section</title>
+    <link>https://www.section.io/docs/how-tos/module-integrations/optidash/</link>
+    <description>Recent content in Set up Optidash on Section</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2021 Section.</copyright><atom:link href="https://www.section.io/docs/how-tos/module-integrations/optidash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Change optimized image quality</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/optidash/change-image-quality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/optidash/change-image-quality/</guid>
+      <description>Overview Optidash module allows the flexibility to control the quality of the optimized image.
+How To You can control the optimized image quality by changing the following settings in the advanced configuration settings for Optidash :
+ &amp;quot;lossless&amp;quot; : &amp;quot;true/false&amp;quot;  Enable disable lossy compression.
+ &amp;quot;quality&amp;quot; : 1 - 100  This options will only be used if the LOSSY option is set to true. Can be a number in the range of 1 - 100.</description>
+    </item>
+    
+    <item>
+      <title>Clear Optidash cache</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/optidash/how-to-clear-cache/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/optidash/how-to-clear-cache/</guid>
+      <description>Overview There are two ways for clearing Optidash cache.
+ Clear the entire Cache Clear a particular image from the cache.  Clear the entire Cache In the advanced configuration settings for Optidash you can change the following parameter
+&amp;quot;cache_version&amp;quot; : &amp;quot;v1&amp;quot; Updating the &amp;ldquo;cache_version&amp;rdquo; will clear the entire Optidash cache.
+Clear a particular image from the cache. To clear the cache for an individual URL you can use our API: https://aperture.</description>
+    </item>
+    
+    <item>
+      <title>Optidash Advanced Configuration</title>
+      <link>https://www.section.io/docs/how-tos/module-integrations/optidash/optidash-advanced-config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.section.io/docs/how-tos/module-integrations/optidash/optidash-advanced-config/</guid>
+      <description>Optidash Module Settings Once your application has been set up with Optidash you will find the following settings under Advanced Config &amp;gt; Optidash in the Section Console (Aperture portal).
+{ &amp;quot;api_key&amp;quot;: &amp;quot;REDACTED&amp;quot;, &amp;quot;lossless&amp;quot;: false, &amp;quot;enabled&amp;quot;: true, &amp;quot;ttl&amp;quot;: 604800, &amp;quot;cache_version&amp;quot;: &amp;quot;v1&amp;quot;, &amp;quot;s3&amp;quot;: { &amp;quot;key&amp;quot;: &amp;quot;REDACTED&amp;quot;, &amp;quot;secret&amp;quot;: &amp;quot;REDACTED&amp;quot;, &amp;quot;region&amp;quot;: &amp;quot;ap-southeast-2&amp;quot;, &amp;quot;bucket&amp;quot;: &amp;quot;section-kraken&amp;quot; } }   &amp;quot;lossless&amp;quot; : &amp;quot;true/false&amp;quot;  Enable disable lossy compression.
+ &amp;quot;quality&amp;quot; : 1 - 100  This options will only be used if the LOSSY option is set to true.</description>
+    </item>
+    
+  </channel>
+</rss>
