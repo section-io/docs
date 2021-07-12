@@ -1,6 +1,6 @@
 ---
 title: Modules
-description: Information on which modules and reverse proxies are available to use on Section edge platform.
+description: Information on which modules and reverse proxies are available to use on Section's Edge Platform.
 type: "docs"
 keywords: content delivery network, CDN, varnish, turpentine, modsecurity, reverse proxies, proxy, proxy template
 aliases:
@@ -39,7 +39,6 @@ If you want to experiment with different modules you can use our [Developer Work
 | [Radware Bot Manager](/docs/explanations/modules/radware-bot-manager/ "Radware Bot Manager overview") | Bot Management | Non-human bot traffic detection and management. |
 | [Signal Sciences](/docs/explanations/modules/signal-sciences/ "Signal Sciences overview") | Web Application Firewall | Real-time protection for an application under attack and integrates into devops toolchains. |
 | [SiteSpect](/docs/explanations/modules/sitespect/ "SiteSpect overview") | A/B Testing | Javascript and Tag Free A/B testing. |
-| [Templarbit Shield](/docs/explanations/modules/templarbit/ "Templarbit Shield overview") | Web Application Firewall | Intelligent application protection. |
 | [ThreatX](/docs/explanations/modules/threat-x/ "ThreatX overview") | Web Application Firewall | Web Application Firewall based on dynamic rules. |
 | [Varnish Cache](/docs/explanations/modules/varnish-cache/ "Varnish overview") | Cache | Latest version of Varnish Cache completely customizable. |
 | [Virtual Waiting Room](/docs/explanations/modules/virtual-waiting-room/ "Virtual Waiting Room overview") | Traffic Management | Manage user experience during extreme traffic events. |
