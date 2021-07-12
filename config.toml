@@ -80,7 +80,7 @@ copyright = "Copyright © 2021 Section."
 # banner
 [Languages.en.params.banner]
 title = "Section Documentation"
-subtitle = "Find advice and answers from our support team fast or get in touch"
+subtitle = "Explore technical guides and references to get the most out of Section's Edge Platform."
 bg_image = "images/banner.jpg"
 placeholder = "Search the docs..."
 
