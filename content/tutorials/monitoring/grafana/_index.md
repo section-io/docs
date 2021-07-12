@@ -1,6 +1,6 @@
 ---
 title: Grafana Metric Visualization
-description: An overview of the Grafana tool and its application within the Section platform
+description: An overview of the Grafana tool and its application within the Section platform.
 keywords: monitoring, Grafana, metrics, Varnish Cache handling
 type: "docs"
 aliases:

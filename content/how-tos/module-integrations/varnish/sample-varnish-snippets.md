@@ -1,5 +1,5 @@
 ---
-title: Use Varnish Cache snippets
+title: Use Varnish Cache Snippets
 description: A collection of Varnish Cache snippets to help get your Varnish Cache proxy up and running.
 type: "docs"
 keywords: [Varnish, snippets, caching, HTTPS, blocking, Wordpress]

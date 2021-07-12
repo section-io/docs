@@ -1,6 +1,6 @@
 ---
 title: Going Live
-description: A step-by-step guide on how to get started with Section CDG.
+description: A step-by-step guide on how to get started with Section Edge as a Service.
 keywords: guide, getting started, website performance, page speed, webpage speed, website security, content delivery network, CDN
 type: "docs"
 aliases:

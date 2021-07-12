@@ -1,6 +1,6 @@
 ---
 title: Using the Quick Configuration
-description: How to use Section toggles to update your Varnish Cache and modsecurity configurations.
+description: How to use Section toggles to update your Varnish Cache and ModSecurity configurations.
 type: "docs"
 keywords: website performance, page speed, webpage speed, website security, varnish, VCL, modsecurity, CDN configuration
 aliases:
@@ -12,7 +12,7 @@ aliases:
 
 ---
 
-To make it easy to get started configuring your reverse proxies, Section offers a few basic confguration options for [Varnish](#varnish) and [Modsecurity](#modsecurity). Check out our guide on [Advanced Configuration](/docs/topic-guides/advanced-config/) for more advanced configuration topics.
+To make it easy to get started configuring your reverse proxies, Section offers a few basic confguration options for [Varnish](#varnish) and [ModSecurity](#modsecurity). Check out our guide on [Advanced Configuration](/docs/topic-guides/advanced-config/) for more advanced configuration topics.
 
 ## Varnish
 
@@ -42,10 +42,10 @@ Changes made to these options will be reflected in the `proxy-features.json` fil
 
 To start writing your own VCL, you'll need to head over to the [repo](/docs/topic-guides/advanced-config/).
 
-## Modsecurity
+## ModSecurity
 
-To make getting your CDN setup easier we have a number of configuration options you can enable without writing any code. We've defined rules that you can view by going to the Proxy page under the Configuration menu in Aperture. If you have both Varnish Cache and Modsecurity setup, you will need to click Proxy in the top nav to display a drop down menu to view both of your reverse proxies and select Modsecurity.
+To make getting your CDN setup easier we have a number of configuration options you can enable without writing any code. We've defined rules that you can view by going to the Proxy page under the Configuration menu in Aperture. If you have both Varnish Cache and ModSecurity setup, you will need to click Proxy in the top nav to display a drop down menu to view both of your reverse proxies and select ModSecurity.
 
 The initial configuration in a repository starts ModSecurity’s SecRuleEngine in DetectionOnly mode (this writes log entries but never executes any disruptive actions). This is a great starting point, as you can immediately see possible threats without stopping legitimate traffic to your site.
 
-For each config file that we've setup you can see a list of rules within that file and an on/off toggle. Turning the toggle "On" will allow the rules to start actively detecting traffic for that rule. In order to turn the rules into a blocking mode, you'll need to do advanced configuration by editing files in the [repo](/docs/topic-guides/advanced-config/). To learn more about what each rule does, visit [OWASP Modsecurity Rule Set Project](https://www.owasp.org/index.php/Category:OWASP_ModSecurity_Core_Rule_Set_Project).
+For each config file that we've setup you can see a list of rules within that file and an on/off toggle. Turning the toggle "On" will allow the rules to start actively detecting traffic for that rule. In order to turn the rules into a blocking mode, you'll need to do advanced configuration by editing files in the [repo](/docs/topic-guides/advanced-config/). To learn more about what each rule does, visit [OWASP ModSecurity Rule Set Project](https://www.owasp.org/index.php/Category:OWASP_ModSecurity_Core_Rule_Set_Project).
